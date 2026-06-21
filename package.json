@@ -1,0 +1,34 @@
+{
+  "name": "sentient-os-design-genome",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Governance and validation assets for the Sentient OS Architectural Web Stylebook.",
+  "exports": {
+    "./foundation.css": "./dist/sentient-foundation.css",
+    "./primitives.css": "./dist/sentient-primitives.css",
+    "./personalities.css": "./dist/sentient-personalities.css",
+    "./architectures.css": "./dist/sentient-architectures.css",
+    "./projects.css": "./dist/sentient-projects.css",
+    "./foundation-tokens": "./dist/sentient-foundation.tokens.json",
+    "./theme-schema": "./schemas/theme-declaration.schema.json",
+    "./component-schema": "./schemas/component-contract.schema.json"
+  },
+  "scripts": {
+    "validate": "npm run validate:themes && npm run validate:tokens && npm run validate:components && npm run validate:primitives && npm run validate:react-starter && npm run validate:personalities && npm run validate:architectures && npm run validate:projects && npm run validate:release",
+    "validate:themes": "node scripts/validate-theme-declaration.mjs",
+    "validate:tokens": "node scripts/validate-foundation-tokens.mjs",
+    "validate:components": "node scripts/validate-component-contracts.mjs",
+    "validate:primitives": "node scripts/validate-primitives-css.mjs",
+    "validate:react-starter": "node scripts/validate-react-vite-starter.mjs",
+    "validate:personalities": "node scripts/validate-personality-themes.mjs",
+    "validate:architectures": "node scripts/validate-architectural-themes.mjs",
+    "validate:projects": "node scripts/validate-project-dna-themes.mjs",
+    "validate:release": "node scripts/validate-release.mjs",
+    "build": "npm run build:foundation && npm run build:primitives && npm run build:personalities && npm run build:architectures && npm run build:projects",
+    "build:foundation": "node scripts/build-foundation-css.mjs",
+    "build:primitives": "node scripts/build-primitives-css.mjs",
+    "build:personalities": "node scripts/build-personalities-css.mjs",
+    "build:architectures": "node scripts/build-architectures-css.mjs",
+    "build:projects": "node scripts/build-projects-css.mjs"
+  }
+}

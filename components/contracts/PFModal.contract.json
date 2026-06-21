@@ -1,0 +1,37 @@
+{
+  "id": "pf-modal",
+  "name": "PFModal",
+  "category": "overlay",
+  "description": "Temporary chamber for focused tasks, confirmations, or critical information.",
+  "architectural_role": "temporary-chamber",
+  "responsibility": "Focus attention on a temporary task, confirmation, or critical information.",
+  "slots": {
+    "required": ["header", "body"],
+    "optional": ["optional_footer_actions", "optional_close_control"]
+  },
+  "variants": ["default", "confirmation", "critical"],
+  "states": ["closed", "opening", "open", "closing"],
+  "token_dependencies": ["--space-4", "--space-5", "--space-6", "--radius-2xl", "--text-h3", "--text-body", "--line-body", "--weight-semibold", "--elevation-4", "--duration-normal", "--ease-enter", "--ease-exit", "--focus-ring-width", "--focus-ring-offset", "--focus-ring-color", "--z-modal"],
+  "accessibility": {
+    "requirements": [
+      "Focus must be trapped while the modal is open.",
+      "A clear escape path must exist.",
+      "Dialog title and purpose must be announced."
+    ]
+  },
+  "composition_rules": [
+    "Modals must have a clear escape.",
+    "Do not use modals for complex workflows unless necessary.",
+    "Focus must be trapped inside while open."
+  ],
+  "anti_patterns": [
+    "stacking multiple modals without exceptional reason",
+    "placing long multistep workflows in a modal by default",
+    "removing the visible close path"
+  ],
+  "governance": {
+    "foundation_component": true,
+    "allowed_density_modes": ["compact", "standard", "focus", "executive"],
+    "allowed_architectural_families": ["Command Tower", "Glass Atrium", "Blueprint Studio", "Signal Terminal", "Executive Gallery", "Horizon Workspace"]
+  }
+}

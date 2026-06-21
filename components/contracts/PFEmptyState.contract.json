@@ -1,0 +1,37 @@
+{
+  "id": "pf-empty-state",
+  "name": "PFEmptyState",
+  "category": "feedback",
+  "description": "Guided unoccupied-room pattern for absence of content and next steps.",
+  "architectural_role": "unoccupied-room",
+  "responsibility": "Explain absence of content and guide the user toward the next meaningful action.",
+  "slots": {
+    "required": ["title", "message"],
+    "optional": ["optional_action", "optional_secondary_action", "optional_illustration"]
+  },
+  "variants": ["default", "compact", "actionable"],
+  "states": ["default"],
+  "token_dependencies": ["--space-4", "--space-5", "--space-6", "--radius-lg", "--text-h3", "--text-body", "--text-small", "--line-body", "--weight-medium"],
+  "accessibility": {
+    "requirements": [
+      "Messages must remain readable and explicit.",
+      "Actions must be reachable by keyboard.",
+      "Decorative illustration must not be required to understand the message."
+    ]
+  },
+  "composition_rules": [
+    "Empty states must be useful.",
+    "Avoid vague messages.",
+    "Offer one clear next step where possible."
+  ],
+  "anti_patterns": [
+    "empty states that only apologize without guiding next action",
+    "multiple competing recovery actions",
+    "illustration-first empty states that hide the message"
+  ],
+  "governance": {
+    "foundation_component": true,
+    "allowed_density_modes": ["compact", "standard", "focus", "executive"],
+    "allowed_architectural_families": ["Command Tower", "Glass Atrium", "Blueprint Studio", "Signal Terminal", "Executive Gallery", "Horizon Workspace"]
+  }
+}

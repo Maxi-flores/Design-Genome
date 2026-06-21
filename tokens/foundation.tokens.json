@@ -1,0 +1,29 @@
+{
+  "version": "0.3",
+  "name": "Sentient OS Foundation Tokens",
+  "description": "Immutable base tokens inherited by all Sentient OS ecosystem projects.",
+  "scope": "foundation",
+  "rule": "Foundation tokens may be extended by personalities but may not be overridden at the architecture level.",
+  "groups": [
+    "spacing",
+    "typography",
+    "radius",
+    "breakpoints",
+    "motion",
+    "elevation",
+    "status",
+    "zIndex",
+    "focus"
+  ],
+  "sources": {
+    "spacing": "tokens/spacing.tokens.json",
+    "typography": "tokens/typography.tokens.json",
+    "radius": "tokens/radius.tokens.json",
+    "breakpoints": "tokens/breakpoints.tokens.json",
+    "motion": "tokens/motion.tokens.json",
+    "elevation": "tokens/elevation.tokens.json",
+    "status": "tokens/status.tokens.json",
+    "zIndex": "tokens/z-index.tokens.json",
+    "focus": "tokens/focus.tokens.json"
+  }
+}

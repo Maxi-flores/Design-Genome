@@ -1,0 +1,125 @@
+@import "./command-tower.css";
+@import "./glass-atrium.css";
+@import "./blueprint-studio.css";
+@import "./signal-terminal.css";
+@import "./executive-gallery.css";
+@import "./horizon-workspace.css";
+
+[data-architectural-family] {
+  background-image: var(--architecture-bg-treatment);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+[data-architectural-family] .pf-navigation,
+[data-architectural-family] .pf-command-bar,
+[data-architectural-family] .pf-workspace-grid,
+[data-architectural-family] .pf-card,
+[data-architectural-family] .pf-panel,
+[data-architectural-family] .pf-section,
+[data-architectural-family] .pf-metric-card,
+[data-architectural-family] .pf-data-table,
+[data-architectural-family] .pf-empty-state,
+[data-architectural-family] .pf-timeline,
+[data-architectural-family] .pf-modal,
+[data-architectural-family] .pf-drawer,
+[data-architectural-family] .pf-tabs,
+[data-architectural-family] .pf-input,
+[data-architectural-family] .pf-select {
+  backdrop-filter: blur(var(--architecture-layer-blur));
+}
+
+[data-architectural-family] .pf-workspace-grid {
+  gap: var(--architecture-workspace-gap);
+}
+
+[data-architectural-family] .pf-workspace-grid[data-variant="two-column"],
+[data-architectural-family] .pf-workspace-grid[data-variant="dashboard"] {
+  grid-template-columns: minmax(var(--architecture-navigation-width), 0.8fr) minmax(0, 2fr);
+}
+
+[data-architectural-family] .pf-workspace-grid[data-variant="three-column"] {
+  grid-template-columns: repeat(auto-fit, minmax(var(--architecture-grid-min-column), 1fr));
+}
+
+[data-architectural-family] .pf-workspace-grid > * {
+  display: grid;
+  gap: var(--architecture-panel-gap);
+}
+
+[data-architectural-family] .pf-section {
+  gap: var(--architecture-section-gap);
+  max-inline-size: var(--architecture-content-max-width);
+  box-shadow:
+    inset 0 0 0 1px color-mix(in srgb, var(--personality-border) var(--architecture-panel-border-strength), transparent),
+    var(--architecture-surface-depth);
+}
+
+[data-architectural-family] .pf-card,
+[data-architectural-family] .pf-panel,
+[data-architectural-family] .pf-metric-card,
+[data-architectural-family] .pf-data-table,
+[data-architectural-family] .pf-empty-state,
+[data-architectural-family] .pf-navigation,
+[data-architectural-family] .pf-modal,
+[data-architectural-family] .pf-drawer {
+  background: color-mix(in srgb, var(--personality-surface-raised) var(--architecture-surface-opacity), transparent);
+  box-shadow: var(--architecture-surface-depth);
+  border-color: color-mix(in srgb, var(--personality-border) var(--architecture-panel-border-strength), transparent);
+}
+
+[data-architectural-family] .pf-panel,
+[data-architectural-family] .pf-data-table,
+[data-architectural-family] .pf-empty-state {
+  gap: var(--architecture-panel-gap);
+}
+
+[data-architectural-family] .pf-card,
+[data-architectural-family] .pf-metric-card,
+[data-architectural-family] .pf-empty-state {
+  padding: calc(var(--space-4) * var(--architecture-grid-density));
+}
+
+[data-architectural-family] .pf-navigation {
+  inline-size: min(100%, var(--architecture-navigation-width));
+}
+
+[data-architectural-family] .pf-command-bar {
+  min-block-size: var(--architecture-command-height);
+  padding-block: calc(var(--space-3) * var(--architecture-grid-density));
+  background: color-mix(in srgb, var(--personality-surface-muted) var(--architecture-surface-opacity), transparent);
+  border-color: color-mix(in srgb, var(--personality-border-strong) var(--architecture-panel-border-strength), transparent);
+  box-shadow:
+    inset 0 0 0 1px color-mix(in srgb, var(--personality-accent-soft) var(--architecture-focus-zone-opacity), transparent),
+    var(--architecture-surface-depth);
+}
+
+[data-architectural-family] .pf-button {
+  transition-duration: calc(var(--duration-normal) * var(--architecture-motion-scale));
+}
+
+[data-architectural-family] .pf-status-badge {
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--personality-border) var(--architecture-panel-border-strength), transparent);
+}
+
+[data-architectural-family] .pf-timeline {
+  gap: var(--architecture-panel-gap);
+  padding: calc(var(--space-4) * var(--architecture-grid-density));
+  background: color-mix(in srgb, var(--personality-surface) var(--architecture-surface-opacity), transparent);
+  border: 1px solid color-mix(in srgb, var(--personality-border) var(--architecture-panel-border-strength), transparent);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--architecture-surface-depth);
+}
+
+[data-architectural-family] .pf-tabs {
+  gap: var(--architecture-panel-gap);
+  padding: calc(var(--space-3) * var(--architecture-grid-density));
+  background: color-mix(in srgb, var(--personality-surface) var(--architecture-surface-opacity), transparent);
+  border: 1px solid color-mix(in srgb, var(--personality-border) var(--architecture-panel-border-strength), transparent);
+  border-radius: var(--radius-lg);
+}
+
+[data-architectural-family] .pf-input,
+[data-architectural-family] .pf-select {
+  min-block-size: calc(var(--space-7) * var(--architecture-grid-density));
+}

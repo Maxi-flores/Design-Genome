@@ -1,0 +1,57 @@
+{
+  "version": "0.3",
+  "group": "radius",
+  "description": "Foundation radius tokens for component shape consistency.",
+  "rule": "Avoid mixing radius families within one page.",
+  "tokens": [
+    {
+      "id": "radius-xs",
+      "cssVar": "--radius-xs",
+      "value": "4px",
+      "px": 4,
+      "usage": "Small controls and compact technical inputs."
+    },
+    {
+      "id": "radius-sm",
+      "cssVar": "--radius-sm",
+      "value": "8px",
+      "px": 8,
+      "usage": "Buttons, tags, and small utility surfaces."
+    },
+    {
+      "id": "radius-md",
+      "cssVar": "--radius-md",
+      "value": "12px",
+      "px": 12,
+      "usage": "Cards and standard reusable content containers."
+    },
+    {
+      "id": "radius-lg",
+      "cssVar": "--radius-lg",
+      "value": "16px",
+      "px": 16,
+      "usage": "Panels and stronger structural surfaces."
+    },
+    {
+      "id": "radius-xl",
+      "cssVar": "--radius-xl",
+      "value": "20px",
+      "px": 20,
+      "usage": "Drawers and expanded secondary surfaces."
+    },
+    {
+      "id": "radius-2xl",
+      "cssVar": "--radius-2xl",
+      "value": "24px",
+      "px": 24,
+      "usage": "Modals and prominent overlay chambers."
+    },
+    {
+      "id": "radius-full",
+      "cssVar": "--radius-full",
+      "value": "999px",
+      "px": 999,
+      "usage": "Pills, circular badges, and rounded identity markers."
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+@import "./aurora-command.css";
+@import "./crystal-executive.css";
+@import "./constellation-feed.css";
+@import "./nebula-workspace.css";
+@import "./midnight-terminal.css";
+@import "./fluid-productivity.css";
+@import "./ember-gaming.css";
+@import "./horizon-light.css";
+@import "./inferno-performance.css";
+@import "./nocturne-minimal.css";
+@import "./oracle-intelligence.css";
+
+[data-design-personality][data-theme-mode] {
+  color: var(--personality-text);
+  background:
+    radial-gradient(circle at top right, var(--personality-glow), transparent 42%),
+    linear-gradient(180deg, color-mix(in srgb, var(--personality-bg) 84%, white 16%), var(--personality-bg));
+}
+
+[data-design-personality][data-theme-mode] .pf-card,
+[data-design-personality][data-theme-mode] .pf-panel,
+[data-design-personality][data-theme-mode] .pf-section,
+[data-design-personality][data-theme-mode] .pf-metric-card,
+[data-design-personality][data-theme-mode] .pf-command-bar,
+[data-design-personality][data-theme-mode] .pf-data-table,
+[data-design-personality][data-theme-mode] .pf-empty-state,
+[data-design-personality][data-theme-mode] .pf-navigation,
+[data-design-personality][data-theme-mode] .pf-modal,
+[data-design-personality][data-theme-mode] .pf-drawer,
+[data-design-personality][data-theme-mode] .pf-tabs__panel,
+[data-design-personality][data-theme-mode] .pf-input,
+[data-design-personality][data-theme-mode] .pf-select,
+[data-design-personality][data-theme-mode] .pf-status-badge {
+  color: var(--personality-text);
+  border-color: var(--personality-border);
+}
+
+[data-design-personality][data-theme-mode] .pf-card,
+[data-design-personality][data-theme-mode] .pf-metric-card,
+[data-design-personality][data-theme-mode] .pf-empty-state,
+[data-design-personality][data-theme-mode] .pf-input,
+[data-design-personality][data-theme-mode] .pf-select,
+[data-design-personality][data-theme-mode] .pf-status-badge {
+  background: var(--personality-surface);
+  box-shadow: var(--personality-shadow);
+}
+
+[data-design-personality][data-theme-mode] .pf-panel,
+[data-design-personality][data-theme-mode] .pf-section,
+[data-design-personality][data-theme-mode] .pf-command-bar,
+[data-design-personality][data-theme-mode] .pf-data-table,
+[data-design-personality][data-theme-mode] .pf-navigation,
+[data-design-personality][data-theme-mode] .pf-modal,
+[data-design-personality][data-theme-mode] .pf-drawer,
+[data-design-personality][data-theme-mode] .pf-tabs__panel {
+  background: var(--personality-surface-raised);
+  box-shadow: var(--personality-shadow);
+}
+
+[data-design-personality][data-theme-mode] .pf-card[data-variant="muted"],
+[data-design-personality][data-theme-mode] .pf-card[data-variant="selected"],
+[data-design-personality][data-theme-mode] .pf-panel[data-variant="context"],
+[data-design-personality][data-theme-mode] .pf-panel[data-variant="system"],
+[data-design-personality][data-theme-mode] .pf-panel[data-variant="intelligence"],
+[data-design-personality][data-theme-mode] .pf-data-table__empty-state,
+[data-design-personality][data-theme-mode] .pf-empty-state__illustration {
+  background: var(--personality-surface-muted);
+}
+
+[data-design-personality][data-theme-mode] .pf-card__header,
+[data-design-personality][data-theme-mode] .pf-panel__header,
+[data-design-personality][data-theme-mode] .pf-section__header,
+[data-design-personality][data-theme-mode] .pf-empty-state__title,
+[data-design-personality][data-theme-mode] .pf-metric-card__value,
+[data-design-personality][data-theme-mode] .pf-navigation__section-label {
+  color: var(--personality-text);
+}
+
+[data-design-personality][data-theme-mode] .pf-card__body,
+[data-design-personality][data-theme-mode] .pf-panel__body,
+[data-design-personality][data-theme-mode] .pf-section__body,
+[data-design-personality][data-theme-mode] .pf-empty-state__message,
+[data-design-personality][data-theme-mode] .pf-metric-card__description,
+[data-design-personality][data-theme-mode] .pf-metric-card__delta,
+[data-design-personality][data-theme-mode] .pf-data-table__table th,
+[data-design-personality][data-theme-mode] .pf-data-table__table td,
+[data-design-personality][data-theme-mode] .pf-input__description,
+[data-design-personality][data-theme-mode] .pf-select__description {
+  color: var(--personality-text-muted);
+}
+
+[data-design-personality][data-theme-mode] .pf-button,
+[data-design-personality][data-theme-mode] .pf-navigation__item,
+[data-design-personality][data-theme-mode] .pf-tabs__trigger {
+  color: var(--personality-text);
+  border-color: var(--personality-border);
+  background: var(--personality-surface-muted);
+}
+
+[data-design-personality][data-theme-mode] .pf-button:hover,
+[data-design-personality][data-theme-mode] .pf-navigation__item:hover,
+[data-design-personality][data-theme-mode] .pf-tabs__trigger:hover {
+  border-color: var(--personality-border-strong);
+  box-shadow: 0 0 0 1px var(--personality-border-strong);
+}
+
+[data-design-personality][data-theme-mode] .pf-button[data-variant="primary"] {
+  color: var(--personality-bg);
+  border-color: var(--personality-accent);
+  background: linear-gradient(135deg, var(--personality-accent), var(--personality-accent-strong));
+}
+
+[data-design-personality][data-theme-mode] .pf-button[data-variant="secondary"] {
+  border-color: var(--personality-border-strong);
+  background: var(--personality-surface);
+}
+
+[data-design-personality][data-theme-mode] .pf-button[data-variant="ghost"] {
+  background: transparent;
+  color: var(--personality-text-muted);
+}
+
+[data-design-personality][data-theme-mode] .pf-button[data-variant="danger"] {
+  color: var(--personality-danger);
+  border-color: color-mix(in srgb, var(--personality-danger) 42%, var(--personality-border));
+  background: color-mix(in srgb, var(--personality-danger) 12%, var(--personality-surface));
+}
+
+[data-design-personality][data-theme-mode] .pf-status-badge {
+  color: var(--personality-text-muted);
+  background: var(--personality-surface-muted);
+}
+
+[data-design-personality][data-theme-mode] .pf-status-badge[data-status="active"],
+[data-design-personality][data-theme-mode] .pf-status-badge[data-status="running"] {
+  color: var(--personality-info);
+  border-color: color-mix(in srgb, var(--personality-info) 44%, var(--personality-border));
+  background: color-mix(in srgb, var(--personality-info) 12%, var(--personality-surface));
+}
+
+[data-design-personality][data-theme-mode] .pf-status-badge[data-status="completed"] {
+  color: var(--personality-success);
+  border-color: color-mix(in srgb, var(--personality-success) 44%, var(--personality-border));
+  background: color-mix(in srgb, var(--personality-success) 12%, var(--personality-surface));
+}
+
+[data-design-personality][data-theme-mode] .pf-status-badge[data-status="warning"] {
+  color: var(--personality-warning);
+  border-color: color-mix(in srgb, var(--personality-warning) 44%, var(--personality-border));
+  background: color-mix(in srgb, var(--personality-warning) 12%, var(--personality-surface));
+}
+
+[data-design-personality][data-theme-mode] .pf-status-badge[data-status="blocked"],
+[data-design-personality][data-theme-mode] .pf-status-badge[data-status="error"] {
+  color: var(--personality-danger);
+  border-color: color-mix(in srgb, var(--personality-danger) 44%, var(--personality-border));
+  background: color-mix(in srgb, var(--personality-danger) 12%, var(--personality-surface));
+}
+
+[data-design-personality][data-theme-mode] .pf-status-badge[data-status="paused"],
+[data-design-personality][data-theme-mode] .pf-status-badge[data-status="archived"],
+[data-design-personality][data-theme-mode] .pf-status-badge[data-status="draft"] {
+  color: var(--personality-text-subtle);
+}
+
+[data-design-personality][data-theme-mode] .pf-command-bar,
+[data-design-personality][data-theme-mode] .pf-data-table,
+[data-design-personality][data-theme-mode] .pf-navigation,
+[data-design-personality][data-theme-mode] .pf-tabs__panel {
+  border-color: var(--personality-border-strong);
+}
+
+[data-design-personality][data-theme-mode] .pf-data-table__table th,
+[data-design-personality][data-theme-mode] .pf-data-table__table td,
+[data-design-personality][data-theme-mode] .pf-tabs__panel,
+[data-design-personality][data-theme-mode] .pf-navigation__item[aria-current="page"],
+[data-design-personality][data-theme-mode] .pf-tabs__trigger[data-state="active"] {
+  border-color: var(--personality-border-strong);
+}
+
+[data-design-personality][data-theme-mode] .pf-navigation__item[aria-current="page"],
+[data-design-personality][data-theme-mode] .pf-tabs__trigger[data-state="active"] {
+  color: var(--personality-accent-strong);
+  background: var(--personality-accent-soft);
+}
+
+[data-design-personality][data-theme-mode] .pf-input,
+[data-design-personality][data-theme-mode] .pf-select {
+  background: var(--personality-surface);
+  color: var(--personality-text);
+}
+
+[data-design-personality][data-theme-mode] .pf-input::placeholder {
+  color: var(--personality-text-subtle);
+}
+
+[data-design-personality][data-theme-mode] .pf-input[data-state="error"],
+[data-design-personality][data-theme-mode] .pf-select[data-state="error"] {
+  border-color: color-mix(in srgb, var(--personality-danger) 44%, var(--personality-border));
+}
+
+[data-design-personality][data-theme-mode] .pf-button:focus-visible,
+[data-design-personality][data-theme-mode] .pf-navigation__item:focus-visible,
+[data-design-personality][data-theme-mode] .pf-tabs__trigger:focus-visible,
+[data-design-personality][data-theme-mode] .pf-input:focus-visible,
+[data-design-personality][data-theme-mode] .pf-select:focus-visible,
+[data-design-personality][data-theme-mode] .pf-modal__close:focus-visible,
+[data-design-personality][data-theme-mode] .pf-drawer__close:focus-visible {
+  outline-color: var(--personality-focus);
+  box-shadow: 0 0 0 4px var(--personality-glow);
+}
+
+[data-design-personality][data-theme-mode] .pf-modal,
+[data-design-personality][data-theme-mode] .pf-drawer {
+  border-color: var(--personality-border-strong);
+  box-shadow: var(--personality-shadow), 0 0 0 1px var(--personality-border);
+}
+
+[data-design-personality][data-theme-mode] .pf-timeline__marker {
+  border-color: var(--personality-accent);
+  background: var(--personality-accent-soft);
+}

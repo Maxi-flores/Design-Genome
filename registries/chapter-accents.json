@@ -1,0 +1,52 @@
+{
+  "version": "0.2",
+  "status": "starter-registry",
+  "source": "Seeded from ecosystem naming in the stylebook and example governance needs.",
+  "accents": [
+    {
+      "id": "violet-cyan",
+      "name": "Violet Cyan",
+      "intent": "High-contrast command and intelligence emphasis."
+    },
+    {
+      "id": "crystal-gold",
+      "name": "Crystal Gold",
+      "intent": "Premium executive guidance and decision emphasis."
+    },
+    {
+      "id": "horizon-sky",
+      "name": "Horizon Sky",
+      "intent": "Calm planning, readability, and human workflow support."
+    },
+    {
+      "id": "constellation-indigo",
+      "name": "Constellation Indigo",
+      "intent": "Layered ecosystem exploration and connected overview."
+    },
+    {
+      "id": "blueprint-cyan",
+      "name": "Blueprint Cyan",
+      "intent": "Technical construction, creation, and production clarity."
+    },
+    {
+      "id": "signal-lime",
+      "name": "Signal Lime",
+      "intent": "Terminal clarity, system states, and active technical feedback."
+    },
+    {
+      "id": "ember-orange",
+      "name": "Ember Orange",
+      "intent": "Performance urgency and high-energy technical throughput."
+    },
+    {
+      "id": "atrium-teal",
+      "name": "Atrium Teal",
+      "intent": "Premium openness, glass depth, and strategic overview."
+    },
+    {
+      "id": "paper-indigo",
+      "name": "Paper Indigo",
+      "intent": "Quiet analytical depth and low-noise reading environments."
+    }
+  ]
+}

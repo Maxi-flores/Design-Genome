@@ -1,0 +1,33 @@
+[data-project="mucho3d"] {
+  --project-identity: "Mucho3D";
+  --project-accent-primary: var(--personality-accent);
+  --project-accent-secondary: var(--personality-info);
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 20%, transparent);
+  --project-accent-contrast: var(--personality-bg);
+  --project-surface-tuning: color-mix(in srgb, var(--architecture-atmosphere-intensity) 88%, white 12%);
+  --project-border-tuning: 68%;
+  --project-focus-emphasis: 1.14;
+  --project-navigation-emphasis: 1.08;
+  --project-command-emphasis: 1.1;
+  --project-dashboard-emphasis: 1.16;
+  --project-intelligence-emphasis: 1.06;
+  --project-motion-tuning: 1.06;
+  --project-density-preference: focus;
+}
+
+[data-project="mucho3d"][data-design-personality="nebula-workspace"][data-architectural-family="blueprint-studio"] {
+  --project-dashboard-emphasis: 1.18;
+  --project-command-emphasis: 1.08;
+}
+
+[data-project="mucho3d"][data-chapter-accent="blueprint-cyan"] {
+  --project-accent-primary: #06b6d4;
+  --project-accent-secondary: #22d3ee;
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 20%, transparent);
+}
+
+[data-project="mucho3d"][data-chapter-accent="ember-orange"] {
+  --project-accent-primary: #f97316;
+  --project-accent-secondary: #fb7185;
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 18%, transparent);
+}

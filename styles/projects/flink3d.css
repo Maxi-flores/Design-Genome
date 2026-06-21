@@ -1,0 +1,33 @@
+[data-project="flink3d"] {
+  --project-identity: "Flink3D";
+  --project-accent-primary: var(--personality-accent);
+  --project-accent-secondary: var(--personality-info);
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 18%, transparent);
+  --project-accent-contrast: var(--personality-bg);
+  --project-surface-tuning: var(--architecture-atmosphere-intensity);
+  --project-border-tuning: 72%;
+  --project-focus-emphasis: 1.12;
+  --project-navigation-emphasis: 1.12;
+  --project-command-emphasis: 1.16;
+  --project-dashboard-emphasis: 1.08;
+  --project-intelligence-emphasis: 1.02;
+  --project-motion-tuning: 0.96;
+  --project-density-preference: compact;
+}
+
+[data-project="flink3d"][data-design-personality="midnight-terminal"][data-architectural-family="signal-terminal"] {
+  --project-command-emphasis: 1.18;
+  --project-border-tuning: 76%;
+}
+
+[data-project="flink3d"][data-chapter-accent="signal-lime"] {
+  --project-accent-primary: #84cc16;
+  --project-accent-secondary: #22d3ee;
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 18%, transparent);
+}
+
+[data-project="flink3d"][data-chapter-accent="blueprint-cyan"] {
+  --project-accent-primary: #06b6d4;
+  --project-accent-secondary: #6366f1;
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 16%, transparent);
+}

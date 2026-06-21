@@ -1,0 +1,37 @@
+{
+  "id": "pf-select",
+  "name": "PFSelect",
+  "category": "form",
+  "description": "Controlled option selector for bounded choices.",
+  "architectural_role": "intake-desk",
+  "responsibility": "Allow users to choose from a controlled set of options.",
+  "slots": {
+    "required": ["label", "trigger", "options"],
+    "optional": ["optional_description", "optional_error", "optional_placeholder"]
+  },
+  "variants": ["default", "quiet", "error", "success"],
+  "states": ["default", "hover", "focus", "disabled", "open", "error"],
+  "token_dependencies": ["--space-2", "--space-3", "--space-4", "--radius-sm", "--text-small", "--text-body", "--line-body", "--weight-medium", "--focus-ring-width", "--focus-ring-offset", "--focus-ring-color", "--elevation-2", "--z-base"],
+  "accessibility": {
+    "requirements": [
+      "Options must be understandable.",
+      "Selected value must be clear.",
+      "Keyboard accessibility is required."
+    ]
+  },
+  "composition_rules": [
+    "Use select controls only when the option set is controlled and bounded.",
+    "Labels and descriptions should clarify the decision being made.",
+    "Option labels should remain concise and comparable."
+  ],
+  "anti_patterns": [
+    "using select for unbounded search when autocomplete is needed",
+    "vague option labels",
+    "selected states that depend on color alone"
+  ],
+  "governance": {
+    "foundation_component": true,
+    "allowed_density_modes": ["compact", "standard", "focus", "executive"],
+    "allowed_architectural_families": ["Command Tower", "Glass Atrium", "Blueprint Studio", "Signal Terminal", "Executive Gallery", "Horizon Workspace"]
+  }
+}

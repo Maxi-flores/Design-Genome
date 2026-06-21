@@ -1,0 +1,55 @@
+[data-architectural-family="horizon-workspace"] {
+  --architecture-bg-treatment:
+    linear-gradient(180deg, color-mix(in srgb, var(--personality-accent-soft) 18%, transparent), transparent 36%),
+    radial-gradient(circle at top left, color-mix(in srgb, var(--personality-glow) 56%, transparent), transparent 40%);
+  --architecture-workspace-gap: var(--space-5);
+  --architecture-section-gap: var(--space-5);
+  --architecture-panel-gap: var(--space-4);
+  --architecture-content-max-width: calc(var(--bp-xl) + var(--space-7));
+  --architecture-surface-depth: var(--elevation-2);
+  --architecture-surface-opacity: 90%;
+  --architecture-panel-border-strength: 62%;
+  --architecture-navigation-width: 17rem;
+  --architecture-command-height: calc(var(--space-8) + var(--space-1));
+  --architecture-grid-min-column: 17rem;
+  --architecture-grid-density: 1.02;
+  --architecture-focus-zone-opacity: 22%;
+  --architecture-layer-blur: 10px;
+  --architecture-atmosphere-intensity: 18%;
+  --architecture-motion-scale: 1;
+}
+
+[data-architectural-family="horizon-workspace"][data-theme-mode="day"] {
+  --architecture-surface-opacity: 88%;
+}
+
+[data-architectural-family="horizon-workspace"][data-theme-mode="night"] {
+  --architecture-surface-opacity: 94%;
+  --architecture-focus-zone-opacity: 20%;
+}
+
+[data-architectural-family="horizon-workspace"][data-density-mode="compact"] {
+  --architecture-workspace-gap: var(--space-4);
+  --architecture-section-gap: var(--space-4);
+  --architecture-panel-gap: var(--space-3);
+}
+
+[data-architectural-family="horizon-workspace"][data-density-mode="standard"] {
+  --architecture-workspace-gap: var(--space-5);
+  --architecture-section-gap: var(--space-5);
+  --architecture-panel-gap: var(--space-4);
+}
+
+[data-architectural-family="horizon-workspace"][data-density-mode="focus"] {
+  --architecture-workspace-gap: var(--space-5);
+  --architecture-section-gap: var(--space-6);
+  --architecture-panel-gap: var(--space-4);
+  --architecture-content-max-width: calc(var(--bp-xl) - var(--space-3));
+}
+
+[data-architectural-family="horizon-workspace"][data-density-mode="executive"] {
+  --architecture-workspace-gap: var(--space-6);
+  --architecture-section-gap: var(--space-6);
+  --architecture-panel-gap: var(--space-5);
+  --architecture-grid-density: 1.06;
+}

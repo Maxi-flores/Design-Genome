@@ -1,0 +1,33 @@
+[data-project="sentient-os"] {
+  --project-identity: "Sentient OS";
+  --project-accent-primary: var(--personality-accent);
+  --project-accent-secondary: var(--personality-info);
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 18%, transparent);
+  --project-accent-contrast: var(--personality-bg);
+  --project-surface-tuning: var(--architecture-atmosphere-intensity);
+  --project-border-tuning: 64%;
+  --project-focus-emphasis: 1.08;
+  --project-navigation-emphasis: 1.08;
+  --project-command-emphasis: 1.12;
+  --project-dashboard-emphasis: 1.06;
+  --project-intelligence-emphasis: 1.16;
+  --project-motion-tuning: 1;
+  --project-density-preference: standard;
+}
+
+[data-project="sentient-os"][data-design-personality="oracle-intelligence"][data-architectural-family="command-tower"] {
+  --project-surface-tuning: color-mix(in srgb, var(--architecture-atmosphere-intensity) 70%, white 30%);
+  --project-intelligence-emphasis: 1.2;
+}
+
+[data-project="sentient-os"][data-chapter-accent="violet-cyan"] {
+  --project-accent-primary: #8b5cf6;
+  --project-accent-secondary: #22d3ee;
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 18%, transparent);
+}
+
+[data-project="sentient-os"][data-chapter-accent="signal-lime"] {
+  --project-accent-primary: #84cc16;
+  --project-accent-secondary: #22d3ee;
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 16%, transparent);
+}

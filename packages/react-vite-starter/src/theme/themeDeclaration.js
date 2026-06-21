@@ -1,0 +1,11 @@
+export const themeDeclaration = {
+  project: 'Sentient OS',
+  design_personality: 'Oracle Intelligence',
+  theme_mode: 'night',
+  density_mode: 'standard',
+  motion_mode: 'standard',
+  chapter_accent: 'violet-cyan',
+  architectural_family: 'Command Tower',
+  spatial_identity: 'System Observatory',
+  application_mode: 'Framework Integration'
+};

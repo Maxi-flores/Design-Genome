@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sentient OS Foundation Preview</title>
+    <link rel="stylesheet" href="../dist/sentient-foundation.css">
+    <style>
+      :root {
+        color-scheme: light;
+      }
+
+      body {
+        font-family: var(--font-primary, system-ui);
+        font-size: var(--text-body, 16px);
+        line-height: var(--line-body, 1.5);
+        margin: 0;
+        padding: var(--space-6, 32px);
+      }
+
+      main {
+        display: grid;
+        gap: var(--space-7, 48px);
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+
+      section {
+        display: grid;
+        gap: var(--space-4, 16px);
+      }
+
+      h1 {
+        font-size: var(--text-h1, 32px);
+        line-height: var(--line-heading, 1.2);
+        font-weight: var(--weight-semibold, 600);
+        margin: 0;
+      }
+
+      h2 {
+        font-size: var(--text-h2, 24px);
+        line-height: var(--line-heading, 1.2);
+        font-weight: var(--weight-semibold, 600);
+        margin: 0;
+      }
+
+      p,
+      ul {
+        margin: 0;
+      }
+
+      .grid {
+        display: grid;
+        gap: var(--space-4, 16px);
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      }
+
+      .sample {
+        border: 1px solid currentColor;
+        border-radius: var(--radius-md, 12px);
+        padding: var(--space-4, 16px);
+      }
+
+      .spacing-bar {
+        background: currentColor;
+        height: 12px;
+        border-radius: var(--radius-full, 999px);
+      }
+
+      .radius-box {
+        border: 1px solid currentColor;
+        padding: var(--space-5, 24px);
+      }
+
+      .elevation-box {
+        border-radius: var(--radius-lg, 16px);
+        box-shadow: var(--elevation-1);
+        padding: var(--space-5, 24px);
+      }
+
+      .focus-demo {
+        display: inline-flex;
+        align-items: center;
+        gap: var(--space-2, 8px);
+        border: 1px solid currentColor;
+        border-radius: var(--radius-sm, 8px);
+        padding: var(--space-3, 12px) var(--space-4, 16px);
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .focus-demo:focus-visible {
+        outline: var(--focus-ring-width) var(--focus-ring-style) var(--focus-ring-color);
+        outline-offset: var(--focus-ring-offset);
+      }
+
+      .mono {
+        font-family: var(--font-mono, monospace);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Sentient OS Foundation Token Preview</h1>
+        <p>
+          This document previews the immutable Foundation token layer only. It is not an application UI and does not include
+          architectural family or personality styling.
+        </p>
+      </section>
+
+      <section>
+        <h2>Spacing Scale</h2>
+        <div class="grid">
+          <div class="sample"><div class="spacing-bar" style="width: var(--space-1);"></div><p class="mono">--space-1</p></div>
+          <div class="sample"><div class="spacing-bar" style="width: var(--space-2);"></div><p class="mono">--space-2</p></div>
+          <div class="sample"><div class="spacing-bar" style="width: var(--space-3);"></div><p class="mono">--space-3</p></div>
+          <div class="sample"><div class="spacing-bar" style="width: var(--space-4);"></div><p class="mono">--space-4</p></div>
+          <div class="sample"><div class="spacing-bar" style="width: var(--space-5);"></div><p class="mono">--space-5</p></div>
+          <div class="sample"><div class="spacing-bar" style="width: var(--space-6);"></div><p class="mono">--space-6</p></div>
+          <div class="sample"><div class="spacing-bar" style="width: var(--space-7);"></div><p class="mono">--space-7</p></div>
+          <div class="sample"><div class="spacing-bar" style="width: var(--space-8);"></div><p class="mono">--space-8</p></div>
+          <div class="sample"><div class="spacing-bar" style="width: var(--space-9);"></div><p class="mono">--space-9</p></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Typography Scale</h2>
+        <div class="sample">
+          <p style="font-size: var(--text-hero); line-height: var(--line-tight); font-weight: var(--weight-bold);">Hero text</p>
+          <p style="font-size: var(--text-h1); line-height: var(--line-heading); font-weight: var(--weight-semibold);">H1 page title</p>
+          <p style="font-size: var(--text-h2); line-height: var(--line-heading); font-weight: var(--weight-semibold);">H2 section heading</p>
+          <p style="font-size: var(--text-h3); line-height: var(--line-heading); font-weight: var(--weight-medium);">H3 panel heading</p>
+          <p style="font-size: var(--text-body-lg);">Body large text for summaries.</p>
+          <p style="font-size: var(--text-body);">Body text for standard interface reading.</p>
+          <p style="font-size: var(--text-small);">Small text for metadata and support content.</p>
+          <p style="font-size: var(--text-caption);">Caption text for compact annotations.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Radius Examples</h2>
+        <div class="grid">
+          <div class="radius-box" style="border-radius: var(--radius-xs);">XS</div>
+          <div class="radius-box" style="border-radius: var(--radius-sm);">SM</div>
+          <div class="radius-box" style="border-radius: var(--radius-md);">MD</div>
+          <div class="radius-box" style="border-radius: var(--radius-lg);">LG</div>
+          <div class="radius-box" style="border-radius: var(--radius-xl);">XL</div>
+          <div class="radius-box" style="border-radius: var(--radius-2xl);">2XL</div>
+          <div class="radius-box" style="border-radius: var(--radius-full);">FULL</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Elevation Examples</h2>
+        <div class="grid">
+          <div class="elevation-box" style="box-shadow: var(--elevation-0);">Elevation 0</div>
+          <div class="elevation-box" style="box-shadow: var(--elevation-1);">Elevation 1</div>
+          <div class="elevation-box" style="box-shadow: var(--elevation-2);">Elevation 2</div>
+          <div class="elevation-box" style="box-shadow: var(--elevation-3);">Elevation 3</div>
+          <div class="elevation-box" style="box-shadow: var(--elevation-4);">Elevation 4</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Status Semantics</h2>
+        <div class="grid">
+          <div class="sample"><strong>Active</strong><p>Informational active state.</p></div>
+          <div class="sample"><strong>Running</strong><p>Executing work in progress.</p></div>
+          <div class="sample"><strong>Completed</strong><p>Successful finished outcome.</p></div>
+          <div class="sample"><strong>Paused</strong><p>Temporarily halted but recoverable.</p></div>
+          <div class="sample"><strong>Blocked</strong><p>Unable to continue without intervention.</p></div>
+          <div class="sample"><strong>Warning</strong><p>Cautionary state needing attention.</p></div>
+          <div class="sample"><strong>Error</strong><p>Failed or invalid outcome.</p></div>
+          <div class="sample"><strong>Draft</strong><p>Not finalized yet.</p></div>
+          <div class="sample"><strong>Archived</strong><p>Reference-only historical state.</p></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Motion Durations</h2>
+        <div class="grid">
+          <div class="sample"><p class="mono">--duration-fast</p><p>120ms</p></div>
+          <div class="sample"><p class="mono">--duration-normal</p><p>220ms</p></div>
+          <div class="sample"><p class="mono">--duration-slow</p><p>360ms</p></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Focus Examples</h2>
+        <div class="grid">
+          <a href="#focus-one" class="focus-demo" id="focus-one">Keyboard focus sample</a>
+          <button class="focus-demo" type="button">Focusable button sample</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

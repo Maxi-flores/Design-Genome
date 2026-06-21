@@ -1,0 +1,37 @@
+{
+  "id": "pf-section",
+  "name": "PFSection",
+  "category": "layout",
+  "description": "Workspace region for grouping related content into a clear floor area.",
+  "architectural_role": "floor",
+  "responsibility": "Group related content into a clear workspace region.",
+  "slots": {
+    "required": ["section_header", "section_body"],
+    "optional": ["optional_footer"]
+  },
+  "variants": ["default", "compact", "focus", "executive"],
+  "states": ["default"],
+  "token_dependencies": ["--space-5", "--space-6", "--space-7", "--text-h2", "--text-body", "--line-heading", "--line-body"],
+  "accessibility": {
+    "requirements": [
+      "Section headings must remain semantic and navigable.",
+      "Grouped content must preserve reading order.",
+      "Regions should be identifiable when complex layouts are used."
+    ]
+  },
+  "composition_rules": [
+    "Use PFSection to define workspace hierarchy before placing child surfaces.",
+    "Sections should group related content only.",
+    "Executive and focus variants should reduce competing visual noise."
+  ],
+  "anti_patterns": [
+    "using sections for purely decorative separation",
+    "grouping unrelated content without a shared purpose",
+    "creating deep nesting that obscures workspace hierarchy"
+  ],
+  "governance": {
+    "foundation_component": true,
+    "allowed_density_modes": ["compact", "standard", "focus", "executive"],
+    "allowed_architectural_families": ["Command Tower", "Glass Atrium", "Blueprint Studio", "Signal Terminal", "Executive Gallery", "Horizon Workspace"]
+  }
+}

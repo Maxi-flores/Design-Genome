@@ -1,0 +1,36 @@
+{
+  "version": "0.3",
+  "group": "focus",
+  "description": "Foundation focus visibility tokens for keyboard-first accessibility.",
+  "rules": [
+    "Visible focus states are mandatory.",
+    "Keyboard navigation must remain clear.",
+    "Personality themes may adjust focus color but may not remove focus visibility."
+  ],
+  "tokens": [
+    {
+      "id": "focus-ring-width",
+      "cssVar": "--focus-ring-width",
+      "value": "2px",
+      "usage": "Default focus outline thickness."
+    },
+    {
+      "id": "focus-ring-offset",
+      "cssVar": "--focus-ring-offset",
+      "value": "2px",
+      "usage": "Default spacing between the element edge and the focus ring."
+    },
+    {
+      "id": "focus-ring-style",
+      "cssVar": "--focus-ring-style",
+      "value": "solid",
+      "usage": "Default focus outline style."
+    },
+    {
+      "id": "focus-ring-color",
+      "cssVar": "--focus-ring-color",
+      "value": "currentColor",
+      "usage": "Foundation-safe focus color placeholder that remains visible without a project color system."
+    }
+  ]
+}

@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sentient OS Architectural Families Preview</title>
+    <link rel="stylesheet" href="../dist/sentient-foundation.css">
+    <link rel="stylesheet" href="../dist/sentient-primitives.css">
+    <link rel="stylesheet" href="../dist/sentient-personalities.css">
+    <link rel="stylesheet" href="../dist/sentient-architectures.css">
+    <style>
+      body {
+        margin: 0;
+        padding: var(--space-6);
+        font-family: var(--font-primary);
+        font-size: var(--text-body);
+        line-height: var(--line-body);
+        color: CanvasText;
+        background: Canvas;
+      }
+
+      main {
+        display: grid;
+        gap: var(--space-7);
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      h1,
+      h2,
+      p {
+        margin: 0;
+      }
+
+      h1 {
+        font-size: var(--text-h1);
+        line-height: var(--line-heading);
+      }
+
+      h2 {
+        font-size: var(--text-h2);
+        line-height: var(--line-heading);
+      }
+
+      .preview-intro {
+        display: grid;
+        gap: var(--space-3);
+      }
+
+      .preview-note {
+        font-size: var(--text-small);
+      }
+
+      .preview-architecture {
+        display: grid;
+        gap: var(--space-4);
+        padding: var(--space-6);
+        border-radius: var(--radius-2xl);
+      }
+
+      .preview-header {
+        display: grid;
+        gap: var(--space-2);
+      }
+
+      .preview-grid {
+        display: grid;
+        gap: var(--space-4);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="preview-intro">
+        <h1>Architectural Families Preview</h1>
+        <p>This is a neutral architectural family preview layered on top of Foundation, primitives, and personality themes.</p>
+        <p class="preview-note">It is not an application UI, project screen, or chapter accent system. It demonstrates spatial behavior only.</p>
+      </section>
+
+      <section class="preview-architecture" data-architectural-family="command-tower" data-design-personality="aurora-command" data-theme-mode="night" data-density-mode="standard" data-motion-mode="standard">
+        <div class="preview-header">
+          <h2>Command Tower</h2>
+          <p>Operational control, runtime visibility, and structured command surfaces.</p>
+        </div>
+        <nav class="pf-navigation" aria-label="Command Tower">
+          Architecture Active
+        </nav>
+        <div class="pf-command-bar">
+          Foundation Loaded
+        </div>
+        <div class="pf-workspace-grid" data-variant="two-column">
+          <div>
+            <article class="pf-card">
+              <div class="pf-card__header">PFCard</div>
+              <div class="pf-card__body">Primitive Components Styled</div>
+            </article>
+            <article class="pf-metric-card">
+              <div class="pf-metric-card__label">PFMetricCard</div>
+              <div class="pf-metric-card__value">96%</div>
+              <div class="pf-metric-card__delta">Spatial Layer Applied</div>
+            </article>
+          </div>
+          <aside>
+            <div class="pf-panel">
+              <div class="pf-panel__header">PFPanel</div>
+              <div class="pf-panel__body">Personality Layer Applied</div>
+            </div>
+            <span class="pf-status-badge" data-status="running">Status-Aware</span>
+          </aside>
+        </div>
+      </section>
+
+      <section class="preview-architecture" data-architectural-family="glass-atrium" data-design-personality="crystal-executive" data-theme-mode="day" data-density-mode="executive" data-motion-mode="standard">
+        <div class="preview-header">
+          <h2>Glass Atrium</h2>
+          <p>Premium, spacious, layered overview surfaces with softer atmospheric depth.</p>
+        </div>
+        <nav class="pf-navigation" aria-label="Glass Atrium">
+          Architecture Active
+        </nav>
+        <div class="pf-command-bar">
+          Foundation Loaded
+        </div>
+        <div class="pf-workspace-grid" data-variant="two-column">
+          <div>
+            <article class="pf-card">
+              <div class="pf-card__header">PFCard</div>
+              <div class="pf-card__body">Primitive Components Styled</div>
+            </article>
+            <article class="pf-metric-card">
+              <div class="pf-metric-card__label">PFMetricCard</div>
+              <div class="pf-metric-card__value">12</div>
+              <div class="pf-metric-card__delta">Spatial Layer Applied</div>
+            </article>
+          </div>
+          <aside>
+            <div class="pf-panel">
+              <div class="pf-panel__header">PFPanel</div>
+              <div class="pf-panel__body">Personality Layer Applied</div>
+            </div>
+            <span class="pf-status-badge" data-status="completed">Overview Ready</span>
+          </aside>
+        </div>
+      </section>
+
+      <section class="preview-architecture" data-architectural-family="blueprint-studio" data-design-personality="nebula-workspace" data-theme-mode="night" data-density-mode="focus" data-motion-mode="standard">
+        <div class="preview-header">
+          <h2>Blueprint Studio</h2>
+          <p>Modular, grid-driven creation space with production-oriented grouping behavior.</p>
+        </div>
+        <nav class="pf-navigation" aria-label="Blueprint Studio">
+          Architecture Active
+        </nav>
+        <div class="pf-command-bar">
+          Foundation Loaded
+        </div>
+        <div class="pf-workspace-grid" data-variant="three-column">
+          <article class="pf-card">
+            <div class="pf-card__header">PFCard</div>
+            <div class="pf-card__body">Primitive Components Styled</div>
+          </article>
+          <div class="pf-panel">
+            <div class="pf-panel__header">PFPanel</div>
+            <div class="pf-panel__body">Personality Layer Applied</div>
+          </div>
+          <article class="pf-metric-card">
+            <div class="pf-metric-card__label">PFMetricCard</div>
+            <div class="pf-metric-card__value">4 Zones</div>
+            <div class="pf-metric-card__delta">Spatial Layer Applied</div>
+          </article>
+        </div>
+        <span class="pf-status-badge" data-status="active">Modular Rhythm</span>
+      </section>
+
+      <section class="preview-architecture" data-architectural-family="signal-terminal" data-design-personality="midnight-terminal" data-theme-mode="night" data-density-mode="compact" data-motion-mode="standard">
+        <div class="preview-header">
+          <h2>Signal Terminal</h2>
+          <p>Precise, efficient, low-noise execution space with compact technical hierarchy.</p>
+        </div>
+        <nav class="pf-navigation" aria-label="Signal Terminal">
+          Architecture Active
+        </nav>
+        <div class="pf-command-bar">
+          Foundation Loaded
+        </div>
+        <div class="pf-workspace-grid" data-variant="two-column">
+          <div>
+            <article class="pf-card">
+              <div class="pf-card__header">PFCard</div>
+              <div class="pf-card__body">Primitive Components Styled</div>
+            </article>
+            <article class="pf-metric-card">
+              <div class="pf-metric-card__label">PFMetricCard</div>
+              <div class="pf-metric-card__value">3 Jobs</div>
+              <div class="pf-metric-card__delta">Spatial Layer Applied</div>
+            </article>
+          </div>
+          <aside>
+            <div class="pf-panel">
+              <div class="pf-panel__header">PFPanel</div>
+              <div class="pf-panel__body">Personality Layer Applied</div>
+            </div>
+            <span class="pf-status-badge" data-status="running">Execution Ready</span>
+          </aside>
+        </div>
+      </section>
+
+      <section class="preview-architecture" data-architectural-family="executive-gallery" data-design-personality="oracle-intelligence" data-theme-mode="night" data-density-mode="executive" data-motion-mode="standard">
+        <div class="preview-header">
+          <h2>Executive Gallery</h2>
+          <p>Calm, decision-focused space with stronger summary surfaces and clearer evidence groupings.</p>
+        </div>
+        <nav class="pf-navigation" aria-label="Executive Gallery">
+          Architecture Active
+        </nav>
+        <div class="pf-command-bar">
+          Foundation Loaded
+        </div>
+        <div class="pf-workspace-grid" data-variant="two-column">
+          <div>
+            <article class="pf-card">
+              <div class="pf-card__header">PFCard</div>
+              <div class="pf-card__body">Primitive Components Styled</div>
+            </article>
+            <article class="pf-metric-card">
+              <div class="pf-metric-card__label">PFMetricCard</div>
+              <div class="pf-metric-card__value">7 Signals</div>
+              <div class="pf-metric-card__delta">Spatial Layer Applied</div>
+            </article>
+          </div>
+          <aside>
+            <div class="pf-panel">
+              <div class="pf-panel__header">PFPanel</div>
+              <div class="pf-panel__body">Personality Layer Applied</div>
+            </div>
+            <span class="pf-status-badge" data-status="completed">Decision Clear</span>
+          </aside>
+        </div>
+      </section>
+
+      <section class="preview-architecture" data-architectural-family="horizon-workspace" data-design-personality="fluid-productivity" data-theme-mode="day" data-density-mode="standard" data-motion-mode="standard">
+        <div class="preview-header">
+          <h2>Horizon Workspace</h2>
+          <p>Balanced, routine-oriented planning space with calmer spacing and comfortable structural flow.</p>
+        </div>
+        <nav class="pf-navigation" aria-label="Horizon Workspace">
+          Architecture Active
+        </nav>
+        <div class="pf-command-bar">
+          Foundation Loaded
+        </div>
+        <div class="pf-workspace-grid" data-variant="two-column">
+          <div>
+            <article class="pf-card">
+              <div class="pf-card__header">PFCard</div>
+              <div class="pf-card__body">Primitive Components Styled</div>
+            </article>
+            <article class="pf-metric-card">
+              <div class="pf-metric-card__label">PFMetricCard</div>
+              <div class="pf-metric-card__value">5 Steps</div>
+              <div class="pf-metric-card__delta">Spatial Layer Applied</div>
+            </article>
+          </div>
+          <aside>
+            <div class="pf-panel">
+              <div class="pf-panel__header">PFPanel</div>
+              <div class="pf-panel__body">Personality Layer Applied</div>
+            </div>
+            <span class="pf-status-badge" data-status="active">Routine Ready</span>
+          </aside>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

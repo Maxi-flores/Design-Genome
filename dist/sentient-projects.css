@@ -1,0 +1,318 @@
+/*
+Sentient OS Design Genome
+v0.9 — Project DNA Composition Layer
+Generated from styles/projects/sentient-projects.css
+*/
+
+[data-project="sentient-os"] {
+  --project-identity: "Sentient OS";
+  --project-accent-primary: var(--personality-accent);
+  --project-accent-secondary: var(--personality-info);
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 18%, transparent);
+  --project-accent-contrast: var(--personality-bg);
+  --project-surface-tuning: var(--architecture-atmosphere-intensity);
+  --project-border-tuning: 64%;
+  --project-focus-emphasis: 1.08;
+  --project-navigation-emphasis: 1.08;
+  --project-command-emphasis: 1.12;
+  --project-dashboard-emphasis: 1.06;
+  --project-intelligence-emphasis: 1.16;
+  --project-motion-tuning: 1;
+  --project-density-preference: standard;
+}
+
+[data-project="sentient-os"][data-design-personality="oracle-intelligence"][data-architectural-family="command-tower"] {
+  --project-surface-tuning: color-mix(in srgb, var(--architecture-atmosphere-intensity) 70%, white 30%);
+  --project-intelligence-emphasis: 1.2;
+}
+
+[data-project="sentient-os"][data-chapter-accent="violet-cyan"] {
+  --project-accent-primary: #8b5cf6;
+  --project-accent-secondary: #22d3ee;
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 18%, transparent);
+}
+
+[data-project="sentient-os"][data-chapter-accent="signal-lime"] {
+  --project-accent-primary: #84cc16;
+  --project-accent-secondary: #22d3ee;
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 16%, transparent);
+}
+
+[data-project="powerframe-ecosystem"] {
+  --project-identity: "Powerframe Ecosystem";
+  --project-accent-primary: var(--personality-accent);
+  --project-accent-secondary: var(--personality-info);
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 18%, transparent);
+  --project-accent-contrast: var(--personality-bg);
+  --project-surface-tuning: var(--architecture-atmosphere-intensity);
+  --project-border-tuning: 70%;
+  --project-focus-emphasis: 1.12;
+  --project-navigation-emphasis: 1.14;
+  --project-command-emphasis: 1.18;
+  --project-dashboard-emphasis: 1.12;
+  --project-intelligence-emphasis: 1.08;
+  --project-motion-tuning: 0.96;
+  --project-density-preference: compact;
+}
+
+[data-project="powerframe-ecosystem"][data-design-personality="aurora-command"][data-architectural-family="command-tower"] {
+  --project-command-emphasis: 1.22;
+  --project-navigation-emphasis: 1.16;
+}
+
+[data-project="powerframe-ecosystem"][data-chapter-accent="violet-cyan"] {
+  --project-accent-primary: #8b5cf6;
+  --project-accent-secondary: #22d3ee;
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 18%, transparent);
+}
+
+[data-project="powerframe-ecosystem"][data-chapter-accent="crystal-gold"] {
+  --project-accent-primary: #d4a54a;
+  --project-accent-secondary: #22d3ee;
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 16%, transparent);
+}
+
+[data-project="powerframe-ecosystem"][data-chapter-accent="horizon-sky"] {
+  --project-accent-primary: #38bdf8;
+  --project-accent-secondary: #22c55e;
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 16%, transparent);
+}
+
+[data-project="therockettree"] {
+  --project-identity: "TheRocketTree";
+  --project-accent-primary: var(--personality-accent);
+  --project-accent-secondary: var(--personality-info);
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 18%, transparent);
+  --project-accent-contrast: var(--personality-bg);
+  --project-surface-tuning: color-mix(in srgb, var(--architecture-atmosphere-intensity) 78%, white 22%);
+  --project-border-tuning: 60%;
+  --project-focus-emphasis: 1.08;
+  --project-navigation-emphasis: 1.12;
+  --project-command-emphasis: 1.04;
+  --project-dashboard-emphasis: 1.1;
+  --project-intelligence-emphasis: 1.16;
+  --project-motion-tuning: 1.04;
+  --project-density-preference: standard;
+}
+
+[data-project="therockettree"][data-design-personality="constellation-feed"][data-architectural-family="glass-atrium"] {
+  --project-intelligence-emphasis: 1.18;
+  --project-dashboard-emphasis: 1.12;
+}
+
+[data-project="therockettree"][data-chapter-accent="constellation-indigo"] {
+  --project-accent-primary: #6366f1;
+  --project-accent-secondary: #22d3ee;
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 18%, transparent);
+}
+
+[data-project="therockettree"][data-chapter-accent="atrium-teal"] {
+  --project-accent-primary: #14b8a6;
+  --project-accent-secondary: #8b5cf6;
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 16%, transparent);
+}
+
+[data-project="conceptshop"] {
+  --project-identity: "ConceptSHOP";
+  --project-accent-primary: var(--personality-accent);
+  --project-accent-secondary: var(--personality-info);
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 16%, transparent);
+  --project-accent-contrast: var(--personality-bg);
+  --project-surface-tuning: color-mix(in srgb, var(--architecture-atmosphere-intensity) 82%, white 18%);
+  --project-border-tuning: 56%;
+  --project-focus-emphasis: 1.02;
+  --project-navigation-emphasis: 1.04;
+  --project-command-emphasis: 1;
+  --project-dashboard-emphasis: 1.06;
+  --project-intelligence-emphasis: 1.02;
+  --project-motion-tuning: 0.94;
+  --project-density-preference: executive;
+}
+
+[data-project="conceptshop"][data-design-personality="crystal-executive"][data-architectural-family="glass-atrium"] {
+  --project-surface-tuning: color-mix(in srgb, var(--architecture-atmosphere-intensity) 86%, white 14%);
+  --project-border-tuning: 52%;
+}
+
+[data-project="conceptshop"][data-chapter-accent="crystal-gold"] {
+  --project-accent-primary: #d4a54a;
+  --project-accent-secondary: #14b8a6;
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 16%, transparent);
+}
+
+[data-project="conceptshop"][data-chapter-accent="horizon-sky"] {
+  --project-accent-primary: #38bdf8;
+  --project-accent-secondary: #a3e635;
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 16%, transparent);
+}
+
+[data-project="customshop"] {
+  --project-identity: "CustomSHOP";
+  --project-accent-primary: var(--personality-accent);
+  --project-accent-secondary: var(--personality-info);
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 18%, transparent);
+  --project-accent-contrast: var(--personality-bg);
+  --project-surface-tuning: var(--architecture-atmosphere-intensity);
+  --project-border-tuning: 64%;
+  --project-focus-emphasis: 1.1;
+  --project-navigation-emphasis: 1.06;
+  --project-command-emphasis: 1.08;
+  --project-dashboard-emphasis: 1.1;
+  --project-intelligence-emphasis: 1.04;
+  --project-motion-tuning: 1;
+  --project-density-preference: standard;
+}
+
+[data-project="customshop"][data-design-personality="nebula-workspace"][data-architectural-family="blueprint-studio"] {
+  --project-dashboard-emphasis: 1.14;
+  --project-focus-emphasis: 1.12;
+}
+
+[data-project="customshop"][data-chapter-accent="blueprint-cyan"] {
+  --project-accent-primary: #06b6d4;
+  --project-accent-secondary: #6366f1;
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 18%, transparent);
+}
+
+[data-project="customshop"][data-chapter-accent="crystal-gold"] {
+  --project-accent-primary: #d4a54a;
+  --project-accent-secondary: #22d3ee;
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 16%, transparent);
+}
+
+[data-project="mucho3d"] {
+  --project-identity: "Mucho3D";
+  --project-accent-primary: var(--personality-accent);
+  --project-accent-secondary: var(--personality-info);
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 20%, transparent);
+  --project-accent-contrast: var(--personality-bg);
+  --project-surface-tuning: color-mix(in srgb, var(--architecture-atmosphere-intensity) 88%, white 12%);
+  --project-border-tuning: 68%;
+  --project-focus-emphasis: 1.14;
+  --project-navigation-emphasis: 1.08;
+  --project-command-emphasis: 1.1;
+  --project-dashboard-emphasis: 1.16;
+  --project-intelligence-emphasis: 1.06;
+  --project-motion-tuning: 1.06;
+  --project-density-preference: focus;
+}
+
+[data-project="mucho3d"][data-design-personality="nebula-workspace"][data-architectural-family="blueprint-studio"] {
+  --project-dashboard-emphasis: 1.18;
+  --project-command-emphasis: 1.08;
+}
+
+[data-project="mucho3d"][data-chapter-accent="blueprint-cyan"] {
+  --project-accent-primary: #06b6d4;
+  --project-accent-secondary: #22d3ee;
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 20%, transparent);
+}
+
+[data-project="mucho3d"][data-chapter-accent="ember-orange"] {
+  --project-accent-primary: #f97316;
+  --project-accent-secondary: #fb7185;
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 18%, transparent);
+}
+
+[data-project="flink3d"] {
+  --project-identity: "Flink3D";
+  --project-accent-primary: var(--personality-accent);
+  --project-accent-secondary: var(--personality-info);
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 18%, transparent);
+  --project-accent-contrast: var(--personality-bg);
+  --project-surface-tuning: var(--architecture-atmosphere-intensity);
+  --project-border-tuning: 72%;
+  --project-focus-emphasis: 1.12;
+  --project-navigation-emphasis: 1.12;
+  --project-command-emphasis: 1.16;
+  --project-dashboard-emphasis: 1.08;
+  --project-intelligence-emphasis: 1.02;
+  --project-motion-tuning: 0.96;
+  --project-density-preference: compact;
+}
+
+[data-project="flink3d"][data-design-personality="midnight-terminal"][data-architectural-family="signal-terminal"] {
+  --project-command-emphasis: 1.18;
+  --project-border-tuning: 76%;
+}
+
+[data-project="flink3d"][data-chapter-accent="signal-lime"] {
+  --project-accent-primary: #84cc16;
+  --project-accent-secondary: #22d3ee;
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 18%, transparent);
+}
+
+[data-project="flink3d"][data-chapter-accent="blueprint-cyan"] {
+  --project-accent-primary: #06b6d4;
+  --project-accent-secondary: #6366f1;
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 16%, transparent);
+}
+
+[data-project] .pf-card,
+[data-project] .pf-panel,
+[data-project] .pf-section,
+[data-project] .pf-metric-card,
+[data-project] .pf-command-bar,
+[data-project] .pf-data-table,
+[data-project] .pf-empty-state,
+[data-project] .pf-navigation,
+[data-project] .pf-modal,
+[data-project] .pf-drawer,
+[data-project] .pf-tabs,
+[data-project] .pf-input,
+[data-project] .pf-select {
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--project-accent-primary) calc(var(--project-border-tuning) / 4), transparent),
+    0 0 0 999rem color-mix(in srgb, var(--project-accent-soft) calc(var(--project-surface-tuning) / 8), transparent) inset;
+}
+
+[data-project] .pf-button[data-variant="primary"] {
+  border-color: var(--project-accent-primary);
+  background: linear-gradient(135deg, var(--project-accent-primary), var(--project-accent-secondary));
+  color: var(--project-accent-contrast);
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--project-accent-primary) 28%, transparent),
+    0 12px 24px color-mix(in srgb, var(--project-accent-primary) 18%, transparent);
+}
+
+[data-project] .pf-button[data-variant="secondary"],
+[data-project] .pf-button[data-variant="ghost"] {
+  border-color: color-mix(in srgb, var(--project-accent-primary) 28%, var(--personality-border));
+}
+
+[data-project] .pf-status-badge {
+  border-color: color-mix(in srgb, var(--project-accent-primary) 24%, var(--personality-border));
+  box-shadow: 0 0 0 1px var(--project-accent-soft) inset;
+}
+
+[data-project] .pf-navigation {
+  border-color: color-mix(in srgb, var(--project-accent-primary) calc(var(--project-navigation-emphasis) * 18%), transparent);
+}
+
+[data-project] .pf-command-bar {
+  border-color: color-mix(in srgb, var(--project-accent-primary) calc(var(--project-command-emphasis) * 16%), var(--personality-border-strong));
+}
+
+[data-project] .pf-metric-card,
+[data-project] .pf-data-table,
+[data-project] .pf-panel {
+  border-color: color-mix(in srgb, var(--project-accent-secondary) calc(var(--project-dashboard-emphasis) * 14%), var(--personality-border));
+}
+
+[data-project] .pf-card,
+[data-project] .pf-section,
+[data-project] .pf-empty-state {
+  border-color: color-mix(in srgb, var(--project-accent-primary) calc(var(--project-intelligence-emphasis) * 12%), var(--personality-border));
+}
+
+[data-project] .pf-button:focus-visible,
+[data-project] .pf-input:focus-visible,
+[data-project] .pf-select:focus-visible {
+  outline-offset: calc(var(--focus-ring-offset) * var(--project-focus-emphasis));
+  box-shadow: 0 0 0 calc(var(--space-1) * var(--project-focus-emphasis)) var(--project-accent-soft);
+}
+
+[data-project] .pf-workspace-grid {
+  border-top: 1px solid color-mix(in srgb, var(--project-accent-primary) 16%, transparent);
+  padding-top: var(--space-4);
+}

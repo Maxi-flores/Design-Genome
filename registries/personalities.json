@@ -1,0 +1,164 @@
+{
+  "version": "0.2",
+  "source": "Sentient OS Architectural Web Stylebook 0.1",
+  "personalities": [
+    {
+      "id": "aurora-command",
+      "name": "Aurora Command",
+      "mood": "Operational, luminous, high-confidence system guidance.",
+      "compatible_architectural_families": [
+        "Command Tower"
+      ],
+      "recommended_chapter_accents": [
+        "violet-cyan",
+        "signal-lime"
+      ]
+    },
+    {
+      "id": "crystal-executive",
+      "name": "Crystal Executive",
+      "mood": "Premium, calm, polished decision support.",
+      "compatible_architectural_families": [
+        "Executive Gallery",
+        "Glass Atrium"
+      ],
+      "recommended_chapter_accents": [
+        "crystal-gold",
+        "atrium-teal"
+      ]
+    },
+    {
+      "id": "constellation-feed",
+      "name": "Constellation Feed",
+      "mood": "Layered, exploratory, connected ecosystem overview.",
+      "compatible_architectural_families": [
+        "Glass Atrium",
+        "Horizon Workspace"
+      ],
+      "recommended_chapter_accents": [
+        "constellation-indigo",
+        "horizon-sky"
+      ]
+    },
+    {
+      "id": "nebula-workspace",
+      "name": "Nebula Workspace",
+      "mood": "Creative, technical, modular production focus.",
+      "compatible_architectural_families": [
+        "Blueprint Studio"
+      ],
+      "recommended_chapter_accents": [
+        "blueprint-cyan",
+        "constellation-indigo"
+      ]
+    },
+    {
+      "id": "midnight-terminal",
+      "name": "Midnight Terminal",
+      "mood": "Low-noise, developer-grade, precise execution.",
+      "compatible_architectural_families": [
+        "Signal Terminal"
+      ],
+      "recommended_chapter_accents": [
+        "signal-lime",
+        "ember-orange"
+      ]
+    },
+    {
+      "id": "fluid-productivity",
+      "name": "Fluid Productivity",
+      "mood": "Calm, human, balanced daily workflow momentum.",
+      "compatible_architectural_families": [
+        "Horizon Workspace"
+      ],
+      "recommended_chapter_accents": [
+        "horizon-sky",
+        "paper-indigo"
+      ]
+    },
+    {
+      "id": "ember-gaming",
+      "name": "Ember Gaming",
+      "mood": "High-energy, performance-oriented, expressive intensity.",
+      "compatible_architectural_families": [],
+      "declared_family_targets": [
+        "Performance Floor"
+      ],
+      "status": "pending-family-approval",
+      "notes": "Retained from the stylebook personality alignment examples, but not currently activatable because Performance Floor is not yet an approved architectural family."
+    },
+    {
+      "id": "horizon-light",
+      "name": "Horizon Light",
+      "mood": "Open, accessible, optimistic planning and overview.",
+      "compatible_architectural_families": [
+        "Horizon Workspace",
+        "Glass Atrium"
+      ],
+      "recommended_chapter_accents": [
+        "horizon-sky",
+        "atrium-teal"
+      ]
+    },
+    {
+      "id": "inferno-performance",
+      "name": "Inferno Performance",
+      "mood": "Urgent, high-output, energetic technical performance.",
+      "compatible_architectural_families": [
+        "Command Tower"
+      ],
+      "declared_family_targets": [
+        "Performance Floor",
+        "Command Tower"
+      ],
+      "recommended_chapter_accents": [
+        "ember-orange",
+        "signal-lime"
+      ]
+    },
+    {
+      "id": "nocturne-minimal",
+      "name": "Nocturne Minimal",
+      "mood": "Quiet, reduced-noise, thoughtful technical focus.",
+      "compatible_architectural_families": [
+        "Signal Terminal"
+      ],
+      "declared_family_targets": [
+        "Research Lab",
+        "Signal Terminal"
+      ],
+      "recommended_spatial_identities": [
+        "Research Lab",
+        "Signal Terminal"
+      ],
+      "recommended_chapter_accents": [
+        "paper-indigo",
+        "signal-lime"
+      ]
+    },
+    {
+      "id": "oracle-intelligence",
+      "name": "Oracle Intelligence",
+      "mood": "Observational, intelligent, premium analysis and synthesis.",
+      "compatible_architectural_families": [
+        "Command Tower",
+        "Executive Gallery"
+      ],
+      "declared_family_targets": [
+        "Research Lab",
+        "Command Tower",
+        "Executive Gallery"
+      ],
+      "recommended_spatial_identities": [
+        "Research Lab",
+        "System Observatory",
+        "Knowledge Library"
+      ],
+      "recommended_chapter_accents": [
+        "violet-cyan",
+        "crystal-gold",
+        "paper-indigo"
+      ]
+    }
+  ]
+}

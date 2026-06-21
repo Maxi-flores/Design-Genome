@@ -1,0 +1,184 @@
+{
+  "version": "0.2",
+  "source": "Sentient OS Architectural Web Stylebook 0.1",
+  "families": [
+    {
+      "id": "command-tower",
+      "name": "Command Tower",
+      "purpose": [
+        "operational control",
+        "runtime management",
+        "infrastructure visibility",
+        "system command"
+      ],
+      "characteristics": [
+        "dense",
+        "structured",
+        "mission-control",
+        "instrument-driven",
+        "status-aware",
+        "high-contrast"
+      ],
+      "avoid": [
+        "excessive decorative glass",
+        "unclear hierarchy",
+        "lifestyle colors",
+        "overly playful motion"
+      ],
+      "recommended_spatial_identities": [
+        "Command Center",
+        "Control Tower",
+        "Operations Deck",
+        "System Observatory"
+      ]
+    },
+    {
+      "id": "glass-atrium",
+      "name": "Glass Atrium",
+      "purpose": [
+        "executive overview",
+        "premium ecosystem entry",
+        "strategic exploration",
+        "platform introduction"
+      ],
+      "characteristics": [
+        "open",
+        "premium",
+        "atmospheric",
+        "spacious",
+        "layered",
+        "elegant"
+      ],
+      "avoid": [
+        "visual clutter",
+        "dense operational controls",
+        "too many competing cards",
+        "cheap SaaS dashboard aesthetics"
+      ],
+      "recommended_spatial_identities": [
+        "Glass Atrium",
+        "Launch Lobby",
+        "Executive Gallery"
+      ]
+    },
+    {
+      "id": "blueprint-studio",
+      "name": "Blueprint Studio",
+      "purpose": [
+        "creation",
+        "production",
+        "design",
+        "building",
+        "experimentation"
+      ],
+      "characteristics": [
+        "modular",
+        "technical",
+        "creative",
+        "grid-based",
+        "construction-oriented",
+        "spatial"
+      ],
+      "avoid": [
+        "pure corporate dashboard styling",
+        "unstructured creative chaos",
+        "decorative complexity without workflow purpose"
+      ],
+      "recommended_spatial_identities": [
+        "Blueprint Studio",
+        "Creative Workshop",
+        "Production Floor"
+      ]
+    },
+    {
+      "id": "signal-terminal",
+      "name": "Signal Terminal",
+      "purpose": [
+        "engineering",
+        "development",
+        "agent control",
+        "technical execution"
+      ],
+      "characteristics": [
+        "precise",
+        "efficient",
+        "focused",
+        "low-noise",
+        "terminal-inspired",
+        "developer-grade"
+      ],
+      "avoid": [
+        "marketing visuals",
+        "unnecessary softness",
+        "decorative icons",
+        "large empty hero sections"
+      ],
+      "recommended_spatial_identities": [
+        "Signal Terminal",
+        "Research Lab",
+        "Knowledge Library",
+        "System Observatory"
+      ]
+    },
+    {
+      "id": "executive-gallery",
+      "name": "Executive Gallery",
+      "purpose": [
+        "decision making",
+        "finance",
+        "strategy",
+        "reporting",
+        "portfolio overview"
+      ],
+      "characteristics": [
+        "elegant",
+        "minimal",
+        "premium",
+        "calm",
+        "clear",
+        "decision-focused"
+      ],
+      "avoid": [
+        "gaming atmosphere",
+        "busy developer styling",
+        "uncontrolled color",
+        "dashboard overload"
+      ],
+      "recommended_spatial_identities": [
+        "Executive Gallery",
+        "Glass Atrium",
+        "Knowledge Library"
+      ]
+    },
+    {
+      "id": "horizon-workspace",
+      "name": "Horizon Workspace",
+      "purpose": [
+        "planning",
+        "personal productivity",
+        "daily workflow",
+        "life management",
+        "focus systems"
+      ],
+      "characteristics": [
+        "calm",
+        "balanced",
+        "human",
+        "clear",
+        "light-capable",
+        "routine-oriented"
+      ],
+      "avoid": [
+        "aggressive enterprise styling",
+        "overly dark density",
+        "too much operational pressure",
+        "chaotic color coding"
+      ],
+      "recommended_spatial_identities": [
+        "Horizon Workspace",
+        "Knowledge Library",
+        "Launch Lobby"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "version": "0.3",
+  "group": "breakpoints",
+  "description": "Foundation breakpoint tokens for responsive Sentient OS environments.",
+  "tokens": [
+    {
+      "id": "bp-xs",
+      "cssVar": "--bp-xs",
+      "value": "480px",
+      "px": 480,
+      "usage": "Mobile"
+    },
+    {
+      "id": "bp-sm",
+      "cssVar": "--bp-sm",
+      "value": "640px",
+      "px": 640,
+      "usage": "Large mobile"
+    },
+    {
+      "id": "bp-md",
+      "cssVar": "--bp-md",
+      "value": "768px",
+      "px": 768,
+      "usage": "Tablet"
+    },
+    {
+      "id": "bp-lg",
+      "cssVar": "--bp-lg",
+      "value": "1024px",
+      "px": 1024,
+      "usage": "Desktop"
+    },
+    {
+      "id": "bp-xl",
+      "cssVar": "--bp-xl",
+      "value": "1280px",
+      "px": 1280,
+      "usage": "Wide desktop"
+    },
+    {
+      "id": "bp-2xl",
+      "cssVar": "--bp-2xl",
+      "value": "1440px",
+      "px": 1440,
+      "usage": "Operational dashboard"
+    }
+  ]
+}

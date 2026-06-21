@@ -1,0 +1,718 @@
+{
+  "foundation": {
+    "version": "0.3",
+    "name": "Sentient OS Foundation Tokens",
+    "description": "Immutable base tokens inherited by all Sentient OS ecosystem projects.",
+    "scope": "foundation",
+    "rule": "Foundation tokens may be extended by personalities but may not be overridden at the architecture level.",
+    "groups": [
+      "spacing",
+      "typography",
+      "radius",
+      "breakpoints",
+      "motion",
+      "elevation",
+      "status",
+      "zIndex",
+      "focus"
+    ],
+    "sources": {
+      "spacing": "tokens/spacing.tokens.json",
+      "typography": "tokens/typography.tokens.json",
+      "radius": "tokens/radius.tokens.json",
+      "breakpoints": "tokens/breakpoints.tokens.json",
+      "motion": "tokens/motion.tokens.json",
+      "elevation": "tokens/elevation.tokens.json",
+      "status": "tokens/status.tokens.json",
+      "zIndex": "tokens/z-index.tokens.json",
+      "focus": "tokens/focus.tokens.json"
+    }
+  },
+  "groups": {
+    "spacing": {
+      "version": "0.3",
+      "group": "spacing",
+      "description": "Foundation spacing scale for all Sentient OS ecosystem layouts.",
+      "rule": "No arbitrary spacing values. All layout spacing must use Foundation spacing tokens.",
+      "tokens": [
+        {
+          "id": "space-1",
+          "cssVar": "--space-1",
+          "value": "4px",
+          "px": 4,
+          "usage": "Tight icon gaps, compact inline spacing, and dense operational detail."
+        },
+        {
+          "id": "space-2",
+          "cssVar": "--space-2",
+          "value": "8px",
+          "px": 8,
+          "usage": "Small control padding and close related UI groupings."
+        },
+        {
+          "id": "space-3",
+          "cssVar": "--space-3",
+          "value": "12px",
+          "px": 12,
+          "usage": "Compact panel padding and metric label spacing."
+        },
+        {
+          "id": "space-4",
+          "cssVar": "--space-4",
+          "value": "16px",
+          "px": 16,
+          "usage": "Default component padding and standard content rhythm."
+        },
+        {
+          "id": "space-5",
+          "cssVar": "--space-5",
+          "value": "24px",
+          "px": 24,
+          "usage": "Card spacing, section gaps, and comfortable reading surfaces."
+        },
+        {
+          "id": "space-6",
+          "cssVar": "--space-6",
+          "value": "32px",
+          "px": 32,
+          "usage": "Panel interiors, page-header spacing, and structural separation."
+        },
+        {
+          "id": "space-7",
+          "cssVar": "--space-7",
+          "value": "48px",
+          "px": 48,
+          "usage": "Major section spacing and prominent layout breaks."
+        },
+        {
+          "id": "space-8",
+          "cssVar": "--space-8",
+          "value": "64px",
+          "px": 64,
+          "usage": "Large workspace breathing room and executive density layouts."
+        },
+        {
+          "id": "space-9",
+          "cssVar": "--space-9",
+          "value": "80px",
+          "px": 80,
+          "usage": "Full-screen section divisions and spacious overview compositions."
+        }
+      ]
+    },
+    "typography": {
+      "version": "0.3",
+      "group": "typography",
+      "description": "Foundation typography tokens for readable, structured Sentient OS interfaces.",
+      "rules": [
+        "H1 is reserved for page title.",
+        "Decorative typography is not allowed.",
+        "Readability wins."
+      ],
+      "fontFamilies": [
+        {
+          "id": "font-primary",
+          "cssVar": "--font-primary",
+          "value": "\"Geist Variable\", system-ui",
+          "usage": "Primary interface typography and headings."
+        },
+        {
+          "id": "font-secondary",
+          "cssVar": "--font-secondary",
+          "value": "\"Inter Variable\", system-ui",
+          "usage": "Secondary content surfaces and fallback interface reading."
+        },
+        {
+          "id": "font-mono",
+          "cssVar": "--font-mono",
+          "value": "\"JetBrains Mono\", monospace",
+          "usage": "Technical logs, code, metrics, and terminal-adjacent content."
+        },
+        {
+          "id": "font-fallback",
+          "cssVar": "--font-fallback",
+          "value": "system-ui",
+          "usage": "System-safe fallback when preferred variable fonts are unavailable."
+        }
+      ],
+      "scale": [
+        {
+          "id": "text-hero",
+          "cssVar": "--text-hero",
+          "value": "40px",
+          "px": 40,
+          "usage": "Large environmental hero statements and high-level observatory entry."
+        },
+        {
+          "id": "text-h1",
+          "cssVar": "--text-h1",
+          "value": "32px",
+          "px": 32,
+          "usage": "Reserved for the page title."
+        },
+        {
+          "id": "text-h2",
+          "cssVar": "--text-h2",
+          "value": "24px",
+          "px": 24,
+          "usage": "Major section headers and strong workspace hierarchy."
+        },
+        {
+          "id": "text-h3",
+          "cssVar": "--text-h3",
+          "value": "20px",
+          "px": 20,
+          "usage": "Subsection headings and important panel titles."
+        },
+        {
+          "id": "text-body-lg",
+          "cssVar": "--text-body-lg",
+          "value": "18px",
+          "px": 18,
+          "usage": "Readable summary content and executive overview text."
+        },
+        {
+          "id": "text-body",
+          "cssVar": "--text-body",
+          "value": "16px",
+          "px": 16,
+          "usage": "Default interface body text."
+        },
+        {
+          "id": "text-small",
+          "cssVar": "--text-small",
+          "value": "14px",
+          "px": 14,
+          "usage": "Secondary labels, metadata, and supporting content."
+        },
+        {
+          "id": "text-caption",
+          "cssVar": "--text-caption",
+          "value": "12px",
+          "px": 12,
+          "usage": "Captions, compact status notes, and low-emphasis annotations."
+        }
+      ],
+      "lineHeights": [
+        {
+          "id": "line-tight",
+          "cssVar": "--line-tight",
+          "value": "1.1",
+          "usage": "Headlines and compressed instrumental text."
+        },
+        {
+          "id": "line-heading",
+          "cssVar": "--line-heading",
+          "value": "1.2",
+          "usage": "Section titles and structured hierarchy."
+        },
+        {
+          "id": "line-body",
+          "cssVar": "--line-body",
+          "value": "1.5",
+          "usage": "Default reading rhythm for interface body copy."
+        },
+        {
+          "id": "line-relaxed",
+          "cssVar": "--line-relaxed",
+          "value": "1.6",
+          "usage": "Long-form reading and dense explanatory content."
+        }
+      ],
+      "fontWeights": [
+        {
+          "id": "weight-regular",
+          "cssVar": "--weight-regular",
+          "value": "400",
+          "usage": "Default paragraph and interface text."
+        },
+        {
+          "id": "weight-medium",
+          "cssVar": "--weight-medium",
+          "value": "500",
+          "usage": "Labels, supporting emphasis, and form structure."
+        },
+        {
+          "id": "weight-semibold",
+          "cssVar": "--weight-semibold",
+          "value": "600",
+          "usage": "Panel titles, navigation emphasis, and decision points."
+        },
+        {
+          "id": "weight-bold",
+          "cssVar": "--weight-bold",
+          "value": "700",
+          "usage": "High-priority title emphasis used sparingly."
+        }
+      ]
+    },
+    "radius": {
+      "version": "0.3",
+      "group": "radius",
+      "description": "Foundation radius tokens for component shape consistency.",
+      "rule": "Avoid mixing radius families within one page.",
+      "tokens": [
+        {
+          "id": "radius-xs",
+          "cssVar": "--radius-xs",
+          "value": "4px",
+          "px": 4,
+          "usage": "Small controls and compact technical inputs."
+        },
+        {
+          "id": "radius-sm",
+          "cssVar": "--radius-sm",
+          "value": "8px",
+          "px": 8,
+          "usage": "Buttons, tags, and small utility surfaces."
+        },
+        {
+          "id": "radius-md",
+          "cssVar": "--radius-md",
+          "value": "12px",
+          "px": 12,
+          "usage": "Cards and standard reusable content containers."
+        },
+        {
+          "id": "radius-lg",
+          "cssVar": "--radius-lg",
+          "value": "16px",
+          "px": 16,
+          "usage": "Panels and stronger structural surfaces."
+        },
+        {
+          "id": "radius-xl",
+          "cssVar": "--radius-xl",
+          "value": "20px",
+          "px": 20,
+          "usage": "Drawers and expanded secondary surfaces."
+        },
+        {
+          "id": "radius-2xl",
+          "cssVar": "--radius-2xl",
+          "value": "24px",
+          "px": 24,
+          "usage": "Modals and prominent overlay chambers."
+        },
+        {
+          "id": "radius-full",
+          "cssVar": "--radius-full",
+          "value": "999px",
+          "px": 999,
+          "usage": "Pills, circular badges, and rounded identity markers."
+        }
+      ]
+    },
+    "breakpoints": {
+      "version": "0.3",
+      "group": "breakpoints",
+      "description": "Foundation breakpoint tokens for responsive Sentient OS environments.",
+      "tokens": [
+        {
+          "id": "bp-xs",
+          "cssVar": "--bp-xs",
+          "value": "480px",
+          "px": 480,
+          "usage": "Mobile"
+        },
+        {
+          "id": "bp-sm",
+          "cssVar": "--bp-sm",
+          "value": "640px",
+          "px": 640,
+          "usage": "Large mobile"
+        },
+        {
+          "id": "bp-md",
+          "cssVar": "--bp-md",
+          "value": "768px",
+          "px": 768,
+          "usage": "Tablet"
+        },
+        {
+          "id": "bp-lg",
+          "cssVar": "--bp-lg",
+          "value": "1024px",
+          "px": 1024,
+          "usage": "Desktop"
+        },
+        {
+          "id": "bp-xl",
+          "cssVar": "--bp-xl",
+          "value": "1280px",
+          "px": 1280,
+          "usage": "Wide desktop"
+        },
+        {
+          "id": "bp-2xl",
+          "cssVar": "--bp-2xl",
+          "value": "1440px",
+          "px": 1440,
+          "usage": "Operational dashboard"
+        }
+      ]
+    },
+    "motion": {
+      "version": "0.3",
+      "group": "motion",
+      "description": "Foundation motion tokens that clarify state change and support reduced motion.",
+      "rules": [
+        "Motion must clarify system behavior.",
+        "Motion may not create visual noise.",
+        "Reduced motion must be supported."
+      ],
+      "durations": [
+        {
+          "id": "duration-fast",
+          "cssVar": "--duration-fast",
+          "value": "120ms",
+          "ms": 120,
+          "usage": "Fast status changes and subtle micro-state updates."
+        },
+        {
+          "id": "duration-normal",
+          "cssVar": "--duration-normal",
+          "value": "220ms",
+          "ms": 220,
+          "usage": "Default transition timing for interface changes."
+        },
+        {
+          "id": "duration-slow",
+          "cssVar": "--duration-slow",
+          "value": "360ms",
+          "ms": 360,
+          "usage": "Large surface reveals and route-level motion."
+        }
+      ],
+      "easings": [
+        {
+          "id": "ease-standard",
+          "cssVar": "--ease-standard",
+          "value": "cubic-bezier(0.2, 0, 0, 1)",
+          "usage": "Default interactive motion curve."
+        },
+        {
+          "id": "ease-enter",
+          "cssVar": "--ease-enter",
+          "value": "cubic-bezier(0, 0, 0, 1)",
+          "usage": "Entering surfaces and appearing content."
+        },
+        {
+          "id": "ease-exit",
+          "cssVar": "--ease-exit",
+          "value": "cubic-bezier(0.4, 0, 1, 1)",
+          "usage": "Exiting surfaces and dismissing content."
+        }
+      ],
+      "approvedMotionTypes": [
+        "fade",
+        "slide",
+        "subtle scale",
+        "elevation shift",
+        "panel reveal",
+        "status transition",
+        "route transition",
+        "drawer movement"
+      ]
+    },
+    "elevation": {
+      "version": "0.3",
+      "group": "elevation",
+      "description": "Neutral Foundation elevation values that work across future light and dark themes.",
+      "tokens": [
+        {
+          "id": "elevation-0",
+          "cssVar": "--elevation-0",
+          "value": "none",
+          "usage": "Level 0: base surface"
+        },
+        {
+          "id": "elevation-1",
+          "cssVar": "--elevation-1",
+          "value": "0 1px 2px rgba(15, 23, 42, 0.08), 0 1px 1px rgba(15, 23, 42, 0.05)",
+          "usage": "Level 1: card"
+        },
+        {
+          "id": "elevation-2",
+          "cssVar": "--elevation-2",
+          "value": "0 4px 10px rgba(15, 23, 42, 0.10), 0 2px 4px rgba(15, 23, 42, 0.06)",
+          "usage": "Level 2: raised panel"
+        },
+        {
+          "id": "elevation-3",
+          "cssVar": "--elevation-3",
+          "value": "0 10px 24px rgba(15, 23, 42, 0.12), 0 4px 8px rgba(15, 23, 42, 0.08)",
+          "usage": "Level 3: drawer / command surface"
+        },
+        {
+          "id": "elevation-4",
+          "cssVar": "--elevation-4",
+          "value": "0 18px 40px rgba(15, 23, 42, 0.16), 0 8px 16px rgba(15, 23, 42, 0.10)",
+          "usage": "Level 4: modal / overlay"
+        }
+      ]
+    },
+    "status": {
+      "version": "0.3",
+      "group": "status",
+      "description": "Universal status semantics shared across the Sentient OS ecosystem.",
+      "rule": "Statuses define meaning before color. Project-specific color systems are not part of the Foundation layer.",
+      "statuses": [
+        {
+          "id": "active",
+          "name": "Active",
+          "meaning": "An item is currently engaged, selected, or in effect.",
+          "severity": "info",
+          "usage": "Selected navigation items, active filters, and engaged operating states."
+        },
+        {
+          "id": "running",
+          "name": "Running",
+          "meaning": "A process is currently executing.",
+          "severity": "info",
+          "usage": "Live runtime jobs, agent execution, and in-progress system actions."
+        },
+        {
+          "id": "completed",
+          "name": "Completed",
+          "meaning": "A process or item has finished successfully.",
+          "severity": "success",
+          "usage": "Resolved work, finished flows, and successful runtime outcomes."
+        },
+        {
+          "id": "paused",
+          "name": "Paused",
+          "meaning": "An item is intentionally halted but recoverable.",
+          "severity": "muted",
+          "usage": "Deferred jobs, suspended automations, and temporarily stopped work."
+        },
+        {
+          "id": "blocked",
+          "name": "Blocked",
+          "meaning": "An item cannot proceed because of a dependency or failure condition.",
+          "severity": "danger",
+          "usage": "Dependency stops, hard workflow blockers, and action-required failures."
+        },
+        {
+          "id": "warning",
+          "name": "Warning",
+          "meaning": "An item needs attention soon but is not fully failed.",
+          "severity": "warning",
+          "usage": "Risk indicators, degraded states, and cautionary system signals."
+        },
+        {
+          "id": "error",
+          "name": "Error",
+          "meaning": "An item has failed or entered an invalid state.",
+          "severity": "danger",
+          "usage": "Failed requests, system faults, and invalid operations."
+        },
+        {
+          "id": "draft",
+          "name": "Draft",
+          "meaning": "An item exists but is not yet finalized or published.",
+          "severity": "neutral",
+          "usage": "Pre-release content, planning artifacts, and editable work in progress."
+        },
+        {
+          "id": "archived",
+          "name": "Archived",
+          "meaning": "An item is preserved for reference and no longer active in primary workflows.",
+          "severity": "muted",
+          "usage": "Historical projects, retired records, and no-longer-operational entries."
+        }
+      ],
+      "semanticTones": [
+        {
+          "id": "success",
+          "name": "Success",
+          "meaning": "Positive completion or healthy outcome."
+        },
+        {
+          "id": "info",
+          "name": "Info",
+          "meaning": "Informational activity or active operational state."
+        },
+        {
+          "id": "warning",
+          "name": "Warning",
+          "meaning": "Cautionary or degraded condition."
+        },
+        {
+          "id": "danger",
+          "name": "Danger",
+          "meaning": "Critical issue, hard stop, or failed state."
+        },
+        {
+          "id": "neutral",
+          "name": "Neutral",
+          "meaning": "Baseline non-emphasized state."
+        },
+        {
+          "id": "muted",
+          "name": "Muted",
+          "meaning": "De-emphasized or intentionally quiet state."
+        }
+      ]
+    },
+    "zIndex": {
+      "version": "0.3",
+      "group": "zIndex",
+      "description": "Foundation stacking order tokens for predictable operational layering.",
+      "rule": "No arbitrary z-index values in application UI.",
+      "tokens": [
+        {
+          "id": "z-base",
+          "cssVar": "--z-base",
+          "value": "0",
+          "usage": "Base workspace surfaces."
+        },
+        {
+          "id": "z-header",
+          "cssVar": "--z-header",
+          "value": "100",
+          "usage": "Persistent app headers."
+        },
+        {
+          "id": "z-navigation",
+          "cssVar": "--z-navigation",
+          "value": "200",
+          "usage": "Navigation rails and anchored navigation surfaces."
+        },
+        {
+          "id": "z-drawer",
+          "cssVar": "--z-drawer",
+          "value": "300",
+          "usage": "Drawers and slide-over contextual rooms."
+        },
+        {
+          "id": "z-command-bar",
+          "cssVar": "--z-command-bar",
+          "value": "400",
+          "usage": "Pinned command surfaces and operational overlays."
+        },
+        {
+          "id": "z-modal",
+          "cssVar": "--z-modal",
+          "value": "500",
+          "usage": "Modal chambers and critical overlays."
+        },
+        {
+          "id": "z-toast",
+          "cssVar": "--z-toast",
+          "value": "600",
+          "usage": "Transient notifications that should remain visible over modals."
+        },
+        {
+          "id": "z-tooltip",
+          "cssVar": "--z-tooltip",
+          "value": "700",
+          "usage": "Tooltips and highest ephemeral assistive overlays."
+        }
+      ]
+    },
+    "focus": {
+      "version": "0.3",
+      "group": "focus",
+      "description": "Foundation focus visibility tokens for keyboard-first accessibility.",
+      "rules": [
+        "Visible focus states are mandatory.",
+        "Keyboard navigation must remain clear.",
+        "Personality themes may adjust focus color but may not remove focus visibility."
+      ],
+      "tokens": [
+        {
+          "id": "focus-ring-width",
+          "cssVar": "--focus-ring-width",
+          "value": "2px",
+          "usage": "Default focus outline thickness."
+        },
+        {
+          "id": "focus-ring-offset",
+          "cssVar": "--focus-ring-offset",
+          "value": "2px",
+          "usage": "Default spacing between the element edge and the focus ring."
+        },
+        {
+          "id": "focus-ring-style",
+          "cssVar": "--focus-ring-style",
+          "value": "solid",
+          "usage": "Default focus outline style."
+        },
+        {
+          "id": "focus-ring-color",
+          "cssVar": "--focus-ring-color",
+          "value": "currentColor",
+          "usage": "Foundation-safe focus color placeholder that remains visible without a project color system."
+        }
+      ]
+    }
+  },
+  "cssVariables": {
+    "--space-1": "4px",
+    "--space-2": "8px",
+    "--space-3": "12px",
+    "--space-4": "16px",
+    "--space-5": "24px",
+    "--space-6": "32px",
+    "--space-7": "48px",
+    "--space-8": "64px",
+    "--space-9": "80px",
+    "--font-primary": "\"Geist Variable\", system-ui",
+    "--font-secondary": "\"Inter Variable\", system-ui",
+    "--font-mono": "\"JetBrains Mono\", monospace",
+    "--font-fallback": "system-ui",
+    "--text-hero": "40px",
+    "--text-h1": "32px",
+    "--text-h2": "24px",
+    "--text-h3": "20px",
+    "--text-body-lg": "18px",
+    "--text-body": "16px",
+    "--text-small": "14px",
+    "--text-caption": "12px",
+    "--line-tight": "1.1",
+    "--line-heading": "1.2",
+    "--line-body": "1.5",
+    "--line-relaxed": "1.6",
+    "--weight-regular": "400",
+    "--weight-medium": "500",
+    "--weight-semibold": "600",
+    "--weight-bold": "700",
+    "--radius-xs": "4px",
+    "--radius-sm": "8px",
+    "--radius-md": "12px",
+    "--radius-lg": "16px",
+    "--radius-xl": "20px",
+    "--radius-2xl": "24px",
+    "--radius-full": "999px",
+    "--bp-xs": "480px",
+    "--bp-sm": "640px",
+    "--bp-md": "768px",
+    "--bp-lg": "1024px",
+    "--bp-xl": "1280px",
+    "--bp-2xl": "1440px",
+    "--duration-fast": "120ms",
+    "--duration-normal": "220ms",
+    "--duration-slow": "360ms",
+    "--ease-standard": "cubic-bezier(0.2, 0, 0, 1)",
+    "--ease-enter": "cubic-bezier(0, 0, 0, 1)",
+    "--ease-exit": "cubic-bezier(0.4, 0, 1, 1)",
+    "--elevation-0": "none",
+    "--elevation-1": "0 1px 2px rgba(15, 23, 42, 0.08), 0 1px 1px rgba(15, 23, 42, 0.05)",
+    "--elevation-2": "0 4px 10px rgba(15, 23, 42, 0.10), 0 2px 4px rgba(15, 23, 42, 0.06)",
+    "--elevation-3": "0 10px 24px rgba(15, 23, 42, 0.12), 0 4px 8px rgba(15, 23, 42, 0.08)",
+    "--elevation-4": "0 18px 40px rgba(15, 23, 42, 0.16), 0 8px 16px rgba(15, 23, 42, 0.10)",
+    "--z-base": "0",
+    "--z-header": "100",
+    "--z-navigation": "200",
+    "--z-drawer": "300",
+    "--z-command-bar": "400",
+    "--z-modal": "500",
+    "--z-toast": "600",
+    "--z-tooltip": "700",
+    "--focus-ring-width": "2px",
+    "--focus-ring-offset": "2px",
+    "--focus-ring-style": "solid",
+    "--focus-ring-color": "currentColor"
+  }
+}

@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sentient OS Primitive Components Preview</title>
+    <link rel="stylesheet" href="../dist/sentient-foundation.css">
+    <link rel="stylesheet" href="../dist/sentient-primitives.css">
+    <style>
+      body {
+        margin: 0;
+        padding: var(--space-6);
+        font-family: var(--font-primary);
+        font-size: var(--text-body);
+        line-height: var(--line-body);
+        color: CanvasText;
+        background: Canvas;
+      }
+
+      main {
+        display: grid;
+        gap: var(--space-7);
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      section {
+        display: grid;
+        gap: var(--space-4);
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin: 0;
+      }
+
+      h1 {
+        font-size: var(--text-h1);
+        line-height: var(--line-heading);
+      }
+
+      h2 {
+        font-size: var(--text-h2);
+        line-height: var(--line-heading);
+      }
+
+      .preview-grid {
+        display: grid;
+        gap: var(--space-4);
+      }
+
+      .preview-two {
+        display: grid;
+        gap: var(--space-4);
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      }
+
+      .preview-note {
+        font-size: var(--text-small);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Primitive Components Preview</h1>
+        <p class="preview-note">
+          This is not an application UI, a personality theme, or a project design. It previews neutral primitive component classes only.
+        </p>
+      </section>
+
+      <section>
+        <h2>PFCard, PFPanel, PFSection</h2>
+        <div class="preview-two">
+          <article class="pf-card" data-variant="interactive">
+            <div class="pf-card__header">PFCard</div>
+            <div class="pf-card__body">One focused unit of information or action.</div>
+            <div class="pf-card__footer">
+              <button class="pf-button" type="button">Inspect</button>
+            </div>
+          </article>
+          <aside class="pf-panel" data-variant="context">
+            <div class="pf-panel__header">PFPanel</div>
+            <div class="pf-panel__body">Grouped supporting context or controls.</div>
+            <div class="pf-panel__actions">
+              <button class="pf-button" data-variant="ghost" type="button">Details</button>
+            </div>
+          </aside>
+        </div>
+        <section class="pf-section" data-variant="default">
+          <div class="pf-section__header">PFSection</div>
+          <div class="pf-section__body">
+            <p>Workspace region grouping related content.</p>
+            <div class="preview-two">
+              <article class="pf-card">
+                <div class="pf-card__header">Nested Surface</div>
+                <div class="pf-card__body">Sections can contain approved child surfaces.</div>
+              </article>
+              <article class="pf-card" data-variant="muted">
+                <div class="pf-card__header">Muted Variant</div>
+                <div class="pf-card__body">Neutral anatomy only, no project styling.</div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section>
+        <h2>PFMetricCard, PFStatusBadge, PFButton</h2>
+        <div class="preview-two">
+          <article class="pf-metric-card" data-variant="default">
+            <div class="pf-metric-card__label">Response Time</div>
+            <div class="pf-metric-card__value">220ms</div>
+            <div class="pf-metric-card__delta">Steady from baseline</div>
+            <div class="pf-metric-card__status">
+              <span class="pf-status-badge" data-status="running">Running</span>
+            </div>
+          </article>
+          <div class="preview-grid">
+            <div class="preview-two">
+              <button class="pf-button" data-variant="primary" type="button">Primary Action</button>
+              <button class="pf-button" data-variant="secondary" type="button">Secondary Action</button>
+              <button class="pf-button" data-variant="ghost" type="button">Ghost Action</button>
+              <button class="pf-button" data-variant="danger" data-state="loading" type="button">Loading</button>
+            </div>
+            <div class="preview-two">
+              <span class="pf-status-badge" data-status="active">Active</span>
+              <span class="pf-status-badge" data-status="running">Running</span>
+              <span class="pf-status-badge" data-status="completed">Completed</span>
+              <span class="pf-status-badge" data-status="paused">Paused</span>
+              <span class="pf-status-badge" data-status="blocked">Blocked</span>
+              <span class="pf-status-badge" data-status="warning">Warning</span>
+              <span class="pf-status-badge" data-status="error">Error</span>
+              <span class="pf-status-badge" data-status="draft">Draft</span>
+              <span class="pf-status-badge" data-status="archived">Archived</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>PFCommandBar</h2>
+        <div class="pf-command-bar">
+          <div class="pf-command-bar__primary">
+            <button class="pf-button" data-variant="primary" type="button">Create</button>
+            <button class="pf-button" type="button">Run</button>
+          </div>
+          <div class="pf-command-bar__secondary">
+            <button class="pf-button" data-variant="ghost" type="button">Archive</button>
+          </div>
+          <div class="pf-command-bar__filters">
+            <select class="pf-select">
+              <option>All states</option>
+            </select>
+          </div>
+          <div class="pf-command-bar__search">
+            <input class="pf-input" type="search" value="Query" aria-label="Search">
+          </div>
+          <div class="pf-command-bar__status">
+            <span class="pf-status-badge" data-status="active">Workspace Ready</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>PFDataTable</h2>
+        <div class="pf-data-table">
+          <div class="pf-data-table__toolbar">
+            <strong>Records</strong>
+            <button class="pf-button" type="button">Filter</button>
+          </div>
+          <table class="pf-data-table__table">
+            <thead class="pf-data-table__columns">
+              <tr>
+                <th>Project</th>
+                <th>Status</th>
+                <th>Updated</th>
+              </tr>
+            </thead>
+            <tbody class="pf-data-table__rows">
+              <tr>
+                <td>Powerframe GMS</td>
+                <td><span class="pf-status-badge" data-status="running">Running</span></td>
+                <td>Today</td>
+              </tr>
+              <tr>
+                <td>ConceptSHOP</td>
+                <td><span class="pf-status-badge" data-status="draft">Draft</span></td>
+                <td>Yesterday</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="pf-data-table__pagination">
+            <span>Page 1 of 1</span>
+            <button class="pf-button" data-variant="ghost" type="button">Next</button>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>PFWorkspaceGrid, PFEmptyState, PFTimeline</h2>
+        <div class="pf-workspace-grid" data-variant="two-column">
+          <div class="pf-workspace-grid__regions">
+            <div class="pf-empty-state">
+              <div class="pf-empty-state__illustration">Empty</div>
+              <div class="pf-empty-state__title">No signals yet</div>
+              <div class="pf-empty-state__message">Explain absence clearly and offer a meaningful next step.</div>
+              <div class="pf-empty-state__actions">
+                <button class="pf-button" data-variant="primary" type="button">Create First Item</button>
+              </div>
+            </div>
+          </div>
+          <aside class="pf-workspace-grid__sidebar">
+            <div class="pf-timeline">
+              <div class="pf-timeline__header">PFTimeline</div>
+              <ol class="pf-timeline__items">
+                <li class="pf-timeline__item">
+                  <span class="pf-timeline__marker" aria-hidden="true"></span>
+                  <div class="pf-timeline__content">
+                    <strong>Foundation</strong>
+                    <span>Tokens exported</span>
+                  </div>
+                </li>
+                <li class="pf-timeline__item">
+                  <span class="pf-timeline__marker" aria-hidden="true"></span>
+                  <div class="pf-timeline__content">
+                    <strong>Contracts</strong>
+                    <span>Governance approved</span>
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section>
+        <h2>PFNavigation, PFTabs, PFInput, PFSelect</h2>
+        <div class="preview-two">
+          <nav class="pf-navigation" aria-label="Primary">
+            <div class="pf-navigation__section-label">Navigate</div>
+            <ul class="pf-navigation__list">
+              <li><a class="pf-navigation__item" aria-current="page" href="#overview">Overview</a></li>
+              <li><a class="pf-navigation__item" href="#signals">Signals</a></li>
+              <li><a class="pf-navigation__item" href="#system">System</a></li>
+            </ul>
+          </nav>
+          <div class="preview-grid">
+            <div class="pf-tabs">
+              <div class="pf-tabs__list" role="tablist" aria-label="Tabs">
+                <button class="pf-tabs__trigger" data-state="active" role="tab" aria-selected="true" type="button">Summary</button>
+                <button class="pf-tabs__trigger" role="tab" aria-selected="false" type="button">Events</button>
+              </div>
+              <div class="pf-tabs__panels">
+                <div class="pf-tabs__panel" role="tabpanel">Related content switches inside one context.</div>
+              </div>
+            </div>
+            <label class="preview-grid">
+              <span>PFInput</span>
+              <input class="pf-input" type="text" value="Typed value">
+            </label>
+            <label class="preview-grid">
+              <span>PFSelect</span>
+              <select class="pf-select">
+                <option>Option one</option>
+                <option>Option two</option>
+              </select>
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>PFModal and PFDrawer</h2>
+        <div class="preview-two">
+          <div class="pf-modal" data-state="open" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <button class="pf-button pf-modal__close" data-variant="ghost" type="button">Close</button>
+            <div class="pf-modal__header" id="modal-title">PFModal</div>
+            <div class="pf-modal__body">A temporary chamber for focused tasks, confirmation, or critical information.</div>
+            <div class="pf-modal__footer">
+              <button class="pf-button" data-variant="ghost" type="button">Cancel</button>
+              <button class="pf-button" data-variant="primary" type="button">Confirm</button>
+            </div>
+          </div>
+          <aside class="pf-drawer" data-state="open" aria-labelledby="drawer-title">
+            <button class="pf-button pf-drawer__close" data-variant="ghost" type="button">Close</button>
+            <div class="pf-drawer__header" id="drawer-title">PFDrawer</div>
+            <div class="pf-drawer__body">A side room for contextual detail while preserving the larger workspace context.</div>
+            <div class="pf-drawer__footer">
+              <button class="pf-button" type="button">Inspect</button>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

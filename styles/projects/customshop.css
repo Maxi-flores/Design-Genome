@@ -1,0 +1,33 @@
+[data-project="customshop"] {
+  --project-identity: "CustomSHOP";
+  --project-accent-primary: var(--personality-accent);
+  --project-accent-secondary: var(--personality-info);
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 18%, transparent);
+  --project-accent-contrast: var(--personality-bg);
+  --project-surface-tuning: var(--architecture-atmosphere-intensity);
+  --project-border-tuning: 64%;
+  --project-focus-emphasis: 1.1;
+  --project-navigation-emphasis: 1.06;
+  --project-command-emphasis: 1.08;
+  --project-dashboard-emphasis: 1.1;
+  --project-intelligence-emphasis: 1.04;
+  --project-motion-tuning: 1;
+  --project-density-preference: standard;
+}
+
+[data-project="customshop"][data-design-personality="nebula-workspace"][data-architectural-family="blueprint-studio"] {
+  --project-dashboard-emphasis: 1.14;
+  --project-focus-emphasis: 1.12;
+}
+
+[data-project="customshop"][data-chapter-accent="blueprint-cyan"] {
+  --project-accent-primary: #06b6d4;
+  --project-accent-secondary: #6366f1;
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 18%, transparent);
+}
+
+[data-project="customshop"][data-chapter-accent="crystal-gold"] {
+  --project-accent-primary: #d4a54a;
+  --project-accent-secondary: #22d3ee;
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 16%, transparent);
+}

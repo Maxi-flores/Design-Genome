@@ -1,0 +1,33 @@
+[data-project="conceptshop"] {
+  --project-identity: "ConceptSHOP";
+  --project-accent-primary: var(--personality-accent);
+  --project-accent-secondary: var(--personality-info);
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 16%, transparent);
+  --project-accent-contrast: var(--personality-bg);
+  --project-surface-tuning: color-mix(in srgb, var(--architecture-atmosphere-intensity) 82%, white 18%);
+  --project-border-tuning: 56%;
+  --project-focus-emphasis: 1.02;
+  --project-navigation-emphasis: 1.04;
+  --project-command-emphasis: 1;
+  --project-dashboard-emphasis: 1.06;
+  --project-intelligence-emphasis: 1.02;
+  --project-motion-tuning: 0.94;
+  --project-density-preference: executive;
+}
+
+[data-project="conceptshop"][data-design-personality="crystal-executive"][data-architectural-family="glass-atrium"] {
+  --project-surface-tuning: color-mix(in srgb, var(--architecture-atmosphere-intensity) 86%, white 14%);
+  --project-border-tuning: 52%;
+}
+
+[data-project="conceptshop"][data-chapter-accent="crystal-gold"] {
+  --project-accent-primary: #d4a54a;
+  --project-accent-secondary: #14b8a6;
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 16%, transparent);
+}
+
+[data-project="conceptshop"][data-chapter-accent="horizon-sky"] {
+  --project-accent-primary: #38bdf8;
+  --project-accent-secondary: #a3e635;
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 16%, transparent);
+}

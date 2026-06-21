@@ -1,0 +1,37 @@
+{
+  "id": "pf-navigation",
+  "name": "PFNavigation",
+  "category": "navigation",
+  "description": "Stable circulation model for movement through the product environment.",
+  "architectural_role": "circulation",
+  "responsibility": "Provide stable movement through the product environment.",
+  "slots": {
+    "required": ["nav_items"],
+    "optional": ["optional_section_labels", "optional_status_indicators", "optional_footer_actions"]
+  },
+  "variants": ["rail", "sidebar", "topbar", "compact"],
+  "states": ["default", "active", "collapsed", "expanded"],
+  "token_dependencies": ["--space-2", "--space-3", "--space-4", "--text-small", "--text-body", "--line-body", "--weight-medium", "--focus-ring-width", "--focus-ring-offset", "--focus-ring-color", "--z-navigation"],
+  "accessibility": {
+    "requirements": [
+      "Users must understand where they are.",
+      "Active location must be programmatically clear.",
+      "Keyboard navigation must support predictable traversal."
+    ]
+  },
+  "composition_rules": [
+    "Navigation location must remain predictable.",
+    "Users must understand where they are.",
+    "Do not mix unrelated navigation models in one view."
+  ],
+  "anti_patterns": [
+    "mixing primary and unrelated secondary navigation in the same pattern",
+    "hiding active location cues",
+    "using navigation as a dumping ground for unrelated actions"
+  ],
+  "governance": {
+    "foundation_component": true,
+    "allowed_density_modes": ["compact", "standard", "focus", "executive"],
+    "allowed_architectural_families": ["Command Tower", "Glass Atrium", "Blueprint Studio", "Signal Terminal", "Executive Gallery", "Horizon Workspace"]
+  }
+}

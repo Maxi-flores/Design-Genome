@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sentient-os.local/schemas/theme-declaration.schema.json",
+  "title": "Sentient OS Theme Declaration",
+  "description": "Required synced theme declaration for Sentient OS ecosystem web applications.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "project",
+    "design_personality",
+    "theme_mode",
+    "density_mode",
+    "motion_mode",
+    "chapter_accent",
+    "architectural_family",
+    "spatial_identity",
+    "application_mode"
+  ],
+  "properties": {
+    "project": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Registered ecosystem project name used to resolve Project DNA rules."
+    },
+    "design_personality": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Approved mood and presentation profile."
+    },
+    "theme_mode": {
+      "type": "string",
+      "enum": [
+        "day",
+        "night",
+        "auto"
+      ]
+    },
+    "density_mode": {
+      "type": "string",
+      "enum": [
+        "compact",
+        "standard",
+        "focus",
+        "executive"
+      ]
+    },
+    "motion_mode": {
+      "type": "string",
+      "enum": [
+        "minimal",
+        "standard",
+        "dynamic"
+      ]
+    },
+    "chapter_accent": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Approved accent pairing or chapter color system."
+    },
+    "architectural_family": {
+      "type": "string",
+      "enum": [
+        "Command Tower",
+        "Glass Atrium",
+        "Blueprint Studio",
+        "Signal Terminal",
+        "Executive Gallery",
+        "Horizon Workspace"
+      ]
+    },
+    "spatial_identity": {
+      "type": "string",
+      "enum": [
+        "Command Center",
+        "Control Tower",
+        "Operations Deck",
+        "Executive Gallery",
+        "Glass Atrium",
+        "Research Lab",
+        "Knowledge Library",
+        "Signal Terminal",
+        "Blueprint Studio",
+        "Creative Workshop",
+        "Production Floor",
+        "Horizon Workspace",
+        "Launch Lobby",
+        "System Observatory"
+      ]
+    },
+    "application_mode": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Declared operational mode for the current application or screen family."
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "pf-drawer",
+  "name": "PFDrawer",
+  "category": "overlay",
+  "description": "Side room for contextual detail and secondary workflows.",
+  "architectural_role": "side-room",
+  "responsibility": "Provide contextual detail or secondary workflows while preserving workspace context.",
+  "slots": {
+    "required": ["header", "body"],
+    "optional": ["optional_footer_actions", "optional_context_summary"]
+  },
+  "variants": ["default", "detail", "editor"],
+  "states": ["closed", "opening", "open", "closing"],
+  "token_dependencies": ["--space-4", "--space-5", "--space-6", "--radius-xl", "--text-h3", "--text-body", "--line-body", "--weight-semibold", "--elevation-3", "--duration-normal", "--ease-enter", "--ease-exit", "--z-drawer"],
+  "accessibility": {
+    "requirements": [
+      "Drawer purpose must be announced clearly.",
+      "Keyboard focus must move into the drawer when it opens.",
+      "Dismissal controls must remain reachable and understandable."
+    ]
+  },
+  "composition_rules": [
+    "Drawers must preserve orientation.",
+    "Drawers should not replace primary pages for complex workflows.",
+    "Context summary should help the user stay anchored to the underlying workspace."
+  ],
+  "anti_patterns": [
+    "using drawers as hidden full page replacements",
+    "putting unrelated tasks in one drawer",
+    "obscuring the relationship between drawer content and the parent workspace"
+  ],
+  "governance": {
+    "foundation_component": true,
+    "allowed_density_modes": ["compact", "standard", "focus", "executive"],
+    "allowed_architectural_families": ["Command Tower", "Signal Terminal", "Executive Gallery", "Horizon Workspace", "Blueprint Studio"]
+  }
+}

@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sentient OS Personality Themes Preview</title>
+    <link rel="stylesheet" href="../dist/sentient-foundation.css">
+    <link rel="stylesheet" href="../dist/sentient-primitives.css">
+    <link rel="stylesheet" href="../dist/sentient-personalities.css">
+    <style>
+      body {
+        margin: 0;
+        padding: var(--space-6);
+        font-family: var(--font-primary);
+        font-size: var(--text-body);
+        line-height: var(--line-body);
+        color: CanvasText;
+        background: Canvas;
+      }
+
+      main {
+        display: grid;
+        gap: var(--space-6);
+        max-width: 1280px;
+        margin: 0 auto;
+      }
+
+      h1,
+      h2,
+      p {
+        margin: 0;
+      }
+
+      h1 {
+        font-size: var(--text-h1);
+        line-height: var(--line-heading);
+      }
+
+      h2 {
+        font-size: var(--text-h2);
+        line-height: var(--line-heading);
+      }
+
+      .preview-intro {
+        display: grid;
+        gap: var(--space-3);
+      }
+
+      .preview-note {
+        font-size: var(--text-small);
+      }
+
+      .preview-personality {
+        display: grid;
+        gap: var(--space-4);
+        padding: var(--space-6);
+        border-radius: var(--radius-2xl);
+      }
+
+      .preview-header {
+        display: grid;
+        gap: var(--space-2);
+      }
+
+      .preview-grid {
+        display: grid;
+        gap: var(--space-4);
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      }
+
+      .preview-stack {
+        display: grid;
+        gap: var(--space-3);
+      }
+
+      .preview-input {
+        display: grid;
+        gap: var(--space-2);
+      }
+
+      .preview-status-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--space-3);
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="preview-intro">
+        <h1>Personality Themes Preview</h1>
+        <p>
+          This is a governance preview of activatable personality layers applied to the existing primitive component system.
+        </p>
+        <p class="preview-note">
+          It is not a project dashboard, project brand system, or application screen. It uses only neutral primitives: PFCard, PFButton, PFStatusBadge, PFMetricCard, and PFInput.
+        </p>
+      </section>
+
+      <section class="preview-personality" data-design-personality="aurora-command" data-theme-mode="night">
+        <div class="preview-header">
+          <h2>Aurora Command</h2>
+          <p>Night mode. Operational, luminous, high-confidence guidance.</p>
+        </div>
+        <div class="preview-grid">
+          <article class="pf-card">
+            <div class="pf-card__header">PFCard</div>
+            <div class="pf-card__body">Signals and decisions remain clear under the governed personality surface.</div>
+          </article>
+          <article class="pf-metric-card">
+            <div class="pf-metric-card__label">PFMetricCard</div>
+            <div class="pf-metric-card__value">99.2%</div>
+            <div class="pf-metric-card__delta">Stable system confidence</div>
+          </article>
+          <div class="preview-stack">
+            <button class="pf-button" data-variant="primary" type="button">PFButton</button>
+            <span class="pf-status-badge" data-status="running">PFStatusBadge</span>
+          </div>
+          <label class="preview-input">
+            <span>PFInput</span>
+            <input class="pf-input" type="text" value="Signal path ready">
+          </label>
+        </div>
+      </section>
+
+      <section class="preview-personality" data-design-personality="crystal-executive" data-theme-mode="day">
+        <div class="preview-header">
+          <h2>Crystal Executive</h2>
+          <p>Day mode. Premium, calm, polished decision support.</p>
+        </div>
+        <div class="preview-grid">
+          <article class="pf-card">
+            <div class="pf-card__header">PFCard</div>
+            <div class="pf-card__body">Executive surfaces stay composed without introducing project branding.</div>
+          </article>
+          <article class="pf-metric-card">
+            <div class="pf-metric-card__label">PFMetricCard</div>
+            <div class="pf-metric-card__value">24</div>
+            <div class="pf-metric-card__delta">Reviewed priorities</div>
+          </article>
+          <div class="preview-stack">
+            <button class="pf-button" data-variant="primary" type="button">PFButton</button>
+            <span class="pf-status-badge" data-status="completed">PFStatusBadge</span>
+          </div>
+          <label class="preview-input">
+            <span>PFInput</span>
+            <input class="pf-input" type="text" value="Decision brief ready">
+          </label>
+        </div>
+      </section>
+
+      <section class="preview-personality" data-design-personality="constellation-feed" data-theme-mode="night">
+        <div class="preview-header">
+          <h2>Constellation Feed</h2>
+          <p>Night mode. Layered, exploratory, connected ecosystem overview.</p>
+        </div>
+        <div class="preview-grid">
+          <article class="pf-card">
+            <div class="pf-card__header">PFCard</div>
+            <div class="pf-card__body">Connected surfaces can feel expansive while staying within primitive governance.</div>
+          </article>
+          <article class="pf-metric-card">
+            <div class="pf-metric-card__label">PFMetricCard</div>
+            <div class="pf-metric-card__value">12</div>
+            <div class="pf-metric-card__delta">Visible system links</div>
+          </article>
+          <div class="preview-stack">
+            <button class="pf-button" data-variant="primary" type="button">PFButton</button>
+            <span class="pf-status-badge" data-status="active">PFStatusBadge</span>
+          </div>
+          <label class="preview-input">
+            <span>PFInput</span>
+            <input class="pf-input" type="text" value="Connected feed online">
+          </label>
+        </div>
+      </section>
+
+      <section class="preview-personality" data-design-personality="nebula-workspace" data-theme-mode="night">
+        <div class="preview-header">
+          <h2>Nebula Workspace</h2>
+          <p>Night mode. Creative, technical, modular production focus.</p>
+        </div>
+        <div class="preview-grid">
+          <article class="pf-card">
+            <div class="pf-card__header">PFCard</div>
+            <div class="pf-card__body">Modular atmosphere comes from the personality layer, not from new component invention.</div>
+          </article>
+          <article class="pf-metric-card">
+            <div class="pf-metric-card__label">PFMetricCard</div>
+            <div class="pf-metric-card__value">8</div>
+            <div class="pf-metric-card__delta">Open production modules</div>
+          </article>
+          <div class="preview-stack">
+            <button class="pf-button" data-variant="primary" type="button">PFButton</button>
+            <span class="pf-status-badge" data-status="running">PFStatusBadge</span>
+          </div>
+          <label class="preview-input">
+            <span>PFInput</span>
+            <input class="pf-input" type="text" value="Workspace branch active">
+          </label>
+        </div>
+      </section>
+
+      <section class="preview-personality" data-design-personality="midnight-terminal" data-theme-mode="night">
+        <div class="preview-header">
+          <h2>Midnight Terminal</h2>
+          <p>Night mode. Low-noise, developer-grade, precise execution.</p>
+        </div>
+        <div class="preview-grid">
+          <article class="pf-card">
+            <div class="pf-card__header">PFCard</div>
+            <div class="pf-card__body">The primitive layer stays intact while the atmosphere becomes terminal-adjacent.</div>
+          </article>
+          <article class="pf-metric-card">
+            <div class="pf-metric-card__label">PFMetricCard</div>
+            <div class="pf-metric-card__value">3</div>
+            <div class="pf-metric-card__delta">Queued execution steps</div>
+          </article>
+          <div class="preview-stack">
+            <button class="pf-button" data-variant="primary" type="button">PFButton</button>
+            <span class="pf-status-badge" data-status="running">PFStatusBadge</span>
+          </div>
+          <label class="preview-input">
+            <span>PFInput</span>
+            <input class="pf-input" type="text" value="Shell command ready">
+          </label>
+        </div>
+      </section>
+
+      <section class="preview-personality" data-design-personality="fluid-productivity" data-theme-mode="day">
+        <div class="preview-header">
+          <h2>Fluid Productivity</h2>
+          <p>Day mode. Calm, human, balanced daily workflow momentum.</p>
+        </div>
+        <div class="preview-grid">
+          <article class="pf-card">
+            <div class="pf-card__header">PFCard</div>
+            <div class="pf-card__body">Productive calm is expressed through governed surface tone and text hierarchy only.</div>
+          </article>
+          <article class="pf-metric-card">
+            <div class="pf-metric-card__label">PFMetricCard</div>
+            <div class="pf-metric-card__value">14</div>
+            <div class="pf-metric-card__delta">Open tasks in rhythm</div>
+          </article>
+          <div class="preview-stack">
+            <button class="pf-button" data-variant="primary" type="button">PFButton</button>
+            <span class="pf-status-badge" data-status="completed">PFStatusBadge</span>
+          </div>
+          <label class="preview-input">
+            <span>PFInput</span>
+            <input class="pf-input" type="text" value="Next step captured">
+          </label>
+        </div>
+      </section>
+
+      <section class="preview-personality" data-design-personality="horizon-light" data-theme-mode="day">
+        <div class="preview-header">
+          <h2>Horizon Light</h2>
+          <p>Day mode. Open, accessible, optimistic planning and overview.</p>
+        </div>
+        <div class="preview-grid">
+          <article class="pf-card">
+            <div class="pf-card__header">PFCard</div>
+            <div class="pf-card__body">Open overview states can stay bright without bypassing foundational constraints.</div>
+          </article>
+          <article class="pf-metric-card">
+            <div class="pf-metric-card__label">PFMetricCard</div>
+            <div class="pf-metric-card__value">5</div>
+            <div class="pf-metric-card__delta">Upcoming plan checkpoints</div>
+          </article>
+          <div class="preview-stack">
+            <button class="pf-button" data-variant="primary" type="button">PFButton</button>
+            <span class="pf-status-badge" data-status="active">PFStatusBadge</span>
+          </div>
+          <label class="preview-input">
+            <span>PFInput</span>
+            <input class="pf-input" type="text" value="Overview note captured">
+          </label>
+        </div>
+      </section>
+
+      <section class="preview-personality" data-design-personality="inferno-performance" data-theme-mode="night">
+        <div class="preview-header">
+          <h2>Inferno Performance</h2>
+          <p>Night mode. Urgent, high-output, energetic technical performance.</p>
+        </div>
+        <div class="preview-grid">
+          <article class="pf-card">
+            <div class="pf-card__header">PFCard</div>
+            <div class="pf-card__body">Intensity is expressed through accent pressure, not through new layout or component logic.</div>
+          </article>
+          <article class="pf-metric-card">
+            <div class="pf-metric-card__label">PFMetricCard</div>
+            <div class="pf-metric-card__value">142</div>
+            <div class="pf-metric-card__delta">Operations per cycle</div>
+          </article>
+          <div class="preview-stack">
+            <button class="pf-button" data-variant="primary" type="button">PFButton</button>
+            <span class="pf-status-badge" data-status="warning">PFStatusBadge</span>
+          </div>
+          <label class="preview-input">
+            <span>PFInput</span>
+            <input class="pf-input" type="text" value="Throughput threshold armed">
+          </label>
+        </div>
+      </section>
+
+      <section class="preview-personality" data-design-personality="nocturne-minimal" data-theme-mode="night">
+        <div class="preview-header">
+          <h2>Nocturne Minimal</h2>
+          <p>Night mode. Quiet, reduced-noise, thoughtful technical focus.</p>
+        </div>
+        <div class="preview-grid">
+          <article class="pf-card">
+            <div class="pf-card__header">PFCard</div>
+            <div class="pf-card__body">The atmosphere stays spare and quiet while the primitive anatomy remains unchanged.</div>
+          </article>
+          <article class="pf-metric-card">
+            <div class="pf-metric-card__label">PFMetricCard</div>
+            <div class="pf-metric-card__value">2</div>
+            <div class="pf-metric-card__delta">Focused work streams</div>
+          </article>
+          <div class="preview-stack">
+            <button class="pf-button" data-variant="primary" type="button">PFButton</button>
+            <span class="pf-status-badge" data-status="paused">PFStatusBadge</span>
+          </div>
+          <label class="preview-input">
+            <span>PFInput</span>
+            <input class="pf-input" type="text" value="Low-noise context held">
+          </label>
+        </div>
+      </section>
+
+      <section class="preview-personality" data-design-personality="oracle-intelligence" data-theme-mode="night">
+        <div class="preview-header">
+          <h2>Oracle Intelligence</h2>
+          <p>Night mode. Observational, intelligent, premium analysis and synthesis.</p>
+        </div>
+        <div class="preview-grid">
+          <article class="pf-card">
+            <div class="pf-card__header">PFCard</div>
+            <div class="pf-card__body">Analytical tone is applied through governed variables and approved primitive hooks.</div>
+          </article>
+          <article class="pf-metric-card">
+            <div class="pf-metric-card__label">PFMetricCard</div>
+            <div class="pf-metric-card__value">87</div>
+            <div class="pf-metric-card__delta">Resolved knowledge links</div>
+          </article>
+          <div class="preview-stack">
+            <button class="pf-button" data-variant="primary" type="button">PFButton</button>
+            <span class="pf-status-badge" data-status="active">PFStatusBadge</span>
+          </div>
+          <label class="preview-input">
+            <span>PFInput</span>
+            <input class="pf-input" type="text" value="Inference window stable">
+          </label>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+{
+  "id": "pf-button",
+  "name": "PFButton",
+  "category": "action",
+  "description": "Action trigger for one clear user command.",
+  "architectural_role": "control-surface",
+  "responsibility": "Trigger one clear action.",
+  "slots": {
+    "required": ["label"],
+    "optional": ["leading_icon", "trailing_icon", "loading_label"]
+  },
+  "variants": ["primary", "secondary", "ghost", "danger", "success"],
+  "states": ["default", "hover", "focus", "active", "disabled", "loading"],
+  "token_dependencies": ["--space-2", "--space-3", "--space-4", "--radius-sm", "--text-body", "--line-body", "--weight-medium", "--duration-fast", "--ease-standard", "--focus-ring-width", "--focus-ring-offset", "--focus-ring-color"],
+  "accessibility": {
+    "requirements": [
+      "Icon-only buttons require accessible labels.",
+      "Disabled and loading states must remain understandable.",
+      "Focus states must remain visible for keyboard users."
+    ]
+  },
+  "composition_rules": [
+    "Place only one primary button within a local action area.",
+    "Use verb-led labels.",
+    "Use secondary or ghost variants for supporting actions."
+  ],
+  "anti_patterns": [
+    "multiple visually equal primary actions in one area",
+    "non-verbal labels that hide intent",
+    "icon-only actions without accessible naming"
+  ],
+  "governance": {
+    "foundation_component": true,
+    "allowed_density_modes": ["compact", "standard", "focus", "executive"],
+    "allowed_architectural_families": ["Command Tower", "Glass Atrium", "Blueprint Studio", "Signal Terminal", "Executive Gallery", "Horizon Workspace"]
+  }
+}

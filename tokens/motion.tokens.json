@@ -1,0 +1,63 @@
+{
+  "version": "0.3",
+  "group": "motion",
+  "description": "Foundation motion tokens that clarify state change and support reduced motion.",
+  "rules": [
+    "Motion must clarify system behavior.",
+    "Motion may not create visual noise.",
+    "Reduced motion must be supported."
+  ],
+  "durations": [
+    {
+      "id": "duration-fast",
+      "cssVar": "--duration-fast",
+      "value": "120ms",
+      "ms": 120,
+      "usage": "Fast status changes and subtle micro-state updates."
+    },
+    {
+      "id": "duration-normal",
+      "cssVar": "--duration-normal",
+      "value": "220ms",
+      "ms": 220,
+      "usage": "Default transition timing for interface changes."
+    },
+    {
+      "id": "duration-slow",
+      "cssVar": "--duration-slow",
+      "value": "360ms",
+      "ms": 360,
+      "usage": "Large surface reveals and route-level motion."
+    }
+  ],
+  "easings": [
+    {
+      "id": "ease-standard",
+      "cssVar": "--ease-standard",
+      "value": "cubic-bezier(0.2, 0, 0, 1)",
+      "usage": "Default interactive motion curve."
+    },
+    {
+      "id": "ease-enter",
+      "cssVar": "--ease-enter",
+      "value": "cubic-bezier(0, 0, 0, 1)",
+      "usage": "Entering surfaces and appearing content."
+    },
+    {
+      "id": "ease-exit",
+      "cssVar": "--ease-exit",
+      "value": "cubic-bezier(0.4, 0, 1, 1)",
+      "usage": "Exiting surfaces and dismissing content."
+    }
+  ],
+  "approvedMotionTypes": [
+    "fade",
+    "slide",
+    "subtle scale",
+    "elevation shift",
+    "panel reveal",
+    "status transition",
+    "route transition",
+    "drawer movement"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "pf-tabs",
+  "name": "PFTabs",
+  "category": "navigation",
+  "description": "Internal-zone switcher for related content within a single context.",
+  "architectural_role": "internal-zone",
+  "responsibility": "Switch between related sections within the same context.",
+  "slots": {
+    "required": ["tab_list", "tab_panels"],
+    "optional": ["optional_counter", "optional_actions"]
+  },
+  "variants": ["default", "underline", "segmented", "compact"],
+  "states": ["default", "active", "focus", "disabled"],
+  "token_dependencies": ["--space-2", "--space-3", "--space-4", "--text-small", "--text-body", "--line-body", "--weight-medium", "--radius-sm", "--focus-ring-width", "--focus-ring-offset", "--focus-ring-color"],
+  "accessibility": {
+    "requirements": [
+      "Keyboard navigation should be supported.",
+      "Active tab must be programmatically associated with its panel.",
+      "Disabled tabs must remain understandable."
+    ]
+  },
+  "composition_rules": [
+    "Tabs must not be used for unrelated pages.",
+    "Active tab must be clear.",
+    "Keyboard navigation should be supported."
+  ],
+  "anti_patterns": [
+    "using tabs as a substitute for unrelated route navigation",
+    "hiding critical section meaning in vague tab labels",
+    "mixing tab styles without reason in one context"
+  ],
+  "governance": {
+    "foundation_component": true,
+    "allowed_density_modes": ["compact", "standard", "focus", "executive"],
+    "allowed_architectural_families": ["Command Tower", "Glass Atrium", "Blueprint Studio", "Signal Terminal", "Executive Gallery", "Horizon Workspace"]
+  }
+}

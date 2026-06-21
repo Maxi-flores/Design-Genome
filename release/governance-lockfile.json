@@ -1,0 +1,96 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2026-06-21T00:00:00Z",
+  "counts": {
+    "approved_projects": 7,
+    "approved_personalities": 11,
+    "approved_architectural_families": 6,
+    "approved_chapter_accents": 9,
+    "approved_components": 17
+  },
+  "approved_projects": [
+    "sentient-os",
+    "powerframe-ecosystem",
+    "therockettree",
+    "conceptshop",
+    "customshop",
+    "mucho3d",
+    "flink3d"
+  ],
+  "approved_personalities": [
+    "aurora-command",
+    "crystal-executive",
+    "constellation-feed",
+    "nebula-workspace",
+    "midnight-terminal",
+    "fluid-productivity",
+    "ember-gaming",
+    "horizon-light",
+    "inferno-performance",
+    "nocturne-minimal",
+    "oracle-intelligence"
+  ],
+  "approved_architectural_families": [
+    "command-tower",
+    "glass-atrium",
+    "blueprint-studio",
+    "signal-terminal",
+    "executive-gallery",
+    "horizon-workspace"
+  ],
+  "approved_chapter_accents": [
+    "violet-cyan",
+    "crystal-gold",
+    "horizon-sky",
+    "constellation-indigo",
+    "blueprint-cyan",
+    "signal-lime",
+    "ember-orange",
+    "atrium-teal",
+    "paper-indigo"
+  ],
+  "approved_components": [
+    "pf-card",
+    "pf-panel",
+    "pf-section",
+    "pf-metric-card",
+    "pf-button",
+    "pf-status-badge",
+    "pf-command-bar",
+    "pf-data-table",
+    "pf-workspace-grid",
+    "pf-empty-state",
+    "pf-timeline",
+    "pf-navigation",
+    "pf-modal",
+    "pf-drawer",
+    "pf-tabs",
+    "pf-input",
+    "pf-select"
+  ],
+  "public_css_exports": [
+    "dist/sentient-foundation.css",
+    "dist/sentient-primitives.css",
+    "dist/sentient-personalities.css",
+    "dist/sentient-architectures.css",
+    "dist/sentient-projects.css"
+  ],
+  "required_import_order": [
+    "sentient-foundation.css",
+    "sentient-primitives.css",
+    "sentient-personalities.css",
+    "sentient-architectures.css",
+    "sentient-projects.css"
+  ],
+  "validators": [
+    "validate:themes",
+    "validate:tokens",
+    "validate:components",
+    "validate:primitives",
+    "validate:react-starter",
+    "validate:personalities",
+    "validate:architectures",
+    "validate:projects",
+    "validate:release"
+  ]
+}

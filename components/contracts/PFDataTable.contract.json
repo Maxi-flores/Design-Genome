@@ -1,0 +1,37 @@
+{
+  "id": "pf-data-table",
+  "name": "PFDataTable",
+  "category": "data",
+  "description": "Ledger surface for structured records, scanning, and predictable actions.",
+  "architectural_role": "ledger",
+  "responsibility": "Display structured records for scanning, comparison, filtering, and action.",
+  "slots": {
+    "required": ["table_header", "columns", "rows"],
+    "optional": ["optional_toolbar", "optional_pagination", "optional_empty_state"]
+  },
+  "variants": ["default", "dense", "comfortable", "zebra"],
+  "states": ["default", "loading", "empty", "sorted", "filtered"],
+  "token_dependencies": ["--space-2", "--space-3", "--space-4", "--text-small", "--text-body", "--line-body", "--weight-medium", "--radius-sm", "--focus-ring-width", "--focus-ring-offset", "--focus-ring-color"],
+  "accessibility": {
+    "requirements": [
+      "Table semantics must remain intact.",
+      "Sorting and filtering controls must be programmatically described.",
+      "Keyboard users must be able to reach interactive cells and toolbar controls."
+    ]
+  },
+  "composition_rules": [
+    "Tables must remain readable.",
+    "Actions must be predictable.",
+    "Sorting and filtering controls must be clear."
+  ],
+  "anti_patterns": [
+    "using tables for unstructured narrative content",
+    "hiding primary data under unclear controls",
+    "packing too many unrelated row actions into one column"
+  ],
+  "governance": {
+    "foundation_component": true,
+    "allowed_density_modes": ["compact", "standard", "focus", "executive"],
+    "allowed_architectural_families": ["Command Tower", "Signal Terminal", "Executive Gallery", "Horizon Workspace", "Blueprint Studio"]
+  }
+}

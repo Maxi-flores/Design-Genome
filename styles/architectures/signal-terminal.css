@@ -1,0 +1,48 @@
+[data-architectural-family="signal-terminal"] {
+  --architecture-bg-treatment:
+    linear-gradient(180deg, color-mix(in srgb, var(--personality-accent-soft) 16%, transparent), transparent 40%),
+    linear-gradient(90deg, color-mix(in srgb, var(--personality-border) 10%, transparent), transparent 16%);
+  --architecture-workspace-gap: var(--space-4);
+  --architecture-section-gap: var(--space-4);
+  --architecture-panel-gap: var(--space-3);
+  --architecture-content-max-width: calc(var(--bp-xl) - var(--space-6));
+  --architecture-surface-depth: var(--elevation-1);
+  --architecture-surface-opacity: 92%;
+  --architecture-panel-border-strength: 76%;
+  --architecture-navigation-width: 16rem;
+  --architecture-command-height: var(--space-8);
+  --architecture-grid-min-column: 15rem;
+  --architecture-grid-density: 0.92;
+  --architecture-focus-zone-opacity: 16%;
+  --architecture-layer-blur: 4px;
+  --architecture-atmosphere-intensity: 12%;
+  --architecture-motion-scale: 0.86;
+}
+
+[data-architectural-family="signal-terminal"][data-density-mode="compact"] {
+  --architecture-workspace-gap: var(--space-3);
+  --architecture-section-gap: var(--space-3);
+  --architecture-panel-gap: var(--space-2);
+  --architecture-grid-density: 0.86;
+}
+
+[data-architectural-family="signal-terminal"][data-density-mode="standard"] {
+  --architecture-workspace-gap: var(--space-4);
+  --architecture-section-gap: var(--space-4);
+  --architecture-panel-gap: var(--space-3);
+}
+
+[data-architectural-family="signal-terminal"][data-density-mode="focus"] {
+  --architecture-workspace-gap: var(--space-4);
+  --architecture-section-gap: var(--space-5);
+  --architecture-panel-gap: var(--space-3);
+  --architecture-content-max-width: calc(var(--bp-lg) - var(--space-5));
+  --architecture-focus-zone-opacity: 22%;
+}
+
+[data-architectural-family="signal-terminal"][data-density-mode="executive"] {
+  --architecture-workspace-gap: var(--space-5);
+  --architecture-section-gap: var(--space-5);
+  --architecture-panel-gap: var(--space-4);
+  --architecture-grid-density: 0.98;
+}

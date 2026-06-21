@@ -1,0 +1,37 @@
+{
+  "id": "pf-timeline",
+  "name": "PFTimeline",
+  "category": "timeline",
+  "description": "Ordered road for events, phases, history, and progress over time.",
+  "architectural_role": "road",
+  "responsibility": "Represent ordered events, project phases, activity history, or progress over time.",
+  "slots": {
+    "required": ["items"],
+    "optional": ["optional_header", "optional_current_marker", "optional_legend"]
+  },
+  "variants": ["default", "compact", "detailed", "progress"],
+  "states": ["default", "current", "completed", "upcoming"],
+  "token_dependencies": ["--space-3", "--space-4", "--space-5", "--text-small", "--text-body", "--line-body", "--weight-medium", "--radius-full"],
+  "accessibility": {
+    "requirements": [
+      "Event order must be understandable without relying on spatial cues alone.",
+      "Current or active item must be programmatically clear when relevant.",
+      "Time labels must remain readable."
+    ]
+  },
+  "composition_rules": [
+    "Order must be clear.",
+    "States must be readable.",
+    "Current position should be obvious when relevant."
+  ],
+  "anti_patterns": [
+    "using a timeline when order is not meaningful",
+    "placing too much hidden metadata inside each event",
+    "ambiguous current-state markers"
+  ],
+  "governance": {
+    "foundation_component": true,
+    "allowed_density_modes": ["compact", "standard", "focus", "executive"],
+    "allowed_architectural_families": ["Command Tower", "Signal Terminal", "Executive Gallery", "Horizon Workspace", "Blueprint Studio"]
+  }
+}

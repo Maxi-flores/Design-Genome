@@ -1,0 +1,38 @@
+{
+  "id": "pf-card",
+  "name": "PFCard",
+  "category": "surface",
+  "description": "Reusable content surface with header, body, and optional footer.",
+  "architectural_role": "room",
+  "responsibility": "Contain one focused unit of information or action.",
+  "slots": {
+    "required": ["header", "body"],
+    "optional": ["optional_footer"]
+  },
+  "variants": ["default", "interactive", "selected", "muted", "elevated"],
+  "states": ["default", "hover", "focus-within", "selected", "disabled"],
+  "token_dependencies": ["--space-4", "--space-5", "--radius-md", "--text-body", "--line-body", "--weight-semibold", "--elevation-1", "--focus-ring-width", "--focus-ring-offset", "--focus-ring-color"],
+  "accessibility": {
+    "requirements": [
+      "Interactive cards must expose a keyboard focus indicator.",
+      "Headers must remain readable and structured.",
+      "Selectable cards must expose programmatic state."
+    ]
+  },
+  "composition_rules": [
+    "Use one card for one coherent information cluster.",
+    "Use PFMetricCard instead of PFCard when the primary purpose is numeric instrumentation.",
+    "Optional footer actions must remain secondary to the card body purpose."
+  ],
+  "anti_patterns": [
+    "multiple primary actions",
+    "too many unrelated metrics",
+    "decorative-only card usage",
+    "nested cards without purpose"
+  ],
+  "governance": {
+    "foundation_component": true,
+    "allowed_density_modes": ["compact", "standard", "focus", "executive"],
+    "allowed_architectural_families": ["Command Tower", "Glass Atrium", "Blueprint Studio", "Signal Terminal", "Executive Gallery", "Horizon Workspace"]
+  }
+}

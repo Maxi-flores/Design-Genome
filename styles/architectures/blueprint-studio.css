@@ -1,0 +1,52 @@
+[data-architectural-family="blueprint-studio"] {
+  --architecture-bg-treatment:
+    linear-gradient(90deg, color-mix(in srgb, var(--personality-accent-soft) 24%, transparent) 1px, transparent 1px),
+    linear-gradient(color-mix(in srgb, var(--personality-accent-soft) 24%, transparent) 1px, transparent 1px);
+  --architecture-workspace-gap: var(--space-5);
+  --architecture-section-gap: var(--space-5);
+  --architecture-panel-gap: var(--space-4);
+  --architecture-content-max-width: calc(var(--bp-2xl) - var(--space-6));
+  --architecture-surface-depth: var(--elevation-2);
+  --architecture-surface-opacity: 90%;
+  --architecture-panel-border-strength: 68%;
+  --architecture-navigation-width: 17rem;
+  --architecture-command-height: calc(var(--space-8) + var(--space-2));
+  --architecture-grid-min-column: 17rem;
+  --architecture-grid-density: 1.04;
+  --architecture-focus-zone-opacity: 20%;
+  --architecture-layer-blur: 8px;
+  --architecture-atmosphere-intensity: 18%;
+  --architecture-motion-scale: 1;
+}
+
+[data-architectural-family="blueprint-studio"] {
+  background-size: var(--space-6) var(--space-6);
+}
+
+[data-architectural-family="blueprint-studio"][data-density-mode="compact"] {
+  --architecture-workspace-gap: var(--space-4);
+  --architecture-section-gap: var(--space-4);
+  --architecture-panel-gap: var(--space-3);
+  --architecture-grid-density: 0.98;
+}
+
+[data-architectural-family="blueprint-studio"][data-density-mode="standard"] {
+  --architecture-workspace-gap: var(--space-5);
+  --architecture-section-gap: var(--space-5);
+  --architecture-panel-gap: var(--space-4);
+}
+
+[data-architectural-family="blueprint-studio"][data-density-mode="focus"] {
+  --architecture-workspace-gap: var(--space-5);
+  --architecture-section-gap: var(--space-6);
+  --architecture-panel-gap: var(--space-4);
+  --architecture-content-max-width: calc(var(--bp-xl) - var(--space-5));
+}
+
+[data-architectural-family="blueprint-studio"][data-density-mode="executive"] {
+  --architecture-workspace-gap: var(--space-6);
+  --architecture-section-gap: var(--space-6);
+  --architecture-panel-gap: var(--space-5);
+  --architecture-navigation-width: 18rem;
+  --architecture-grid-density: 1.08;
+}

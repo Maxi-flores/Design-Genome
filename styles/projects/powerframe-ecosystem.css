@@ -1,0 +1,39 @@
+[data-project="powerframe-ecosystem"] {
+  --project-identity: "Powerframe Ecosystem";
+  --project-accent-primary: var(--personality-accent);
+  --project-accent-secondary: var(--personality-info);
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 18%, transparent);
+  --project-accent-contrast: var(--personality-bg);
+  --project-surface-tuning: var(--architecture-atmosphere-intensity);
+  --project-border-tuning: 70%;
+  --project-focus-emphasis: 1.12;
+  --project-navigation-emphasis: 1.14;
+  --project-command-emphasis: 1.18;
+  --project-dashboard-emphasis: 1.12;
+  --project-intelligence-emphasis: 1.08;
+  --project-motion-tuning: 0.96;
+  --project-density-preference: compact;
+}
+
+[data-project="powerframe-ecosystem"][data-design-personality="aurora-command"][data-architectural-family="command-tower"] {
+  --project-command-emphasis: 1.22;
+  --project-navigation-emphasis: 1.16;
+}
+
+[data-project="powerframe-ecosystem"][data-chapter-accent="violet-cyan"] {
+  --project-accent-primary: #8b5cf6;
+  --project-accent-secondary: #22d3ee;
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 18%, transparent);
+}
+
+[data-project="powerframe-ecosystem"][data-chapter-accent="crystal-gold"] {
+  --project-accent-primary: #d4a54a;
+  --project-accent-secondary: #22d3ee;
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 16%, transparent);
+}
+
+[data-project="powerframe-ecosystem"][data-chapter-accent="horizon-sky"] {
+  --project-accent-primary: #38bdf8;
+  --project-accent-secondary: #22c55e;
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 16%, transparent);
+}

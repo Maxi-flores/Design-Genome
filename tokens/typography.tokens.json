@@ -1,0 +1,146 @@
+{
+  "version": "0.3",
+  "group": "typography",
+  "description": "Foundation typography tokens for readable, structured Sentient OS interfaces.",
+  "rules": [
+    "H1 is reserved for page title.",
+    "Decorative typography is not allowed.",
+    "Readability wins."
+  ],
+  "fontFamilies": [
+    {
+      "id": "font-primary",
+      "cssVar": "--font-primary",
+      "value": "\"Geist Variable\", system-ui",
+      "usage": "Primary interface typography and headings."
+    },
+    {
+      "id": "font-secondary",
+      "cssVar": "--font-secondary",
+      "value": "\"Inter Variable\", system-ui",
+      "usage": "Secondary content surfaces and fallback interface reading."
+    },
+    {
+      "id": "font-mono",
+      "cssVar": "--font-mono",
+      "value": "\"JetBrains Mono\", monospace",
+      "usage": "Technical logs, code, metrics, and terminal-adjacent content."
+    },
+    {
+      "id": "font-fallback",
+      "cssVar": "--font-fallback",
+      "value": "system-ui",
+      "usage": "System-safe fallback when preferred variable fonts are unavailable."
+    }
+  ],
+  "scale": [
+    {
+      "id": "text-hero",
+      "cssVar": "--text-hero",
+      "value": "40px",
+      "px": 40,
+      "usage": "Large environmental hero statements and high-level observatory entry."
+    },
+    {
+      "id": "text-h1",
+      "cssVar": "--text-h1",
+      "value": "32px",
+      "px": 32,
+      "usage": "Reserved for the page title."
+    },
+    {
+      "id": "text-h2",
+      "cssVar": "--text-h2",
+      "value": "24px",
+      "px": 24,
+      "usage": "Major section headers and strong workspace hierarchy."
+    },
+    {
+      "id": "text-h3",
+      "cssVar": "--text-h3",
+      "value": "20px",
+      "px": 20,
+      "usage": "Subsection headings and important panel titles."
+    },
+    {
+      "id": "text-body-lg",
+      "cssVar": "--text-body-lg",
+      "value": "18px",
+      "px": 18,
+      "usage": "Readable summary content and executive overview text."
+    },
+    {
+      "id": "text-body",
+      "cssVar": "--text-body",
+      "value": "16px",
+      "px": 16,
+      "usage": "Default interface body text."
+    },
+    {
+      "id": "text-small",
+      "cssVar": "--text-small",
+      "value": "14px",
+      "px": 14,
+      "usage": "Secondary labels, metadata, and supporting content."
+    },
+    {
+      "id": "text-caption",
+      "cssVar": "--text-caption",
+      "value": "12px",
+      "px": 12,
+      "usage": "Captions, compact status notes, and low-emphasis annotations."
+    }
+  ],
+  "lineHeights": [
+    {
+      "id": "line-tight",
+      "cssVar": "--line-tight",
+      "value": "1.1",
+      "usage": "Headlines and compressed instrumental text."
+    },
+    {
+      "id": "line-heading",
+      "cssVar": "--line-heading",
+      "value": "1.2",
+      "usage": "Section titles and structured hierarchy."
+    },
+    {
+      "id": "line-body",
+      "cssVar": "--line-body",
+      "value": "1.5",
+      "usage": "Default reading rhythm for interface body copy."
+    },
+    {
+      "id": "line-relaxed",
+      "cssVar": "--line-relaxed",
+      "value": "1.6",
+      "usage": "Long-form reading and dense explanatory content."
+    }
+  ],
+  "fontWeights": [
+    {
+      "id": "weight-regular",
+      "cssVar": "--weight-regular",
+      "value": "400",
+      "usage": "Default paragraph and interface text."
+    },
+    {
+      "id": "weight-medium",
+      "cssVar": "--weight-medium",
+      "value": "500",
+      "usage": "Labels, supporting emphasis, and form structure."
+    },
+    {
+      "id": "weight-semibold",
+      "cssVar": "--weight-semibold",
+      "value": "600",
+      "usage": "Panel titles, navigation emphasis, and decision points."
+    },
+    {
+      "id": "weight-bold",
+      "cssVar": "--weight-bold",
+      "value": "700",
+      "usage": "High-priority title emphasis used sparingly."
+    }
+  ]
+}

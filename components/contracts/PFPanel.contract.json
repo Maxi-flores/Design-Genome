@@ -1,0 +1,37 @@
+{
+  "id": "pf-panel",
+  "name": "PFPanel",
+  "category": "surface",
+  "description": "Structural surface for grouped controls, context, or supporting information.",
+  "architectural_role": "wall",
+  "responsibility": "Provide a structural surface for grouped controls, context, or supporting information.",
+  "slots": {
+    "required": ["header", "body"],
+    "optional": ["optional_actions"]
+  },
+  "variants": ["default", "context", "intelligence", "system"],
+  "states": ["default", "collapsed", "expanded", "disabled"],
+  "token_dependencies": ["--space-4", "--space-5", "--radius-lg", "--text-h3", "--text-body", "--line-body", "--weight-semibold", "--elevation-1"],
+  "accessibility": {
+    "requirements": [
+      "Panel headings must preserve semantic structure.",
+      "Collapsible panels must expose expanded and collapsed state.",
+      "Action areas must retain keyboard access."
+    ]
+  },
+  "composition_rules": [
+    "Use panels for grouped supporting context rather than the dominant workspace.",
+    "Panel actions must serve the panel body and not replace app-level navigation.",
+    "System and intelligence variants should remain calm unless state requires emphasis."
+  ],
+  "anti_patterns": [
+    "using panels as decoration",
+    "overloading panels with unrelated content",
+    "placing primary navigation inside arbitrary panels"
+  ],
+  "governance": {
+    "foundation_component": true,
+    "allowed_density_modes": ["compact", "standard", "focus", "executive"],
+    "allowed_architectural_families": ["Command Tower", "Glass Atrium", "Blueprint Studio", "Signal Terminal", "Executive Gallery", "Horizon Workspace"]
+  }
+}

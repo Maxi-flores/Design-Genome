@@ -1,0 +1,445 @@
+/*
+Sentient OS Design Genome
+v0.8 — Architectural Family Theme Layer
+Generated from styles/architectures/sentient-architectures.css
+*/
+
+[data-architectural-family="command-tower"] {
+  --architecture-bg-treatment:
+    linear-gradient(180deg, color-mix(in srgb, var(--personality-accent-soft) 28%, transparent), transparent 46%),
+    linear-gradient(90deg, color-mix(in srgb, var(--personality-border-strong) 14%, transparent), transparent 18%);
+  --architecture-workspace-gap: var(--space-4);
+  --architecture-section-gap: var(--space-5);
+  --architecture-panel-gap: var(--space-3);
+  --architecture-content-max-width: calc(var(--bp-2xl) - var(--space-8));
+  --architecture-surface-depth: var(--elevation-2);
+  --architecture-surface-opacity: 94%;
+  --architecture-panel-border-strength: 78%;
+  --architecture-navigation-width: 18rem;
+  --architecture-command-height: calc(var(--space-8) + var(--space-2));
+  --architecture-grid-min-column: 16rem;
+  --architecture-grid-density: 0.96;
+  --architecture-focus-zone-opacity: 18%;
+  --architecture-layer-blur: 10px;
+  --architecture-atmosphere-intensity: 18%;
+  --architecture-motion-scale: 0.92;
+}
+
+[data-architectural-family="command-tower"][data-density-mode="compact"] {
+  --architecture-workspace-gap: var(--space-3);
+  --architecture-section-gap: var(--space-4);
+  --architecture-panel-gap: var(--space-2);
+  --architecture-command-height: var(--space-8);
+  --architecture-grid-density: 0.9;
+}
+
+[data-architectural-family="command-tower"][data-density-mode="standard"] {
+  --architecture-workspace-gap: var(--space-4);
+  --architecture-section-gap: var(--space-5);
+  --architecture-panel-gap: var(--space-3);
+  --architecture-grid-density: 0.96;
+}
+
+[data-architectural-family="command-tower"][data-density-mode="focus"] {
+  --architecture-workspace-gap: var(--space-5);
+  --architecture-section-gap: var(--space-5);
+  --architecture-panel-gap: var(--space-3);
+  --architecture-content-max-width: calc(var(--bp-xl) - var(--space-7));
+  --architecture-navigation-width: 16rem;
+  --architecture-focus-zone-opacity: 24%;
+}
+
+[data-architectural-family="command-tower"][data-density-mode="executive"] {
+  --architecture-workspace-gap: var(--space-5);
+  --architecture-section-gap: var(--space-6);
+  --architecture-panel-gap: var(--space-4);
+  --architecture-content-max-width: calc(var(--bp-2xl) - var(--space-7));
+  --architecture-grid-density: 1;
+}
+
+[data-architectural-family="glass-atrium"] {
+  --architecture-bg-treatment:
+    radial-gradient(circle at top, color-mix(in srgb, var(--personality-glow) 72%, transparent), transparent 44%),
+    linear-gradient(180deg, color-mix(in srgb, var(--personality-surface-raised) 40%, transparent), transparent 60%);
+  --architecture-workspace-gap: var(--space-6);
+  --architecture-section-gap: var(--space-6);
+  --architecture-panel-gap: var(--space-4);
+  --architecture-content-max-width: calc(var(--bp-2xl) - var(--space-5));
+  --architecture-surface-depth: var(--elevation-3);
+  --architecture-surface-opacity: 82%;
+  --architecture-panel-border-strength: 54%;
+  --architecture-navigation-width: 19rem;
+  --architecture-command-height: calc(var(--space-8) + var(--space-3));
+  --architecture-grid-min-column: 18rem;
+  --architecture-grid-density: 1.08;
+  --architecture-focus-zone-opacity: 22%;
+  --architecture-layer-blur: 18px;
+  --architecture-atmosphere-intensity: 26%;
+  --architecture-motion-scale: 1.06;
+}
+
+[data-architectural-family="glass-atrium"][data-theme-mode="day"] {
+  --architecture-surface-opacity: 78%;
+  --architecture-layer-blur: 20px;
+}
+
+[data-architectural-family="glass-atrium"][data-theme-mode="night"] {
+  --architecture-surface-opacity: 86%;
+  --architecture-panel-border-strength: 60%;
+}
+
+[data-architectural-family="glass-atrium"][data-density-mode="compact"] {
+  --architecture-workspace-gap: var(--space-5);
+  --architecture-section-gap: var(--space-5);
+  --architecture-panel-gap: var(--space-3);
+  --architecture-command-height: var(--space-8);
+  --architecture-grid-density: 1.02;
+}
+
+[data-architectural-family="glass-atrium"][data-density-mode="standard"] {
+  --architecture-workspace-gap: var(--space-6);
+  --architecture-section-gap: var(--space-6);
+  --architecture-panel-gap: var(--space-4);
+}
+
+[data-architectural-family="glass-atrium"][data-density-mode="focus"] {
+  --architecture-workspace-gap: var(--space-6);
+  --architecture-section-gap: var(--space-7);
+  --architecture-panel-gap: var(--space-4);
+  --architecture-content-max-width: calc(var(--bp-xl) - var(--space-4));
+  --architecture-navigation-width: 17rem;
+}
+
+[data-architectural-family="glass-atrium"][data-density-mode="executive"] {
+  --architecture-workspace-gap: var(--space-7);
+  --architecture-section-gap: var(--space-7);
+  --architecture-panel-gap: var(--space-5);
+  --architecture-command-height: calc(var(--space-8) + var(--space-4));
+  --architecture-grid-density: 1.12;
+}
+
+[data-architectural-family="blueprint-studio"] {
+  --architecture-bg-treatment:
+    linear-gradient(90deg, color-mix(in srgb, var(--personality-accent-soft) 24%, transparent) 1px, transparent 1px),
+    linear-gradient(color-mix(in srgb, var(--personality-accent-soft) 24%, transparent) 1px, transparent 1px);
+  --architecture-workspace-gap: var(--space-5);
+  --architecture-section-gap: var(--space-5);
+  --architecture-panel-gap: var(--space-4);
+  --architecture-content-max-width: calc(var(--bp-2xl) - var(--space-6));
+  --architecture-surface-depth: var(--elevation-2);
+  --architecture-surface-opacity: 90%;
+  --architecture-panel-border-strength: 68%;
+  --architecture-navigation-width: 17rem;
+  --architecture-command-height: calc(var(--space-8) + var(--space-2));
+  --architecture-grid-min-column: 17rem;
+  --architecture-grid-density: 1.04;
+  --architecture-focus-zone-opacity: 20%;
+  --architecture-layer-blur: 8px;
+  --architecture-atmosphere-intensity: 18%;
+  --architecture-motion-scale: 1;
+}
+
+[data-architectural-family="blueprint-studio"] {
+  background-size: var(--space-6) var(--space-6);
+}
+
+[data-architectural-family="blueprint-studio"][data-density-mode="compact"] {
+  --architecture-workspace-gap: var(--space-4);
+  --architecture-section-gap: var(--space-4);
+  --architecture-panel-gap: var(--space-3);
+  --architecture-grid-density: 0.98;
+}
+
+[data-architectural-family="blueprint-studio"][data-density-mode="standard"] {
+  --architecture-workspace-gap: var(--space-5);
+  --architecture-section-gap: var(--space-5);
+  --architecture-panel-gap: var(--space-4);
+}
+
+[data-architectural-family="blueprint-studio"][data-density-mode="focus"] {
+  --architecture-workspace-gap: var(--space-5);
+  --architecture-section-gap: var(--space-6);
+  --architecture-panel-gap: var(--space-4);
+  --architecture-content-max-width: calc(var(--bp-xl) - var(--space-5));
+}
+
+[data-architectural-family="blueprint-studio"][data-density-mode="executive"] {
+  --architecture-workspace-gap: var(--space-6);
+  --architecture-section-gap: var(--space-6);
+  --architecture-panel-gap: var(--space-5);
+  --architecture-navigation-width: 18rem;
+  --architecture-grid-density: 1.08;
+}
+
+[data-architectural-family="signal-terminal"] {
+  --architecture-bg-treatment:
+    linear-gradient(180deg, color-mix(in srgb, var(--personality-accent-soft) 16%, transparent), transparent 40%),
+    linear-gradient(90deg, color-mix(in srgb, var(--personality-border) 10%, transparent), transparent 16%);
+  --architecture-workspace-gap: var(--space-4);
+  --architecture-section-gap: var(--space-4);
+  --architecture-panel-gap: var(--space-3);
+  --architecture-content-max-width: calc(var(--bp-xl) - var(--space-6));
+  --architecture-surface-depth: var(--elevation-1);
+  --architecture-surface-opacity: 92%;
+  --architecture-panel-border-strength: 76%;
+  --architecture-navigation-width: 16rem;
+  --architecture-command-height: var(--space-8);
+  --architecture-grid-min-column: 15rem;
+  --architecture-grid-density: 0.92;
+  --architecture-focus-zone-opacity: 16%;
+  --architecture-layer-blur: 4px;
+  --architecture-atmosphere-intensity: 12%;
+  --architecture-motion-scale: 0.86;
+}
+
+[data-architectural-family="signal-terminal"][data-density-mode="compact"] {
+  --architecture-workspace-gap: var(--space-3);
+  --architecture-section-gap: var(--space-3);
+  --architecture-panel-gap: var(--space-2);
+  --architecture-grid-density: 0.86;
+}
+
+[data-architectural-family="signal-terminal"][data-density-mode="standard"] {
+  --architecture-workspace-gap: var(--space-4);
+  --architecture-section-gap: var(--space-4);
+  --architecture-panel-gap: var(--space-3);
+}
+
+[data-architectural-family="signal-terminal"][data-density-mode="focus"] {
+  --architecture-workspace-gap: var(--space-4);
+  --architecture-section-gap: var(--space-5);
+  --architecture-panel-gap: var(--space-3);
+  --architecture-content-max-width: calc(var(--bp-lg) - var(--space-5));
+  --architecture-focus-zone-opacity: 22%;
+}
+
+[data-architectural-family="signal-terminal"][data-density-mode="executive"] {
+  --architecture-workspace-gap: var(--space-5);
+  --architecture-section-gap: var(--space-5);
+  --architecture-panel-gap: var(--space-4);
+  --architecture-grid-density: 0.98;
+}
+
+[data-architectural-family="executive-gallery"] {
+  --architecture-bg-treatment:
+    linear-gradient(180deg, color-mix(in srgb, var(--personality-surface-muted) 26%, transparent), transparent 52%),
+    radial-gradient(circle at top right, color-mix(in srgb, var(--personality-glow) 58%, transparent), transparent 42%);
+  --architecture-workspace-gap: var(--space-6);
+  --architecture-section-gap: var(--space-6);
+  --architecture-panel-gap: var(--space-4);
+  --architecture-content-max-width: calc(var(--bp-xl) + var(--space-8));
+  --architecture-surface-depth: var(--elevation-2);
+  --architecture-surface-opacity: 88%;
+  --architecture-panel-border-strength: 58%;
+  --architecture-navigation-width: 18rem;
+  --architecture-command-height: calc(var(--space-8) + var(--space-2));
+  --architecture-grid-min-column: 18rem;
+  --architecture-grid-density: 1.06;
+  --architecture-focus-zone-opacity: 20%;
+  --architecture-layer-blur: 12px;
+  --architecture-atmosphere-intensity: 20%;
+  --architecture-motion-scale: 0.98;
+}
+
+[data-architectural-family="executive-gallery"][data-density-mode="compact"] {
+  --architecture-workspace-gap: var(--space-5);
+  --architecture-section-gap: var(--space-5);
+  --architecture-panel-gap: var(--space-3);
+  --architecture-grid-density: 1;
+}
+
+[data-architectural-family="executive-gallery"][data-density-mode="standard"] {
+  --architecture-workspace-gap: var(--space-6);
+  --architecture-section-gap: var(--space-6);
+  --architecture-panel-gap: var(--space-4);
+}
+
+[data-architectural-family="executive-gallery"][data-density-mode="focus"] {
+  --architecture-workspace-gap: var(--space-6);
+  --architecture-section-gap: var(--space-7);
+  --architecture-panel-gap: var(--space-4);
+  --architecture-content-max-width: calc(var(--bp-xl) - var(--space-2));
+}
+
+[data-architectural-family="executive-gallery"][data-density-mode="executive"] {
+  --architecture-workspace-gap: var(--space-7);
+  --architecture-section-gap: var(--space-7);
+  --architecture-panel-gap: var(--space-5);
+  --architecture-command-height: calc(var(--space-8) + var(--space-3));
+  --architecture-grid-density: 1.1;
+}
+
+[data-architectural-family="horizon-workspace"] {
+  --architecture-bg-treatment:
+    linear-gradient(180deg, color-mix(in srgb, var(--personality-accent-soft) 18%, transparent), transparent 36%),
+    radial-gradient(circle at top left, color-mix(in srgb, var(--personality-glow) 56%, transparent), transparent 40%);
+  --architecture-workspace-gap: var(--space-5);
+  --architecture-section-gap: var(--space-5);
+  --architecture-panel-gap: var(--space-4);
+  --architecture-content-max-width: calc(var(--bp-xl) + var(--space-7));
+  --architecture-surface-depth: var(--elevation-2);
+  --architecture-surface-opacity: 90%;
+  --architecture-panel-border-strength: 62%;
+  --architecture-navigation-width: 17rem;
+  --architecture-command-height: calc(var(--space-8) + var(--space-1));
+  --architecture-grid-min-column: 17rem;
+  --architecture-grid-density: 1.02;
+  --architecture-focus-zone-opacity: 22%;
+  --architecture-layer-blur: 10px;
+  --architecture-atmosphere-intensity: 18%;
+  --architecture-motion-scale: 1;
+}
+
+[data-architectural-family="horizon-workspace"][data-theme-mode="day"] {
+  --architecture-surface-opacity: 88%;
+}
+
+[data-architectural-family="horizon-workspace"][data-theme-mode="night"] {
+  --architecture-surface-opacity: 94%;
+  --architecture-focus-zone-opacity: 20%;
+}
+
+[data-architectural-family="horizon-workspace"][data-density-mode="compact"] {
+  --architecture-workspace-gap: var(--space-4);
+  --architecture-section-gap: var(--space-4);
+  --architecture-panel-gap: var(--space-3);
+}
+
+[data-architectural-family="horizon-workspace"][data-density-mode="standard"] {
+  --architecture-workspace-gap: var(--space-5);
+  --architecture-section-gap: var(--space-5);
+  --architecture-panel-gap: var(--space-4);
+}
+
+[data-architectural-family="horizon-workspace"][data-density-mode="focus"] {
+  --architecture-workspace-gap: var(--space-5);
+  --architecture-section-gap: var(--space-6);
+  --architecture-panel-gap: var(--space-4);
+  --architecture-content-max-width: calc(var(--bp-xl) - var(--space-3));
+}
+
+[data-architectural-family="horizon-workspace"][data-density-mode="executive"] {
+  --architecture-workspace-gap: var(--space-6);
+  --architecture-section-gap: var(--space-6);
+  --architecture-panel-gap: var(--space-5);
+  --architecture-grid-density: 1.06;
+}
+
+[data-architectural-family] {
+  background-image: var(--architecture-bg-treatment);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+[data-architectural-family] .pf-navigation,
+[data-architectural-family] .pf-command-bar,
+[data-architectural-family] .pf-workspace-grid,
+[data-architectural-family] .pf-card,
+[data-architectural-family] .pf-panel,
+[data-architectural-family] .pf-section,
+[data-architectural-family] .pf-metric-card,
+[data-architectural-family] .pf-data-table,
+[data-architectural-family] .pf-empty-state,
+[data-architectural-family] .pf-timeline,
+[data-architectural-family] .pf-modal,
+[data-architectural-family] .pf-drawer,
+[data-architectural-family] .pf-tabs,
+[data-architectural-family] .pf-input,
+[data-architectural-family] .pf-select {
+  backdrop-filter: blur(var(--architecture-layer-blur));
+}
+
+[data-architectural-family] .pf-workspace-grid {
+  gap: var(--architecture-workspace-gap);
+}
+
+[data-architectural-family] .pf-workspace-grid[data-variant="two-column"],
+[data-architectural-family] .pf-workspace-grid[data-variant="dashboard"] {
+  grid-template-columns: minmax(var(--architecture-navigation-width), 0.8fr) minmax(0, 2fr);
+}
+
+[data-architectural-family] .pf-workspace-grid[data-variant="three-column"] {
+  grid-template-columns: repeat(auto-fit, minmax(var(--architecture-grid-min-column), 1fr));
+}
+
+[data-architectural-family] .pf-workspace-grid > * {
+  display: grid;
+  gap: var(--architecture-panel-gap);
+}
+
+[data-architectural-family] .pf-section {
+  gap: var(--architecture-section-gap);
+  max-inline-size: var(--architecture-content-max-width);
+  box-shadow:
+    inset 0 0 0 1px color-mix(in srgb, var(--personality-border) var(--architecture-panel-border-strength), transparent),
+    var(--architecture-surface-depth);
+}
+
+[data-architectural-family] .pf-card,
+[data-architectural-family] .pf-panel,
+[data-architectural-family] .pf-metric-card,
+[data-architectural-family] .pf-data-table,
+[data-architectural-family] .pf-empty-state,
+[data-architectural-family] .pf-navigation,
+[data-architectural-family] .pf-modal,
+[data-architectural-family] .pf-drawer {
+  background: color-mix(in srgb, var(--personality-surface-raised) var(--architecture-surface-opacity), transparent);
+  box-shadow: var(--architecture-surface-depth);
+  border-color: color-mix(in srgb, var(--personality-border) var(--architecture-panel-border-strength), transparent);
+}
+
+[data-architectural-family] .pf-panel,
+[data-architectural-family] .pf-data-table,
+[data-architectural-family] .pf-empty-state {
+  gap: var(--architecture-panel-gap);
+}
+
+[data-architectural-family] .pf-card,
+[data-architectural-family] .pf-metric-card,
+[data-architectural-family] .pf-empty-state {
+  padding: calc(var(--space-4) * var(--architecture-grid-density));
+}
+
+[data-architectural-family] .pf-navigation {
+  inline-size: min(100%, var(--architecture-navigation-width));
+}
+
+[data-architectural-family] .pf-command-bar {
+  min-block-size: var(--architecture-command-height);
+  padding-block: calc(var(--space-3) * var(--architecture-grid-density));
+  background: color-mix(in srgb, var(--personality-surface-muted) var(--architecture-surface-opacity), transparent);
+  border-color: color-mix(in srgb, var(--personality-border-strong) var(--architecture-panel-border-strength), transparent);
+  box-shadow:
+    inset 0 0 0 1px color-mix(in srgb, var(--personality-accent-soft) var(--architecture-focus-zone-opacity), transparent),
+    var(--architecture-surface-depth);
+}
+
+[data-architectural-family] .pf-button {
+  transition-duration: calc(var(--duration-normal) * var(--architecture-motion-scale));
+}
+
+[data-architectural-family] .pf-status-badge {
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--personality-border) var(--architecture-panel-border-strength), transparent);
+}
+
+[data-architectural-family] .pf-timeline {
+  gap: var(--architecture-panel-gap);
+  padding: calc(var(--space-4) * var(--architecture-grid-density));
+  background: color-mix(in srgb, var(--personality-surface) var(--architecture-surface-opacity), transparent);
+  border: 1px solid color-mix(in srgb, var(--personality-border) var(--architecture-panel-border-strength), transparent);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--architecture-surface-depth);
+}
+
+[data-architectural-family] .pf-tabs {
+  gap: var(--architecture-panel-gap);
+  padding: calc(var(--space-3) * var(--architecture-grid-density));
+  background: color-mix(in srgb, var(--personality-surface) var(--architecture-surface-opacity), transparent);
+  border: 1px solid color-mix(in srgb, var(--personality-border) var(--architecture-panel-border-strength), transparent);
+  border-radius: var(--radius-lg);
+}
+
+[data-architectural-family] .pf-input,
+[data-architectural-family] .pf-select {
+  min-block-size: calc(var(--space-7) * var(--architecture-grid-density));
+}

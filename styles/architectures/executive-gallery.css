@@ -1,0 +1,48 @@
+[data-architectural-family="executive-gallery"] {
+  --architecture-bg-treatment:
+    linear-gradient(180deg, color-mix(in srgb, var(--personality-surface-muted) 26%, transparent), transparent 52%),
+    radial-gradient(circle at top right, color-mix(in srgb, var(--personality-glow) 58%, transparent), transparent 42%);
+  --architecture-workspace-gap: var(--space-6);
+  --architecture-section-gap: var(--space-6);
+  --architecture-panel-gap: var(--space-4);
+  --architecture-content-max-width: calc(var(--bp-xl) + var(--space-8));
+  --architecture-surface-depth: var(--elevation-2);
+  --architecture-surface-opacity: 88%;
+  --architecture-panel-border-strength: 58%;
+  --architecture-navigation-width: 18rem;
+  --architecture-command-height: calc(var(--space-8) + var(--space-2));
+  --architecture-grid-min-column: 18rem;
+  --architecture-grid-density: 1.06;
+  --architecture-focus-zone-opacity: 20%;
+  --architecture-layer-blur: 12px;
+  --architecture-atmosphere-intensity: 20%;
+  --architecture-motion-scale: 0.98;
+}
+
+[data-architectural-family="executive-gallery"][data-density-mode="compact"] {
+  --architecture-workspace-gap: var(--space-5);
+  --architecture-section-gap: var(--space-5);
+  --architecture-panel-gap: var(--space-3);
+  --architecture-grid-density: 1;
+}
+
+[data-architectural-family="executive-gallery"][data-density-mode="standard"] {
+  --architecture-workspace-gap: var(--space-6);
+  --architecture-section-gap: var(--space-6);
+  --architecture-panel-gap: var(--space-4);
+}
+
+[data-architectural-family="executive-gallery"][data-density-mode="focus"] {
+  --architecture-workspace-gap: var(--space-6);
+  --architecture-section-gap: var(--space-7);
+  --architecture-panel-gap: var(--space-4);
+  --architecture-content-max-width: calc(var(--bp-xl) - var(--space-2));
+}
+
+[data-architectural-family="executive-gallery"][data-density-mode="executive"] {
+  --architecture-workspace-gap: var(--space-7);
+  --architecture-section-gap: var(--space-7);
+  --architecture-panel-gap: var(--space-5);
+  --architecture-command-height: calc(var(--space-8) + var(--space-3));
+  --architecture-grid-density: 1.1;
+}

@@ -1,0 +1,37 @@
+{
+  "id": "pf-command-bar",
+  "name": "PFCommandBar",
+  "category": "action",
+  "description": "Stable command surface exposing primary workspace actions.",
+  "architectural_role": "control-surface",
+  "responsibility": "Expose primary workspace commands in a stable and predictable location.",
+  "slots": {
+    "required": ["primary_actions", "secondary_actions"],
+    "optional": ["optional_filters", "optional_search", "optional_status"]
+  },
+  "variants": ["default", "compact", "elevated"],
+  "states": ["default", "busy", "disabled"],
+  "token_dependencies": ["--space-3", "--space-4", "--space-5", "--radius-md", "--text-body", "--weight-medium", "--elevation-2", "--z-command-bar"],
+  "accessibility": {
+    "requirements": [
+      "Commands must be keyboard reachable in a predictable order.",
+      "Search and filter controls require labels or accessible names.",
+      "Busy states must not hide available actions without explanation."
+    ]
+  },
+  "composition_rules": [
+    "Keep primary actions visually distinct.",
+    "Avoid command overload.",
+    "Commands must be task-oriented."
+  ],
+  "anti_patterns": [
+    "mixing unrelated workspace actions into one bar",
+    "burying critical actions among secondary controls",
+    "icon-only command groups without accessible labels"
+  ],
+  "governance": {
+    "foundation_component": true,
+    "allowed_density_modes": ["compact", "standard", "focus", "executive"],
+    "allowed_architectural_families": ["Command Tower", "Signal Terminal", "Executive Gallery", "Horizon Workspace", "Blueprint Studio"]
+  }
+}

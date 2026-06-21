@@ -1,0 +1,76 @@
+@import "./sentient-os.css";
+@import "./powerframe-ecosystem.css";
+@import "./therockettree.css";
+@import "./conceptshop.css";
+@import "./customshop.css";
+@import "./mucho3d.css";
+@import "./flink3d.css";
+
+[data-project] .pf-card,
+[data-project] .pf-panel,
+[data-project] .pf-section,
+[data-project] .pf-metric-card,
+[data-project] .pf-command-bar,
+[data-project] .pf-data-table,
+[data-project] .pf-empty-state,
+[data-project] .pf-navigation,
+[data-project] .pf-modal,
+[data-project] .pf-drawer,
+[data-project] .pf-tabs,
+[data-project] .pf-input,
+[data-project] .pf-select {
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--project-accent-primary) calc(var(--project-border-tuning) / 4), transparent),
+    0 0 0 999rem color-mix(in srgb, var(--project-accent-soft) calc(var(--project-surface-tuning) / 8), transparent) inset;
+}
+
+[data-project] .pf-button[data-variant="primary"] {
+  border-color: var(--project-accent-primary);
+  background: linear-gradient(135deg, var(--project-accent-primary), var(--project-accent-secondary));
+  color: var(--project-accent-contrast);
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--project-accent-primary) 28%, transparent),
+    0 12px 24px color-mix(in srgb, var(--project-accent-primary) 18%, transparent);
+}
+
+[data-project] .pf-button[data-variant="secondary"],
+[data-project] .pf-button[data-variant="ghost"] {
+  border-color: color-mix(in srgb, var(--project-accent-primary) 28%, var(--personality-border));
+}
+
+[data-project] .pf-status-badge {
+  border-color: color-mix(in srgb, var(--project-accent-primary) 24%, var(--personality-border));
+  box-shadow: 0 0 0 1px var(--project-accent-soft) inset;
+}
+
+[data-project] .pf-navigation {
+  border-color: color-mix(in srgb, var(--project-accent-primary) calc(var(--project-navigation-emphasis) * 18%), transparent);
+}
+
+[data-project] .pf-command-bar {
+  border-color: color-mix(in srgb, var(--project-accent-primary) calc(var(--project-command-emphasis) * 16%), var(--personality-border-strong));
+}
+
+[data-project] .pf-metric-card,
+[data-project] .pf-data-table,
+[data-project] .pf-panel {
+  border-color: color-mix(in srgb, var(--project-accent-secondary) calc(var(--project-dashboard-emphasis) * 14%), var(--personality-border));
+}
+
+[data-project] .pf-card,
+[data-project] .pf-section,
+[data-project] .pf-empty-state {
+  border-color: color-mix(in srgb, var(--project-accent-primary) calc(var(--project-intelligence-emphasis) * 12%), var(--personality-border));
+}
+
+[data-project] .pf-button:focus-visible,
+[data-project] .pf-input:focus-visible,
+[data-project] .pf-select:focus-visible {
+  outline-offset: calc(var(--focus-ring-offset) * var(--project-focus-emphasis));
+  box-shadow: 0 0 0 calc(var(--space-1) * var(--project-focus-emphasis)) var(--project-accent-soft);
+}
+
+[data-project] .pf-workspace-grid {
+  border-top: 1px solid color-mix(in srgb, var(--project-accent-primary) 16%, transparent);
+  padding-top: var(--space-4);
+}

@@ -1,0 +1,33 @@
+[data-project="therockettree"] {
+  --project-identity: "TheRocketTree";
+  --project-accent-primary: var(--personality-accent);
+  --project-accent-secondary: var(--personality-info);
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 18%, transparent);
+  --project-accent-contrast: var(--personality-bg);
+  --project-surface-tuning: color-mix(in srgb, var(--architecture-atmosphere-intensity) 78%, white 22%);
+  --project-border-tuning: 60%;
+  --project-focus-emphasis: 1.08;
+  --project-navigation-emphasis: 1.12;
+  --project-command-emphasis: 1.04;
+  --project-dashboard-emphasis: 1.1;
+  --project-intelligence-emphasis: 1.16;
+  --project-motion-tuning: 1.04;
+  --project-density-preference: standard;
+}
+
+[data-project="therockettree"][data-design-personality="constellation-feed"][data-architectural-family="glass-atrium"] {
+  --project-intelligence-emphasis: 1.18;
+  --project-dashboard-emphasis: 1.12;
+}
+
+[data-project="therockettree"][data-chapter-accent="constellation-indigo"] {
+  --project-accent-primary: #6366f1;
+  --project-accent-secondary: #22d3ee;
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 18%, transparent);
+}
+
+[data-project="therockettree"][data-chapter-accent="atrium-teal"] {
+  --project-accent-primary: #14b8a6;
+  --project-accent-secondary: #8b5cf6;
+  --project-accent-soft: color-mix(in srgb, var(--project-accent-primary) 16%, transparent);
+}

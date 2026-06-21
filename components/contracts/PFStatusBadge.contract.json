@@ -1,0 +1,38 @@
+{
+  "id": "pf-status-badge",
+  "name": "PFStatusBadge",
+  "category": "status",
+  "description": "Compact semantic state signal for consistent status communication.",
+  "architectural_role": "signal",
+  "responsibility": "Communicate state clearly and consistently.",
+  "slots": {
+    "required": ["label"],
+    "optional": ["leading_icon"]
+  },
+  "variants": ["default", "subtle", "emphasis"],
+  "states": ["active", "running", "completed", "paused", "blocked", "warning", "error", "draft", "archived"],
+  "token_dependencies": ["--space-1", "--space-2", "--space-3", "--radius-full", "--text-caption", "--line-body", "--weight-medium"],
+  "accessibility": {
+    "requirements": [
+      "Status color may not be the only meaning carrier.",
+      "Status labels must be readable.",
+      "Status semantics must match Foundation status tokens."
+    ]
+  },
+  "composition_rules": [
+    "Use PFStatusBadge only for standardized semantic states.",
+    "Combine with supporting text when status alone is not enough context.",
+    "Keep labels short and consistent."
+  ],
+  "anti_patterns": [
+    "using status badges as decorative category tags",
+    "inventing custom statuses outside the Foundation layer",
+    "relying on color alone for meaning"
+  ],
+  "governance": {
+    "foundation_component": true,
+    "allowed_density_modes": ["compact", "standard", "focus", "executive"],
+    "allowed_architectural_families": ["Command Tower", "Glass Atrium", "Blueprint Studio", "Signal Terminal", "Executive Gallery", "Horizon Workspace"],
+    "status_mappings": ["active", "running", "completed", "paused", "blocked", "warning", "error", "draft", "archived"]
+  }
+}

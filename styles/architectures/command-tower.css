@@ -1,0 +1,52 @@
+[data-architectural-family="command-tower"] {
+  --architecture-bg-treatment:
+    linear-gradient(180deg, color-mix(in srgb, var(--personality-accent-soft) 28%, transparent), transparent 46%),
+    linear-gradient(90deg, color-mix(in srgb, var(--personality-border-strong) 14%, transparent), transparent 18%);
+  --architecture-workspace-gap: var(--space-4);
+  --architecture-section-gap: var(--space-5);
+  --architecture-panel-gap: var(--space-3);
+  --architecture-content-max-width: calc(var(--bp-2xl) - var(--space-8));
+  --architecture-surface-depth: var(--elevation-2);
+  --architecture-surface-opacity: 94%;
+  --architecture-panel-border-strength: 78%;
+  --architecture-navigation-width: 18rem;
+  --architecture-command-height: calc(var(--space-8) + var(--space-2));
+  --architecture-grid-min-column: 16rem;
+  --architecture-grid-density: 0.96;
+  --architecture-focus-zone-opacity: 18%;
+  --architecture-layer-blur: 10px;
+  --architecture-atmosphere-intensity: 18%;
+  --architecture-motion-scale: 0.92;
+}
+
+[data-architectural-family="command-tower"][data-density-mode="compact"] {
+  --architecture-workspace-gap: var(--space-3);
+  --architecture-section-gap: var(--space-4);
+  --architecture-panel-gap: var(--space-2);
+  --architecture-command-height: var(--space-8);
+  --architecture-grid-density: 0.9;
+}
+
+[data-architectural-family="command-tower"][data-density-mode="standard"] {
+  --architecture-workspace-gap: var(--space-4);
+  --architecture-section-gap: var(--space-5);
+  --architecture-panel-gap: var(--space-3);
+  --architecture-grid-density: 0.96;
+}
+
+[data-architectural-family="command-tower"][data-density-mode="focus"] {
+  --architecture-workspace-gap: var(--space-5);
+  --architecture-section-gap: var(--space-5);
+  --architecture-panel-gap: var(--space-3);
+  --architecture-content-max-width: calc(var(--bp-xl) - var(--space-7));
+  --architecture-navigation-width: 16rem;
+  --architecture-focus-zone-opacity: 24%;
+}
+
+[data-architectural-family="command-tower"][data-density-mode="executive"] {
+  --architecture-workspace-gap: var(--space-5);
+  --architecture-section-gap: var(--space-6);
+  --architecture-panel-gap: var(--space-4);
+  --architecture-content-max-width: calc(var(--bp-2xl) - var(--space-7));
+  --architecture-grid-density: 1;
+}

@@ -1,0 +1,37 @@
+{
+  "id": "pf-metric-card",
+  "name": "PFMetricCard",
+  "category": "data",
+  "description": "Instrument surface for one measurable value, status, or trend.",
+  "architectural_role": "instrument",
+  "responsibility": "Display one measurable value, status, or trend.",
+  "slots": {
+    "required": ["label", "value"],
+    "optional": ["optional_delta", "optional_status", "optional_description"]
+  },
+  "variants": ["default", "success", "warning", "danger", "neutral"],
+  "states": ["default", "loading", "updated"],
+  "token_dependencies": ["--space-3", "--space-4", "--radius-md", "--text-small", "--text-h2", "--text-body", "--line-heading", "--weight-medium", "--weight-semibold", "--elevation-1"],
+  "accessibility": {
+    "requirements": [
+      "Metric values must include readable labels and units when relevant.",
+      "Status or trend meaning must not rely on color alone.",
+      "Live-updating metrics should announce important changes appropriately."
+    ]
+  },
+  "composition_rules": [
+    "Each metric card should communicate one metric or one tightly coupled metric state.",
+    "Optional descriptions should explain the metric rather than duplicate the value.",
+    "Variant emphasis should match the metric meaning and system semantics."
+  ],
+  "anti_patterns": [
+    "displaying multiple unrelated metrics",
+    "using unclear units",
+    "using color without text meaning"
+  ],
+  "governance": {
+    "foundation_component": true,
+    "allowed_density_modes": ["compact", "standard", "executive"],
+    "allowed_architectural_families": ["Command Tower", "Glass Atrium", "Signal Terminal", "Executive Gallery", "Horizon Workspace"]
+  }
+}

@@ -1,0 +1,60 @@
+[data-architectural-family="glass-atrium"] {
+  --architecture-bg-treatment:
+    radial-gradient(circle at top, color-mix(in srgb, var(--personality-glow) 72%, transparent), transparent 44%),
+    linear-gradient(180deg, color-mix(in srgb, var(--personality-surface-raised) 40%, transparent), transparent 60%);
+  --architecture-workspace-gap: var(--space-6);
+  --architecture-section-gap: var(--space-6);
+  --architecture-panel-gap: var(--space-4);
+  --architecture-content-max-width: calc(var(--bp-2xl) - var(--space-5));
+  --architecture-surface-depth: var(--elevation-3);
+  --architecture-surface-opacity: 82%;
+  --architecture-panel-border-strength: 54%;
+  --architecture-navigation-width: 19rem;
+  --architecture-command-height: calc(var(--space-8) + var(--space-3));
+  --architecture-grid-min-column: 18rem;
+  --architecture-grid-density: 1.08;
+  --architecture-focus-zone-opacity: 22%;
+  --architecture-layer-blur: 18px;
+  --architecture-atmosphere-intensity: 26%;
+  --architecture-motion-scale: 1.06;
+}
+
+[data-architectural-family="glass-atrium"][data-theme-mode="day"] {
+  --architecture-surface-opacity: 78%;
+  --architecture-layer-blur: 20px;
+}
+
+[data-architectural-family="glass-atrium"][data-theme-mode="night"] {
+  --architecture-surface-opacity: 86%;
+  --architecture-panel-border-strength: 60%;
+}
+
+[data-architectural-family="glass-atrium"][data-density-mode="compact"] {
+  --architecture-workspace-gap: var(--space-5);
+  --architecture-section-gap: var(--space-5);
+  --architecture-panel-gap: var(--space-3);
+  --architecture-command-height: var(--space-8);
+  --architecture-grid-density: 1.02;
+}
+
+[data-architectural-family="glass-atrium"][data-density-mode="standard"] {
+  --architecture-workspace-gap: var(--space-6);
+  --architecture-section-gap: var(--space-6);
+  --architecture-panel-gap: var(--space-4);
+}
+
+[data-architectural-family="glass-atrium"][data-density-mode="focus"] {
+  --architecture-workspace-gap: var(--space-6);
+  --architecture-section-gap: var(--space-7);
+  --architecture-panel-gap: var(--space-4);
+  --architecture-content-max-width: calc(var(--bp-xl) - var(--space-4));
+  --architecture-navigation-width: 17rem;
+}
+
+[data-architectural-family="glass-atrium"][data-density-mode="executive"] {
+  --architecture-workspace-gap: var(--space-7);
+  --architecture-section-gap: var(--space-7);
+  --architecture-panel-gap: var(--space-5);
+  --architecture-command-height: calc(var(--space-8) + var(--space-4));
+  --architecture-grid-density: 1.12;
+}

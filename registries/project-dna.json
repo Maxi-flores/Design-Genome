@@ -1,0 +1,181 @@
+{
+  "version": "0.2",
+  "source": "Sentient OS Architectural Web Stylebook 0.1",
+  "projects": [
+    {
+      "id": "sentient-os",
+      "name": "Sentient OS",
+      "identity": [
+        "Intelligence Layer",
+        "Operating Environment",
+        "System Brain"
+      ],
+      "preferred_architectural_families": [
+        "Command Tower",
+        "Signal Terminal",
+        "Glass Atrium"
+      ],
+      "preferred_personalities": [
+        "Oracle Intelligence",
+        "Aurora Command",
+        "Nocturne Minimal"
+      ],
+      "allowed_chapter_accents": [
+        "violet-cyan",
+        "signal-lime",
+        "paper-indigo"
+      ]
+    },
+    {
+      "id": "powerframe-ecosystem",
+      "name": "Powerframe Ecosystem",
+      "identity": [
+        "Operational Intelligence",
+        "Project Control System",
+        "Runtime Management Layer"
+      ],
+      "preferred_architectural_families": [
+        "Command Tower",
+        "Executive Gallery",
+        "Horizon Workspace"
+      ],
+      "preferred_personalities": [
+        "Aurora Command",
+        "Crystal Executive",
+        "Constellation Feed",
+        "Fluid Productivity"
+      ],
+      "allowed_chapter_accents": [
+        "violet-cyan",
+        "crystal-gold",
+        "horizon-sky",
+        "paper-indigo"
+      ]
+    },
+    {
+      "id": "therockettree",
+      "name": "TheRocketTree",
+      "identity": [
+        "Innovation Platform",
+        "Project Ecosystem Hub",
+        "Creative Intelligence Network"
+      ],
+      "preferred_architectural_families": [
+        "Glass Atrium",
+        "Blueprint Studio",
+        "Executive Gallery"
+      ],
+      "preferred_personalities": [
+        "Constellation Feed",
+        "Nebula Workspace",
+        "Oracle Intelligence",
+        "Crystal Executive"
+      ],
+      "allowed_chapter_accents": [
+        "constellation-indigo",
+        "atrium-teal",
+        "blueprint-cyan",
+        "crystal-gold"
+      ]
+    },
+    {
+      "id": "conceptshop",
+      "name": "ConceptSHOP",
+      "identity": [
+        "Premium Marketplace",
+        "Invitation-Based Commerce",
+        "Curated Access Environment"
+      ],
+      "preferred_architectural_families": [
+        "Glass Atrium",
+        "Executive Gallery",
+        "Horizon Workspace"
+      ],
+      "preferred_personalities": [
+        "Crystal Executive",
+        "Horizon Light",
+        "Nocturne Minimal"
+      ],
+      "allowed_chapter_accents": [
+        "crystal-gold",
+        "atrium-teal",
+        "horizon-sky",
+        "paper-indigo"
+      ]
+    },
+    {
+      "id": "customshop",
+      "name": "CustomSHOP",
+      "identity": [
+        "Builder Platform",
+        "Custom Product Workflow",
+        "Personalized Creation System"
+      ],
+      "preferred_architectural_families": [
+        "Blueprint Studio",
+        "Horizon Workspace",
+        "Glass Atrium"
+      ],
+      "preferred_personalities": [
+        "Fluid Productivity",
+        "Nebula Workspace",
+        "Crystal Executive"
+      ],
+      "allowed_chapter_accents": [
+        "blueprint-cyan",
+        "horizon-sky",
+        "crystal-gold",
+        "constellation-indigo"
+      ]
+    },
+    {
+      "id": "mucho3d",
+      "name": "Mucho3D",
+      "identity": [
+        "Creative Engineering",
+        "3D Production Environment",
+        "Spatial Tooling System"
+      ],
+      "preferred_architectural_families": [
+        "Blueprint Studio",
+        "Signal Terminal",
+        "Command Tower"
+      ],
+      "preferred_personalities": [
+        "Nebula Workspace",
+        "Inferno Performance",
+        "Midnight Terminal"
+      ],
+      "allowed_chapter_accents": [
+        "blueprint-cyan",
+        "ember-orange",
+        "signal-lime"
+      ]
+    },
+    {
+      "id": "flink3d",
+      "name": "Flink3D",
+      "identity": [
+        "Production Pipeline",
+        "3D Operations System",
+        "Technical Manufacturing Layer"
+      ],
+      "preferred_architectural_families": [
+        "Signal Terminal",
+        "Blueprint Studio",
+        "Command Tower"
+      ],
+      "preferred_personalities": [
+        "Midnight Terminal",
+        "Aurora Command",
+        "Inferno Performance"
+      ],
+      "allowed_chapter_accents": [
+        "signal-lime",
+        "blueprint-cyan",
+        "ember-orange",
+        "violet-cyan"
+      ]
+    }
+  ]
+}

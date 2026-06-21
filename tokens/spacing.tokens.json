@@ -1,0 +1,71 @@
+{
+  "version": "0.3",
+  "group": "spacing",
+  "description": "Foundation spacing scale for all Sentient OS ecosystem layouts.",
+  "rule": "No arbitrary spacing values. All layout spacing must use Foundation spacing tokens.",
+  "tokens": [
+    {
+      "id": "space-1",
+      "cssVar": "--space-1",
+      "value": "4px",
+      "px": 4,
+      "usage": "Tight icon gaps, compact inline spacing, and dense operational detail."
+    },
+    {
+      "id": "space-2",
+      "cssVar": "--space-2",
+      "value": "8px",
+      "px": 8,
+      "usage": "Small control padding and close related UI groupings."
+    },
+    {
+      "id": "space-3",
+      "cssVar": "--space-3",
+      "value": "12px",
+      "px": 12,
+      "usage": "Compact panel padding and metric label spacing."
+    },
+    {
+      "id": "space-4",
+      "cssVar": "--space-4",
+      "value": "16px",
+      "px": 16,
+      "usage": "Default component padding and standard content rhythm."
+    },
+    {
+      "id": "space-5",
+      "cssVar": "--space-5",
+      "value": "24px",
+      "px": 24,
+      "usage": "Card spacing, section gaps, and comfortable reading surfaces."
+    },
+    {
+      "id": "space-6",
+      "cssVar": "--space-6",
+      "value": "32px",
+      "px": 32,
+      "usage": "Panel interiors, page-header spacing, and structural separation."
+    },
+    {
+      "id": "space-7",
+      "cssVar": "--space-7",
+      "value": "48px",
+      "px": 48,
+      "usage": "Major section spacing and prominent layout breaks."
+    },
+    {
+      "id": "space-8",
+      "cssVar": "--space-8",
+      "value": "64px",
+      "px": 64,
+      "usage": "Large workspace breathing room and executive density layouts."
+    },
+    {
+      "id": "space-9",
+      "cssVar": "--space-9",
+      "value": "80px",
+      "px": 80,
+      "usage": "Full-screen section divisions and spacious overview compositions."
+    }
+  ]
+}

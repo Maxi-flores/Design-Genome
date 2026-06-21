@@ -1,0 +1,37 @@
+{
+  "id": "pf-workspace-grid",
+  "name": "PFWorkspaceGrid",
+  "category": "layout",
+  "description": "Responsive workspace layout grid driven by Foundation spacing and breakpoints.",
+  "architectural_role": "floor",
+  "responsibility": "Arrange workspace regions using Foundation spacing and responsive behavior.",
+  "slots": {
+    "required": ["regions"],
+    "optional": ["optional_sidebar", "optional_intelligence_rail"]
+  },
+  "variants": ["default", "two-column", "three-column", "dashboard"],
+  "states": ["default"],
+  "token_dependencies": ["--space-4", "--space-5", "--space-6", "--bp-md", "--bp-lg", "--bp-xl", "--bp-2xl"],
+  "accessibility": {
+    "requirements": [
+      "Reading order must remain logical at every breakpoint.",
+      "Responsive collapse should preserve access to all regions.",
+      "Layout changes must not trap keyboard navigation."
+    ]
+  },
+  "composition_rules": [
+    "No arbitrary grid spacing.",
+    "Use Foundation breakpoints.",
+    "Maintain visual rhythm."
+  ],
+  "anti_patterns": [
+    "custom spacing values outside the Foundation scale",
+    "breakpoint behavior that hides critical regions",
+    "layout density that obscures the primary workspace"
+  ],
+  "governance": {
+    "foundation_component": true,
+    "allowed_density_modes": ["compact", "standard", "focus", "executive"],
+    "allowed_architectural_families": ["Command Tower", "Glass Atrium", "Blueprint Studio", "Signal Terminal", "Executive Gallery", "Horizon Workspace"]
+  }
+}

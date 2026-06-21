@@ -1,0 +1,56 @@
+{
+  "version": "0.3",
+  "group": "zIndex",
+  "description": "Foundation stacking order tokens for predictable operational layering.",
+  "rule": "No arbitrary z-index values in application UI.",
+  "tokens": [
+    {
+      "id": "z-base",
+      "cssVar": "--z-base",
+      "value": "0",
+      "usage": "Base workspace surfaces."
+    },
+    {
+      "id": "z-header",
+      "cssVar": "--z-header",
+      "value": "100",
+      "usage": "Persistent app headers."
+    },
+    {
+      "id": "z-navigation",
+      "cssVar": "--z-navigation",
+      "value": "200",
+      "usage": "Navigation rails and anchored navigation surfaces."
+    },
+    {
+      "id": "z-drawer",
+      "cssVar": "--z-drawer",
+      "value": "300",
+      "usage": "Drawers and slide-over contextual rooms."
+    },
+    {
+      "id": "z-command-bar",
+      "cssVar": "--z-command-bar",
+      "value": "400",
+      "usage": "Pinned command surfaces and operational overlays."
+    },
+    {
+      "id": "z-modal",
+      "cssVar": "--z-modal",
+      "value": "500",
+      "usage": "Modal chambers and critical overlays."
+    },
+    {
+      "id": "z-toast",
+      "cssVar": "--z-toast",
+      "value": "600",
+      "usage": "Transient notifications that should remain visible over modals."
+    },
+    {
+      "id": "z-tooltip",
+      "cssVar": "--z-tooltip",
+      "value": "700",
+      "usage": "Tooltips and highest ephemeral assistive overlays."
+    }
+  ]
+}

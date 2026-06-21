@@ -1,0 +1,37 @@
+{
+  "id": "pf-input",
+  "name": "PFInput",
+  "category": "form",
+  "description": "Typed input control for accessible structured data entry.",
+  "architectural_role": "intake-desk",
+  "responsibility": "Collect typed user input clearly and accessibly.",
+  "slots": {
+    "required": ["label", "control"],
+    "optional": ["optional_description", "optional_error", "optional_prefix", "optional_suffix"]
+  },
+  "variants": ["default", "quiet", "error", "success"],
+  "states": ["default", "hover", "focus", "disabled", "readonly", "error"],
+  "token_dependencies": ["--space-2", "--space-3", "--space-4", "--radius-sm", "--text-small", "--text-body", "--line-body", "--weight-medium", "--focus-ring-width", "--focus-ring-offset", "--focus-ring-color"],
+  "accessibility": {
+    "requirements": [
+      "Inputs require labels.",
+      "Errors must be readable.",
+      "Focus states are mandatory."
+    ]
+  },
+  "composition_rules": [
+    "Descriptions should clarify expected format or meaning.",
+    "Error messages should explain how to recover.",
+    "Prefix and suffix content must not replace the accessible label."
+  ],
+  "anti_patterns": [
+    "placeholder-only labeling",
+    "errors that rely on color without text explanation",
+    "removing focus visibility"
+  ],
+  "governance": {
+    "foundation_component": true,
+    "allowed_density_modes": ["compact", "standard", "focus", "executive"],
+    "allowed_architectural_families": ["Command Tower", "Glass Atrium", "Blueprint Studio", "Signal Terminal", "Executive Gallery", "Horizon Workspace"]
+  }
+}

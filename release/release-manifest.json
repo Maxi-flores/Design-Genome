@@ -1,0 +1,98 @@
+{
+  "name": "sentient-os-design-genome",
+  "version": "1.0.0",
+  "status": "stable-internal-release",
+  "description": "The governed design genome for the ProfoundProjects / Sentient OS ecosystem.",
+  "public_css_exports": [
+    "dist/sentient-foundation.css",
+    "dist/sentient-primitives.css",
+    "dist/sentient-personalities.css",
+    "dist/sentient-architectures.css",
+    "dist/sentient-projects.css"
+  ],
+  "public_json_exports": [
+    "dist/sentient-foundation.tokens.json"
+  ],
+  "public_registries": [
+    "registries/architectural-families.json",
+    "registries/personalities.json",
+    "registries/project-dna.json",
+    "registries/chapter-accents.json",
+    "components/registry/component-registry.json"
+  ],
+  "public_schemas": [
+    "schemas/theme-declaration.schema.json",
+    "schemas/component-contract.schema.json"
+  ],
+  "public_docs": [
+    "README.md",
+    "docs/architectural-web-stylebook.md",
+    "docs/component-contracts.md",
+    "docs/css-primitives.md",
+    "docs/personality-themes.md",
+    "docs/architectural-family-themes.md",
+    "docs/project-dna-composition.md",
+    "release/public-api.md",
+    "release/import-order-contract.md",
+    "release/consumer-integration-guide.md",
+    "release/versioning-policy.md",
+    "release/release-checklist.md"
+  ],
+  "public_examples": [
+    "examples/index.html",
+    "examples/foundation-preview.html",
+    "examples/primitive-components-preview.html",
+    "examples/personality-themes-preview.html",
+    "examples/architectural-families-preview.html",
+    "examples/project-dna-preview.html"
+  ],
+  "public_packages": [
+    "packages/react-vite-starter"
+  ],
+  "build_scripts": [
+    "build",
+    "build:foundation",
+    "build:primitives",
+    "build:personalities",
+    "build:architectures",
+    "build:projects"
+  ],
+  "validation_scripts": [
+    "validate",
+    "validate:themes",
+    "validate:tokens",
+    "validate:components",
+    "validate:primitives",
+    "validate:react-starter",
+    "validate:personalities",
+    "validate:architectures",
+    "validate:projects",
+    "validate:release"
+  ],
+  "required_import_order": [
+    "sentient-foundation.css",
+    "sentient-primitives.css",
+    "sentient-personalities.css",
+    "sentient-architectures.css",
+    "sentient-projects.css"
+  ],
+  "required_data_attributes": [
+    "data-project",
+    "data-design-personality",
+    "data-architectural-family",
+    "data-chapter-accent",
+    "data-theme-mode",
+    "data-density-mode",
+    "data-motion-mode",
+    "data-spatial-identity",
+    "data-application-mode"
+  ],
+  "forbidden_runtime_behaviors": [
+    "overriding Foundation variables locally",
+    "renaming primitive classes",
+    "bypassing component contracts",
+    "creating local design systems inside applications",
+    "using personality styles as project themes",
+    "using Project DNA as application UI"
+  ]
+}

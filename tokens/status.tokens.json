@@ -1,0 +1,103 @@
+{
+  "version": "0.3",
+  "group": "status",
+  "description": "Universal status semantics shared across the Sentient OS ecosystem.",
+  "rule": "Statuses define meaning before color. Project-specific color systems are not part of the Foundation layer.",
+  "statuses": [
+    {
+      "id": "active",
+      "name": "Active",
+      "meaning": "An item is currently engaged, selected, or in effect.",
+      "severity": "info",
+      "usage": "Selected navigation items, active filters, and engaged operating states."
+    },
+    {
+      "id": "running",
+      "name": "Running",
+      "meaning": "A process is currently executing.",
+      "severity": "info",
+      "usage": "Live runtime jobs, agent execution, and in-progress system actions."
+    },
+    {
+      "id": "completed",
+      "name": "Completed",
+      "meaning": "A process or item has finished successfully.",
+      "severity": "success",
+      "usage": "Resolved work, finished flows, and successful runtime outcomes."
+    },
+    {
+      "id": "paused",
+      "name": "Paused",
+      "meaning": "An item is intentionally halted but recoverable.",
+      "severity": "muted",
+      "usage": "Deferred jobs, suspended automations, and temporarily stopped work."
+    },
+    {
+      "id": "blocked",
+      "name": "Blocked",
+      "meaning": "An item cannot proceed because of a dependency or failure condition.",
+      "severity": "danger",
+      "usage": "Dependency stops, hard workflow blockers, and action-required failures."
+    },
+    {
+      "id": "warning",
+      "name": "Warning",
+      "meaning": "An item needs attention soon but is not fully failed.",
+      "severity": "warning",
+      "usage": "Risk indicators, degraded states, and cautionary system signals."
+    },
+    {
+      "id": "error",
+      "name": "Error",
+      "meaning": "An item has failed or entered an invalid state.",
+      "severity": "danger",
+      "usage": "Failed requests, system faults, and invalid operations."
+    },
+    {
+      "id": "draft",
+      "name": "Draft",
+      "meaning": "An item exists but is not yet finalized or published.",
+      "severity": "neutral",
+      "usage": "Pre-release content, planning artifacts, and editable work in progress."
+    },
+    {
+      "id": "archived",
+      "name": "Archived",
+      "meaning": "An item is preserved for reference and no longer active in primary workflows.",
+      "severity": "muted",
+      "usage": "Historical projects, retired records, and no-longer-operational entries."
+    }
+  ],
+  "semanticTones": [
+    {
+      "id": "success",
+      "name": "Success",
+      "meaning": "Positive completion or healthy outcome."
+    },
+    {
+      "id": "info",
+      "name": "Info",
+      "meaning": "Informational activity or active operational state."
+    },
+    {
+      "id": "warning",
+      "name": "Warning",
+      "meaning": "Cautionary or degraded condition."
+    },
+    {
+      "id": "danger",
+      "name": "Danger",
+      "meaning": "Critical issue, hard stop, or failed state."
+    },
+    {
+      "id": "neutral",
+      "name": "Neutral",
+      "meaning": "Baseline non-emphasized state."
+    },
+    {
+      "id": "muted",
+      "name": "Muted",
+      "meaning": "De-emphasized or intentionally quiet state."
+    }
+  ]
+}
