@@ -1,0 +1,74 @@
+A Codex UI/UX project transforms from a standard AI generation loop into a highly detailed, deeply customized enterprise engine by shifting from conversational prompting to file-based orchestration. [1, 2, 3] 
+Instead of typing long, repetitive prompts to guide code or design styles, developers use targeted markdown configuration files (SKILL.md, GUARDRAILS.md, AGENTS.md). This structures the AI coding agent’s behavior, prevents "AI design slop", enforces accessibility standards, and maintains a strict token budget. [1, 2, 4, 5, 6, 7] 
+------------------------------
+## 1. Reusable Functional Capability: SKILL.md
+A Skill in Codex is not a plugin or a fine-tune; it is a directory anchored by a SKILL.md file that bundles procedural workflow rules, YAML frontmatter metadata, and optional scripts. [1] 
+
+* Progressive Disclosure (Context Optimization): Codex loads only the skill name and description at startup (costing almost zero tokens). It parses the full SKILL.md guidelines only when a task matches the skill's description or when a designer manually triggers it with a slash command (e.g., /polish). [1, 4, 5, 8] 
+* UI/UX Customization: Designers use UI/UX skills to mandate strict styling choices (e.g., “Never use generic card grids as a first impression”, or “Enforce Tailwind CSS defaults and accessible component primitives like Radix”). [7, 9] 
+* Example Skills Used in 2026:
+* magicpath: Connects Codex to an infinite design canvas to generate UI variations natively.
+   * make-interfaces-feel-better: A popular procedural script that enforces specific typographic weights, prevents bad line breaks using text-pretty, and controls spatial layouts in one pass.
+   * impeccable: Bundles up to 23 discrete commands for auditing, micro-animations, and surface polishing. [7, 10, 11] 
+
+------------------------------
+## 2. Behavioral Boundaries & Safety: GUARDRAILS.md
+While skills teach Codex how to build, GUARDRAILS.md teaches Codex what to avoid. It serves as a safety protocol and a persistent memory log across project context resets. [2, 12, 13] 
+
+* Escaping "The Gutter": When an AI agent fails a design build, its context window often gets flooded with errors. Codex then tends to obsess over fixing the error rather than delivering the actual user experience (a loop known as "the gutter"). GUARDRAILS.md provides a hard memory state to force fallback procedures instead of endless loops. [12, 14] 
+* Frontend Constraints: This file mandates strict technical boundaries, such as:
+* Prohibiting animations that trigger layout shifts (CLS).
+   * Restricting absolute z-index scales to explicit design system primitives.
+   * Imposing Approval Gates (e.g., Codex cannot execute terminal scripts, download unchecked packages, or make destructive Git updates without explicit human confirmation). [7, 15, 16] 
+
+------------------------------
+## 3. Repository Grounding: AGENTS.md
+While skills are called on demand, AGENTS.md sits at the root of the project as a persistent, "always-on" rulebook for the entire workspace. [2] 
+
+* Design System & Environment Anchoring: It grounds Codex in the exact tech stack (e.g., "This is a Next.js App Router monorepo using TypeScript and shadcn/ui"). It prevents Codex from hallucinating generic design elements by locking it into your specific CSS variables and token primitives. [2, 8, 17, 18, 19] 
+* Cascading Layering: Codex looks for the closest AGENTS.md file. A global file in your user directory dictates personal preferences (e.g., "Write explicit error states; no silent fallbacks"), while subdirectory-level files fine-tune specific modules (e.g., demanding strict data-density layouts inside an analytical dashboard directory). [8, 18, 20] 
+
+------------------------------
+## 4. Advanced UX Customization Frameworks
+To make the AI build highly structured, customizable apps, developers combine these markdown files to create explicit assessment criteria inside their prompts or skills: [21, 22, 23] 
+
+| Framework Element [21, 24, 25, 26, 27] | Purpose in UI/UX Codex Projects | Implementation File |
+|---|---|---|
+| The 3-Second Rule | Forces primary intent and primary action dominance to be immediately visually obvious. | SKILL.md (Design Principles) |
+| Comprehension Bars | Demands that complex components pass the "Kid Wow Check" (compelling UI) and "Mom Comprehension Check" (non-technical clarity) before a patch is marked complete. | SKILL.md (QA Spec) |
+| Task Classification Gates | Prevents token wasting by forcing Codex to classify the job (e.g., light read, normal patch, expensive browser/e2e run) before starting work. | AGENTS.md (Operational Limits) |
+| stop-slop Filters | Eradicates common AI writing tells (like "it's worth noting that" or passive voice stacks) from user-facing copy, tooltips, and documentation. | Global Skill Profile |
+
+## How It Works Together in Practice
+When a designer runs a command like /design-dashboard, Codex pulls from AGENTS.md to see what structural design tokens it must follow. It invokes the SKILL.md workflow to generate multiple layout variants on an infinite preview canvas. Finally, it parses GUARDRAILS.md to verify that the contrast ratios, typographic sizes, and micro-interactions pass all automated accessibility checks before presenting the code. [1, 7, 10, 12, 17, 28] 
+------------------------------
+Would you like to explore a structural template for creating your first SKILL.md or GUARDRAILS.md file, or should we look into a concrete example of a custom design-token workflow?
+
+[1] [https://www.verdent.ai](https://www.verdent.ai/guides/codex-app-skills-guide)
+[2] [https://www.verdent.ai](https://www.verdent.ai/guides/codex-agents-md-explained)
+[3] [https://medium.com](https://medium.com/@dev_56360/from-diffs-to-dialogue-my-first-weeks-with-codex-app-007ed6a71910)
+[4] [https://developers.openai.com](https://developers.openai.com/codex/skills)
+[5] [https://www.youtube.com](https://www.youtube.com/watch?v=d3Ydt6LyGeY)
+[6] [https://composio.dev](https://composio.dev/content/top-codex-skills)
+[7] [https://mcpmarket.com](https://mcpmarket.com/tools/skills/ui-interface-guardrails)
+[8] [https://www.youtube.com](https://www.youtube.com/watch?v=GOtHFZnagO0&t=408)
+[9] [https://composio.dev](https://composio.dev/content/top-design-skills)
+[10] [https://www.youtube.com](https://www.youtube.com/watch?v=LJsENfKv6ZU)
+[11] [https://composio.dev](https://composio.dev/content/top-design-skills)
+[12] https://guardrails.md
+[13] [https://github.com](https://github.com/ComposioHQ/awesome-codex-skills/blob/master/README.md)
+[14] [https://www.youtube.com](https://www.youtube.com/watch?v=Q3L-5KXX2SE&t=80)
+[15] [https://dev.to](https://dev.to/maxkrivich/ai-coding-agent-security-practical-guardrails-for-claude-code-copilot-and-codex-och)
+[16] [https://dev.to](https://dev.to/truongpx396/multica-deep-dive-how-to-build-a-managed-agents-platform-54l2)
+[17] [https://www.agensi.io](https://www.agensi.io/learn/codex-cli-agents-md-complete-guide)
+[18] [https://ai.sulat.com](https://ai.sulat.com/codex-guide-agents-md-cascading-rules-and-the-optional-agents-override-md-1f4c81767e92)
+[19] [https://www.reddit.com](https://www.reddit.com/r/ClaudeCode/comments/1ne3isa/need_feedback_claude_code_vs_codex_or_codex_cli/)
+[20] [https://kirill-markin.com](https://kirill-markin.com/articles/codex-rules-for-ai/)
+[21] [https://www.reddit.com](https://www.reddit.com/r/codex/comments/1r2z5a6/need_help_crafting_an_amazing_uiux_skillmd/)
+[22] [https://www.linkedin.com](https://www.linkedin.com/posts/omarsar_claude-dot-md-files-dont-scale-beyond-modest-activity-7433536504351662080-6XlR)
+[23] [https://kaizenaiconsulting.com](https://kaizenaiconsulting.com/claude-code-skills-extending-ai-capabilities-for-your-business/)
+[24] [https://www.reddit.com](https://www.reddit.com/r/codex/comments/1u8bcg3/what_agentsmd_guardrails_are_people_using_to/)
+[25] [https://medium.com](https://medium.com/@unicodeveloper/9-must-have-skills-for-codex-in-2026-b5124b375eec)
+[26] [https://www.instagram.com](https://www.instagram.com/reel/DZXnYd2NZIL/)
+[27] [https://www.newline.co](https://www.newline.co/@Dipen/transfer-skillsmd-from-claude-code-to-codex--e7f7b01e)
+[28] [https://www.youtube.com](https://www.youtube.com/watch?v=IdqeXTXzY98)
