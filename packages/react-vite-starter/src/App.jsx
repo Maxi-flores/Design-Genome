@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { SentientProvider } from './SentientProvider.jsx';
 import { themeDeclaration } from './theme/themeDeclaration.js';
+import { LayoutManager } from './components/LayoutManager.jsx';
 import { PFNavigation } from './components/PFNavigation.jsx';
 import { PFCommandBar } from './components/PFCommandBar.jsx';
 import { PFWorkspaceGrid } from './components/PFWorkspaceGrid.jsx';
@@ -34,12 +35,18 @@ export function App() {
 
   return (
     <SentientProvider themeDeclaration={themeDeclaration}>
-      <div style={{ padding: 'var(--space-6)', display: 'grid', gap: 'var(--space-6)' }}>
-        <PFSection
-          title="React/Vite Integration Starter"
-          description="This is a neutral framework integration preview, not an application screen or project dashboard."
-          footer={<PFStatusBadge status="active">Theme Declaration Applied</PFStatusBadge>}
-        >
+      <LayoutManager
+        architecturalFamily={themeDeclaration.architectural_family}
+        spatialIdentity={themeDeclaration.spatial_identity}
+        densityMode={themeDeclaration.density_mode}
+        header={
+          <PFSection
+            title="React/Vite Integration Starter"
+            description="This is a neutral framework integration preview, not an application screen or project dashboard."
+            variant="compact"
+          />
+        }
+        sidebar={
           <PFNavigation
             label="Starter Navigation"
             items={[
@@ -48,7 +55,8 @@ export function App() {
               { label: 'Contracts', href: '#contracts', active: false }
             ]}
           />
-
+        }
+        commandBar={
           <PFCommandBar
             primaryActions={
               <>
@@ -81,88 +89,88 @@ export function App() {
             }
             status={<PFStatusBadge status="running">Primitive Classes Active</PFStatusBadge>}
           />
-
-          <PFWorkspaceGrid density="standard">
-            <PFCard
-              title="Foundation Loaded"
-              description="The starter consumes generated Foundation CSS and Primitive CSS from the root dist layer."
-              footer={<PFButton variant="ghost">Inspect Contract</PFButton>}
-              variant="interactive"
-            >
-              Neutral wrappers add structure but not project identity.
-            </PFCard>
-
-            <PFPanel
-              title="Component Contracts Connected"
-              actions={<PFStatusBadge status="completed">Approved</PFStatusBadge>}
-              variant="context"
-            >
-              React wrappers consume existing primitive classes and remain aligned with approved contracts.
-            </PFPanel>
-
-            <PFMetricCard
-              label="Integration State"
-              value="Ready"
-              delta="No project styling applied"
-              status="completed"
-              description="Neutral component wrappers are connected."
-            />
-
-            <PFDataTable
-              caption="Starter Signals"
-              columns={[
-                { key: 'signal', label: 'Signal' },
-                { key: 'state', label: 'State' },
-                { key: 'note', label: 'Note' }
-              ]}
-              rows={[
-                { signal: 'Foundation', state: 'Loaded', note: 'CSS imported from root dist.' },
-                { signal: 'Primitives', state: 'Active', note: 'Primitive classes used by wrappers.' },
-                { signal: 'Contracts', state: 'Connected', note: 'Approved component structure preserved.' }
-              ]}
-            />
-
-            <PFTabs tabs={tabs} activeId={activeTab} onChange={setActiveTab} />
-
-            <PFTimeline
-              items={[
-                { title: 'Foundation tokens', time: 'v0.3', status: 'completed', description: 'Base CSS variables generated.' },
-                { title: 'Component contracts', time: 'v0.4', status: 'completed', description: 'Machine-readable governance layer active.' },
-                { title: 'React wrappers', time: 'v0.6', status: 'running', description: 'Framework integration proof in progress.' }
-              ]}
-            />
-
-            <PFEmptyState
-              title="No project styling present"
-              description="This starter intentionally avoids project-specific UI, personality themes, and architectural family styling."
-              action={<PFButton variant="primary">Review Neutral Layer</PFButton>}
-            />
-          </PFWorkspaceGrid>
-
-          <PFModal
-            open={modalOpen}
-            title="Neutral Modal Wrapper"
-            onClose={() => setModalOpen(false)}
-            actions={
-              <>
-                <PFButton variant="ghost" onClick={() => setModalOpen(false)}>Close</PFButton>
-                <PFButton variant="primary" onClick={() => setModalOpen(false)}>Confirm</PFButton>
-              </>
-            }
+        }
+      >
+        <PFWorkspaceGrid density="standard">
+          <PFCard
+            title="Foundation Loaded"
+            description="The starter consumes generated Foundation CSS and Primitive CSS from the root dist layer."
+            footer={<PFButton variant="ghost">Inspect Contract</PFButton>}
+            variant="interactive"
           >
-            Production-grade focus trapping is intentionally deferred to a later implementation phase.
-          </PFModal>
+            Neutral wrappers add structure but not project identity.
+          </PFCard>
 
-          <PFDrawer
-            open={drawerOpen}
-            title="Neutral Drawer Wrapper"
-            onClose={() => setDrawerOpen(false)}
-            actions={<PFButton onClick={() => setDrawerOpen(false)}>Done</PFButton>}
+          <PFPanel
+            title="Component Contracts Connected"
+            actions={<PFStatusBadge status="completed">Approved</PFStatusBadge>}
+            variant="context"
           >
-            This drawer demonstrates framework integration without adding project-specific design language.
-          </PFDrawer>
-        </PFSection>
-      </div>
+            React wrappers consume existing primitive classes and remain aligned with approved contracts.
+          </PFPanel>
+
+          <PFMetricCard
+            label="Integration State"
+            value="Ready"
+            delta="No project styling applied"
+            status="completed"
+            description="Neutral component wrappers are connected."
+          />
+
+          <PFDataTable
+            caption="Starter Signals"
+            columns={[
+              { key: 'signal', label: 'Signal' },
+              { key: 'state', label: 'State' },
+              { key: 'note', label: 'Note' }
+            ]}
+            rows={[
+              { signal: 'Foundation', state: 'Loaded', note: 'CSS imported from root dist.' },
+              { signal: 'Primitives', state: 'Active', note: 'Primitive classes used by wrappers.' },
+              { signal: 'Contracts', state: 'Connected', note: 'Approved component structure preserved.' }
+            ]}
+          />
+
+          <PFTabs tabs={tabs} activeId={activeTab} onChange={setActiveTab} />
+
+          <PFTimeline
+            items={[
+              { title: 'Foundation tokens', time: 'v0.3', status: 'completed', description: 'Base CSS variables generated.' },
+              { title: 'Component contracts', time: 'v0.4', status: 'completed', description: 'Machine-readable governance layer active.' },
+              { title: 'React wrappers', time: 'v0.6', status: 'running', description: 'Framework integration proof in progress.' }
+            ]}
+          />
+
+          <PFEmptyState
+            title="No project styling present"
+            description="This starter intentionally avoids project-specific UI, personality themes, and architectural family styling."
+            action={<PFButton variant="primary">Review Neutral Layer</PFButton>}
+          />
+        </PFWorkspaceGrid>
+
+        <PFModal
+          open={modalOpen}
+          title="Neutral Modal Wrapper"
+          onClose={() => setModalOpen(false)}
+          actions={
+            <>
+              <PFButton variant="ghost" onClick={() => setModalOpen(false)}>Close</PFButton>
+              <PFButton variant="primary" onClick={() => setModalOpen(false)}>Confirm</PFButton>
+            </>
+          }
+        >
+          Production-grade focus trapping is intentionally deferred to a later implementation phase.
+        </PFModal>
+
+        <PFDrawer
+          open={drawerOpen}
+          title="Neutral Drawer Wrapper"
+          onClose={() => setDrawerOpen(false)}
+          actions={<PFButton onClick={() => setDrawerOpen(false)}>Done</PFButton>}
+        >
+          This drawer demonstrates framework integration without adding project-specific design language.
+        </PFDrawer>
+      </LayoutManager>
     </SentientProvider>
   );
 }
