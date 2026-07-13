@@ -700,7 +700,7 @@ are loaded before primitive classes are used.
   align-items: center;
   gap: var(--space-3);
   padding-inline: var(--space-5);
-  min-block-size: 56px;
+  min-block-size: 56px; /* header height — var(--space-3) top + var(--space-3) bottom + icon line-height */
   border-block-end: 1px solid color-mix(in srgb, currentColor 12%, transparent);
   background: inherit;
   box-sizing: border-box;
@@ -740,7 +740,7 @@ are loaded before primitive classes are used.
   flex-shrink: 0;
   overflow-y: auto;
   overflow-x: hidden;
-  inline-size: 240px;
+  inline-size: 240px; /* navigation rail expanded width */
   border-inline-end: 1px solid color-mix(in srgb, currentColor 12%, transparent);
   transition:
     inline-size var(--duration-normal) var(--ease-standard),
@@ -751,7 +751,7 @@ are loaded before primitive classes are used.
 
 .pf-layout-manager__sidebar-inner {
   padding: var(--space-4);
-  inline-size: 240px;
+  inline-size: 240px; /* must match sidebar expanded width */
   min-inline-size: 240px;
 }
 
@@ -810,7 +810,7 @@ are loaded before primitive classes are used.
   }
 
   .pf-layout-manager[data-sidebar-collapsed="false"] .pf-layout-manager__sidebar {
-    inline-size: 240px;
+    inline-size: 240px; /* must match sidebar expanded width */
     visibility: visible;
     box-shadow: var(--elevation-3);
   }

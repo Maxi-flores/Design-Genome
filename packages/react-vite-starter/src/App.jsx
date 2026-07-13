@@ -40,11 +40,14 @@ export function App() {
         spatialIdentity={themeDeclaration.spatial_identity}
         densityMode={themeDeclaration.density_mode}
         header={
-          <PFSection
-            title="React/Vite Integration Starter"
-            description="This is a neutral framework integration preview, not an application screen or project dashboard."
-            variant="compact"
-          />
+          <>
+            <PFSection
+              title="React/Vite Integration Starter"
+              description="This is a neutral framework integration preview, not an application screen or project dashboard."
+              variant="compact"
+            />
+            <PFStatusBadge status="active">Theme Declaration Applied</PFStatusBadge>
+          </>
         }
         sidebar={
           <PFNavigation
