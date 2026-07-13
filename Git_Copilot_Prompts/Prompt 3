@@ -1,0 +1,103 @@
+@workspace
+
+Proceed with the implementation now. Do not stop after producing a plan or to-do list.
+
+Primary objective:
+Create the Design Genome layout validation utility at:
+
+src/components/layout/manager/utils/validateLayout.ts
+
+Required steps:
+
+1. Locate and read architecture.md.
+2. Extract and interpret every rule contained between:
+    * <!-- GENOME-GUARDRAILS -->
+    * the matching closing genome guardrail marker.
+3. Inspect the existing dynamic layout canvas types, layout manager components, tokens, Tailwind configuration, and any existing validation utilities before designing the API.
+4. Implement a reusable TypeScript validator that checks a page/layout definition against the synchronized Design Genome contract.
+
+The validator must support, where present in the genome contract:
+
+* allowed spacing tokens
+* forbidden arbitrary spacing values
+* grid and column restrictions
+* maximum content widths
+* section padding rules
+* component gap rules
+* typography token restrictions
+* border-radius restrictions
+* color and surface token restrictions
+* responsive breakpoint requirements
+* layout nesting restrictions
+* required shell, header, navigation, content, and footer regions
+* deprecated or forbidden design tokens
+
+Implementation requirements:
+
+* Do not hardcode assumptions that contradict architecture.md.
+* Convert the synchronized genome section into normalized validation rules.
+* Prefer typed rule objects rather than scattered regular expressions.
+* Export clear public types such as:
+    * LayoutValidationSeverity
+    * LayoutValidationIssue
+    * LayoutValidationResult
+    * LayoutValidationOptions
+* Export a primary function named validateLayout.
+* The function must return structured issues with:
+    * rule identifier
+    * severity
+    * message
+    * affected node or path
+    * expected value
+    * received value
+    * optional remediation
+* Support at least:
+    * "warning" mode for the visual editor/runtime canvas
+    * "error" or "strict" mode for builds and compilation checks
+* In strict mode, throw a dedicated LayoutGenomeValidationError when violations classified as errors are found.
+* Warnings must remain inspectable without automatically throwing.
+* Avoid direct DOM access so the validator remains testable.
+* Do not use any unless the existing canvas model makes it unavoidable.
+* Do not modify unrelated UI or application behavior.
+
+Integration:
+
+* Find the safest existing layout-manager or canvas validation boundary.
+* Integrate the validator there only if the integration point is clear and low-risk.
+* If no safe integration point exists, implement the standalone validator and document the recommended call site instead of guessing.
+* Do not create a recursive render loop or validate on every React render without memoization.
+
+Testing:
+
+Create:
+
+src/components/layout/manager/utils/validateLayout.spec.ts
+
+Cover at minimum:
+
+1. valid layout using approved tokens
+2. arbitrary spacing violation
+3. forbidden token violation
+4. warning-only validation
+5. strict validation throwing LayoutGenomeValidationError
+6. multiple violations with accurate node paths
+7. missing or malformed genome guardrail configuration
+8. responsive-layout rule violation
+
+Validation workflow:
+
+1. Run the current baseline commands before editing.
+2. Implement the validator and tests.
+3. Run:
+    * npm run typecheck
+    * npm test
+    * npm run build
+4. Inspect git diff.
+5. Confirm that no secrets, generated assets, lockfile changes, or unrelated files were introduced.
+
+At completion, report:
+
+* files created or changed
+* validator API
+* genome rules discovered
+* exact integration point, if added
