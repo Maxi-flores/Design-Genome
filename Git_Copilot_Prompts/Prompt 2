@@ -1,0 +1,8 @@
+@workspace
+
+The #file:architecture.md has been synchronized with our external Design Genome repo via automation scripts.
+
+1. Scan the injected genome sections between the `<!-- GENOME-GUARDRAILS -->` tags.
+2. Read the layout skills and guardrails specified in that external contract.
+3. Write a TypeScript script inside `src/components/layout/manager/utils/validateLayout.ts` that strictly asserts if our dynamic layout canvas satisfies these external rules.
+4. If a page design violates a token or spacing restriction, throw a runtime compilation error or layout warning.
